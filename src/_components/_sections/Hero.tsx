@@ -23,18 +23,20 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="w-full h-screen flex items-center bg-[#40B4B4]/5">
-      <div className="w-1/2 p-12 flex flex-col justify-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800">
-          WELCOME TO
-        </h1>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#40B4B4]">
-          DISC NU
-        </h2>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-xl">
-          A Northwestern University community dedicated to Designing &
-          Innovating for Social Change
-        </p>
+    <div className="min-w-full h-screen flex">
+      <div className="w-1/2 h-full p-8 flex flex-col justify-center items-center">
+        <div className="max-w-xl text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black">
+            WELCOME TO
+          </h1>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#40B4B4]">
+            DISC NU
+          </h2>
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-600">
+            A Northwestern University community dedicated to Designing &
+            Innovating for Social Change
+          </p>
+        </div>
       </div>
 
       <div ref={containerRef} className="w-1/2 h-full">
