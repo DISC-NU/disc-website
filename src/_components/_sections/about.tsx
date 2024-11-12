@@ -23,7 +23,7 @@ export default function AboutSection() {
             , one project at a time.
           </h1>
 
-          <p className="mt-4 max-w-3xl text-gray-500">
+          <p className="mt-4 max-w-3xl text-gray-500 text-md">
             Since 2017, DISC has been transforming how Northwestern students
             engage with technology and community impact. What started as a small
             student group has grown into a dynamic community of innovators,
@@ -58,7 +58,7 @@ export default function AboutSection() {
               <h3 className="text-xl font-bold text-gray-900">
                 Enhance your problem-solving skills through coding!
               </h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-md">
                 We provide a supportive environment where members learn to
                 tackle challenges step-by-step. Break down problems, brainstorm
                 solutions, implement code, and reach effective solutions
@@ -74,7 +74,7 @@ export default function AboutSection() {
               <h3 className="text-xl font-bold text-gray-900">
                 Where innovation meets implementation!
               </h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-md">
                 We're passionate about coding and bringing ideas to life through
                 technology. Join us as we dive into the world of software
                 development and explore ways to enact positive change through
@@ -93,7 +93,7 @@ export default function AboutSection() {
               <h3 className="text-xl font-bold text-gray-900">
                 Join our dynamic club and make a difference!
               </h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-md">
                 Our community is dedicated to driving social impact and
                 community engagement through leadership at every level. Whether
                 you're a project manager, tech lead, or general member, there's
