@@ -17,7 +17,7 @@ const colorPalette = [
   "#308F8F", // Deepest teal
   "#E6F7F7", // Very light teal
   "#D0F0F0", // Light teal
-  "#B9E9E9", // Medium light teal
+  "#B9E9E9", // Medium light teala
   "#297777", // darker teal
   "#246666", // very dark teal
   "#1D5555", // deepest teal
