@@ -9,7 +9,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/_components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const NavItem = ({
   href,
@@ -78,21 +80,23 @@ export default async function Header() {
           aria-label="Main navigation"
         >
           <div className="flex h-12 items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex gap-2 items-center">
+              <Image
+                src="/disc_logo.png"
+                alt="DISC Logo"
+                width={40}
+                height={40}
+              />
               <Link
                 href="/"
                 className="flex flex-shrink-0 items-center"
                 aria-label="DISC LOGOs"
               >
-                <div className="text-2xl font-bold">DISC LOGO</div>
+                <div className="text-2xl font-bold">DISC</div>
               </Link>
               <nav className="ml-4 hidden md:block" aria-label="Main menu">
                 <NavigationMenu>
                   <NavigationMenuList className="text-black/60 dark:text-gray-500">
-                    <NavItem href="/docs">Documentation</NavItem>
-                    <NavItem href="" target="_blank">
-                      GitHub
-                    </NavItem>
                     <DropdownNavItem trigger="Resources">
                       <ul className="grid w-[400px] gap-3 bg-background p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         <ListItem href="/about" title="About">
@@ -109,9 +113,33 @@ export default async function Header() {
                         </ListItem>
                       </ul>
                     </DropdownNavItem>
+
+                    <NavItem href="/docs">Documentation</NavItem>
+                    <NavItem
+                      href="https://github.com/yourusername"
+                      target="_blank"
+                    >
+                      GitHub
+                    </NavItem>
                   </NavigationMenuList>
                 </NavigationMenu>
               </nav>
+            </div>
+            {/* <div className="lg:hidden">
+              <MobileMenu user={user} handleSignOut={handleSignOut} />
+            </div> */}
+            <div className="hidden md:block">
+              <div className="flex items-center space-x-4">
+                <Link
+                  href="/login"
+                  className="text-sm font-medium text-gray-700 hover:text-gray-900"
+                >
+                  Sign in
+                </Link>
+                <Button className="bg-[#40B4B4] hover:bg-[#369999] text-white font-semibold">
+                  <a href="https://discord.gg/mqRQ7s9CyS">Join DISC</a>
+                </Button>
+              </div>
             </div>
           </div>
         </nav>
