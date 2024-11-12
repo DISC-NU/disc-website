@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
-import { Toaster } from "@/components/ui/toaster";
-
+import { Toaster } from "@/_components/ui/toaster";
+import Header from "@/_components/ui/navigation-bar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,12 +29,11 @@ export default function RootLayout({
       <body
         className={`bg-background font-sans tracking-tight text-gray-900 antialiased`}
       >
-        <ThemeProvider attribute="class" enableSystem enableColorScheme>
-          <div className="flex min-h-screen flex-col overflow-hidden">
-            {children}
-            <Toaster />
-          </div>
-        </ThemeProvider>
+        <div className="flex min-h-screen flex-col overflow-hidden">
+          <Header />
+          {children}
+          <Toaster />
+        </div>
       </body>
     </html>
   );
