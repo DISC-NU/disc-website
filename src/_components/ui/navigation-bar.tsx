@@ -1,6 +1,5 @@
 import { ReactNode, forwardRef, ComponentPropsWithoutRef } from "react";
 import Link from "next/link";
-// import PearGreenLogo from "./PearGreen.svg";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,11 +10,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/_components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-// import AuthButton from "./authbutton";
-// import MobileMenu from "./mobile-menu";
-// import { redirect } from "next/navigation";
-// import { createClient } from "@/utils/supabase/server";
-// import DownloadButton from "./downloadbutton";
 
 const NavItem = ({
   href,
@@ -49,6 +43,7 @@ const DropdownNavItem = ({
   </NavigationMenuItem>
 );
 
+// ListItem component for dropdown content
 const ListItem = forwardRef<
   HTMLAnchorElement,
   ComponentPropsWithoutRef<"a"> & { title: string; href: string }
@@ -65,7 +60,7 @@ const ListItem = forwardRef<
         {...props}
       >
         <div className="text-sm font-medium leading-none">{title}</div>
-        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+        <p className="line-clamp-2 text-sm leading-snug text-gray-600/90 dark:text-gray-500">
           {children}
         </p>
       </Link>
@@ -75,72 +70,48 @@ const ListItem = forwardRef<
 ListItem.displayName = "ListItem";
 
 export default async function Header() {
-  // const supabase = createClient();
-  // const {
-  //   data: { user },
-  //   error,
-  // } = await supabase.auth.getUser();
-
-  // const handleSignOut = async () => {
-  //   "use server";
-  //   // const supabase = createClient();
-  //   await supabase.auth.signOut();
-  //   redirect("/");
-  // };
-
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 p-3 transition-all duration-300 ease-in-out">
-      <div className="mx-auto max-w-4xl">
+    <header className="fixed left-0 right-0 top-0 z-50 p-4 transition-all duration-300 ease-in-out">
+      <div className="mx-auto max-w-[1070px]">
         <nav
-          className="rounded-full border border-border/50 bg-background shadow-md transition-all duration-300 ease-in-out"
+          className="rounded-2xl border border-gray-200 bg-background px-2 transition-all duration-300 ease-in-out dark:border-gray-50"
           aria-label="Main navigation"
         >
-          <div className="px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <Link
-                  href="/"
-                  className="flex flex-shrink-0 items-center"
-                  aria-label="DISC NU Home"
-                >
-                  {/* <PearGreenLogo className="mb-1 h-8" /> */}
-                  <div className="h4 ml-2 text-primary-700">DISC</div>
-                </Link>
-                <nav className="ml-10 hidden md:block" aria-label="Main menu">
-                  <NavigationMenu>
-                    <NavigationMenuList className="space-x-1">
-                      <DropdownNavItem trigger="Resources">
-                        <ul className="grid w-[400px] gap-3 bg-background p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                          <ListItem href="/about" title="About">
-                            Learn more about DISC
-                          </ListItem>
-                          <ListItem href="/blog" title="Blog">
-                            Read insights on DISC&apos;s development by our
-                            contributors
-                          </ListItem>
-                          <ListItem href="/faq" title="FAQ">
-                            Frequently asked questions about DISC
-                          </ListItem>
-                          <ListItem href="/changelog" title="Changelog">
-                            See what&apos;s new in DISC
-                          </ListItem>
-                        </ul>
-                      </DropdownNavItem>
-                      <NavItem href="/pricing">Pricing</NavItem>
-                      <NavItem href="/docs">Documentation</NavItem>
-                      <NavItem
-                        href="https://github.com/DISC-NU"
-                        target="_blank"
-                      >
-                        GitHub ⭐️
-                      </NavItem>
-                    </NavigationMenuList>
-                  </NavigationMenu>
-                </nav>
-              </div>
-              <div className="lg:hidden">
-                {/* <MobileMenu user={user} handleSignOut={handleSignOut} /> */}
-              </div>
+          <div className="flex h-12 items-center justify-between">
+            <div className="flex items-center">
+              <Link
+                href="/"
+                className="flex flex-shrink-0 items-center"
+                aria-label="DISC LOGOs"
+              >
+                <div className="text-2xl font-bold">DISC LOGO</div>
+              </Link>
+              <nav className="ml-4 hidden md:block" aria-label="Main menu">
+                <NavigationMenu>
+                  <NavigationMenuList className="text-black/60 dark:text-gray-500">
+                    <NavItem href="/docs">Documentation</NavItem>
+                    <NavItem href="" target="_blank">
+                      GitHub
+                    </NavItem>
+                    <DropdownNavItem trigger="Resources">
+                      <ul className="grid w-[400px] gap-3 bg-background p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                        <ListItem href="/about" title="About">
+                          Learn more about our platform
+                        </ListItem>
+                        <ListItem href="/blog" title="Blog">
+                          Read insights on development
+                        </ListItem>
+                        <ListItem href="/faq" title="FAQ">
+                          Frequently asked questions
+                        </ListItem>
+                        <ListItem href="/changelog" title="Changelog">
+                          See what&apos;s new
+                        </ListItem>
+                      </ul>
+                    </DropdownNavItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </nav>
             </div>
           </div>
         </nav>
