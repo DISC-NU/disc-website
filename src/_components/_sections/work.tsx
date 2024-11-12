@@ -96,7 +96,7 @@ export default function CompanyMarquee() {
           </span>
         </h2>
       </div>
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 max-w-7xl items-center justify-center mx-auto">
         <Marquee>
           {firstRow.map((company, idx) => (
             <CompanyLogo
