@@ -2,17 +2,8 @@
 
 import Image from "next/image";
 import { ReactNode } from "react";
-
-interface Logo {
-  type: "image";
-  src: string;
-}
-
-interface Company {
-  name: string;
-  logo: Logo;
-  website: string;
-}
+import { companies } from "@/utils/constants";
+import { Logo } from "@/types";
 
 interface CompanyLogoProps {
   logo: Logo;
@@ -24,89 +15,6 @@ interface MarqueeProps {
   children: ReactNode;
   direction?: "normal" | "reverse";
 }
-
-const companies: Company[] = [
-  {
-    name: "Salesforce",
-    logo: {
-      type: "image",
-      src: "/salesforce.png",
-    },
-    website: "https://www.salesforce.com/",
-  },
-  {
-    name: "Group one Trading",
-    logo: {
-      type: "image",
-      src: "/group_one.jpeg",
-    },
-    website: "https://www.group1.com/",
-  },
-  {
-    name: "Citadel",
-    logo: {
-      type: "image",
-      src: "/citadel.png",
-    },
-    website: "https://www.citadel.com/",
-  },
-  {
-    name: "Amazon",
-    logo: {
-      type: "image",
-      src: "/amazon.png",
-    },
-    website: "https://www.amazon.com/",
-  },
-  {
-    name: "Google",
-    logo: {
-      type: "image",
-      src: "/google.png",
-    },
-    website: "https://www.google.com/",
-  },
-  {
-    name: "Microsoft",
-    logo: {
-      type: "image",
-      src: "/microsoft.png",
-    },
-    website: "https://www.microsoft.com/",
-  },
-  {
-    name: "Roblox",
-    logo: {
-      type: "image",
-      src: "/roblox.png",
-    },
-    website: "https://www.roblox.com/",
-  },
-  {
-    name: "Splunk",
-    logo: {
-      type: "image",
-      src: "/splunk.png",
-    },
-    website: "https://www.splunk.com/",
-  },
-  {
-    name: "rubrik",
-    logo: {
-      type: "image",
-      src: "/rubrik.png",
-    },
-    website: "https://www.rubrik.com/",
-  },
-  {
-    name: "Boston Consulting Group",
-    logo: {
-      type: "image",
-      src: "/bcg.png",
-    },
-    website: "https://www.bcg.com/",
-  },
-];
 
 const firstRow = companies.slice(0, Math.ceil(companies.length / 2));
 const secondRow = companies.slice(Math.ceil(companies.length / 2));
@@ -174,6 +82,20 @@ const Marquee = ({ children, direction = "normal" }: MarqueeProps) => {
 export default function CompanyMarquee() {
   return (
     <div className="relative w-full py-12 bg-background">
+      <div className=" w-lg flex flex-col items-center mb-12">
+        <h2 className="text-4xl font-bold">
+          <span className="relative">
+            <span className="relative z-10">Where DISC Members Work</span>
+            <span
+              className="absolute bottom-0 left-0 w-full"
+              style={{
+                height: "1.4375rem",
+                background: "rgba(20, 189, 149, 0.20)",
+              }}
+            ></span>
+          </span>
+        </h2>
+      </div>
       <div className="flex flex-col gap-12">
         <Marquee>
           {firstRow.map((company, idx) => (
