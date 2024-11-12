@@ -31,8 +31,19 @@ export default function MeetTheTeam() {
 
       <div className="space-y-2">
         <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-        <p className="font-medium" style={{ color: "rgb(20, 189, 149)" }}>
-          {member.position}
+        <p className="font-medium">
+          <span className="relative">
+            <span className="relative z-10 text-black text-medium">
+              {member.position}
+            </span>
+            <span
+              className="absolute bottom-0 left-0 w-full"
+              style={{
+                height: "0.5rem",
+                background: "rgba(20, 189, 149, 0.20)",
+              }}
+            ></span>
+          </span>
         </p>
         <p className="text-gray-500 text-sm">{member.background}</p>
 
