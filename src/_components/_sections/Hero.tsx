@@ -90,7 +90,7 @@ export default function HeroSection() {
             }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#40B4B4] lg:whitespace-nowrap px-2"
           >
-            Develop & Innovate for Social Good
+            Develop & Innovate for Social Change
           </motion.h2>
 
           <motion.p
