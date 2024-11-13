@@ -7,8 +7,8 @@ const nextConfig = {
   basePath: isProduction ? `/${repoName}` : "",
   images: {
     unoptimized: true,
+    path: isProduction ? `/${repoName}` : "",
   },
-  assetPrefix: isProduction ? `/${repoName}/` : "",
   trailingSlash: true,
 };
 
