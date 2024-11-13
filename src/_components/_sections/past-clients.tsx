@@ -81,20 +81,6 @@ const Marquee = ({ children, direction = "normal" }: MarqueeProps) => {
 export default function ClientMarquee() {
   return (
     <div className="relative w-full py-12 bg-white">
-      <div className="w-lg flex flex-col items-center mb-12">
-        <h2 className="text-4xl font-bold">
-          <span className="relative">
-            <span className="relative z-10">Our Past Clients</span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "1.4375rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
-          </span>
-        </h2>
-      </div>
       <div className="flex flex-col gap-12 max-w-7xl items-center justify-center mx-auto">
         <Marquee>
           {clients.map((client, idx) => (

@@ -7,7 +7,7 @@ import Iphone15Pro from "@/components/ui/iphone-15-pro";
 export function ClientProjectsSection() {
   return (
     <div className="mt-36">
-      <HeaderWithHighlight>Past Client Projects</HeaderWithHighlight>
+      <HeaderWithHighlight>Previous Client Projects</HeaderWithHighlight>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
         <div className="flex flex-col px-2">
