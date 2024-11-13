@@ -29,6 +29,11 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Add .nojekyll file
+        run: |
+          touch ./out/.nojekyll
+          cp -r .next/static ./out/_next/
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

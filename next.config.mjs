@@ -5,11 +5,16 @@ const repoName = "disc-website";
 const nextConfig = {
   output: "export",
   basePath: isProduction ? `/${repoName}` : "",
+  assetPrefix: isProduction ? `/${repoName}/` : "/",
   images: {
     unoptimized: true,
-    path: isProduction ? `/${repoName}` : "",
   },
   trailingSlash: true,
+  distDir: "out",
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  },
 };
 
 export default nextConfig;
