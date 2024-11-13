@@ -80,10 +80,6 @@ The initial design concept was created by the 2024 DISC team:
 git clone https://github.com/DISC-NU/disc-website.git
 ```
 
-```bash
-git clone https://github.com/DISC-NU/disc-website.git
-```
-
 2. Install dependencies:
 
 ```bash
