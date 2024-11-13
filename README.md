@@ -1,6 +1,14 @@
-# Web Portfolio Project
+# Develop & Innovate for Social Change Landing Page
 
-A modern, component-based web portfolio built with Next.js, TypeScript, and Tailwind CSS.
+A modern, component-based landing page website for Develop and Innovate for Social Change. built with Next.js, TypeScript, and Tailwind CSS.
+
+## Who is DISC?
+
+Since 2017, DISC has been transforming how Northwestern students engage with technology and community impact. What started as a small student group has grown into a dynamic community of innovators, bringing together diverse perspectives and skills to tackle real-world challenges.
+
+## How can I join?
+
+Joining is easy! Just click on [this link](https://discord.com/invite/mqRQ7s9CyS) to join our Discord and be updated whenever we host events on campus!
 
 ## Project Overview
 
