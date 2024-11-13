@@ -94,9 +94,7 @@ export default function MeetTheTeam() {
         </p>
 
         <div className="mt-12">
-          {/* Container for all cards */}
           <div className="w-full">
-            {/* First row with 4 members */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
               {teamMembers.slice(0, 4).map((member, index) => (
                 <div key={index} className="w-full">
@@ -104,7 +102,6 @@ export default function MeetTheTeam() {
                 </div>
               ))}
             </div>
-            {/* Second row with 3 members centered */}
             <div className="flex justify-center w-full">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-3/4">
                 {teamMembers.slice(4).map((member, index) => (

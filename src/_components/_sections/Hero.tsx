@@ -1,13 +1,16 @@
 "use client";
-
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import HeroTreeMap from "@/_components/HeroTreeMap";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const topRef = useRef<HTMLDivElement>(null);
+  const bottomRef = useRef<HTMLDivElement>(null);
+  const [dimensions, setDimensions] = useState({
+    top: { width: 0, height: 0 },
+    bottom: { width: 0, height: 0 },
+  });
 
   const textVariants = {
     hidden: {
@@ -22,10 +25,16 @@ export default function HeroSection() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (containerRef.current) {
+      if (topRef.current && bottomRef.current) {
         setDimensions({
-          width: containerRef.current.clientWidth,
-          height: containerRef.current.clientHeight,
+          top: {
+            width: topRef.current.clientWidth,
+            height: topRef.current.clientHeight,
+          },
+          bottom: {
+            width: bottomRef.current.clientWidth,
+            height: bottomRef.current.clientHeight,
+          },
         });
       }
     };
@@ -36,9 +45,26 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="min-w-full h-screen flex">
-      <div className="w-1/2 h-full p-8 flex flex-col justify-center items-center">
-        <div className="max-w-lg text-left">
+    <div className="relative min-w-full h-screen flex flex-col overflow-hidden">
+      <motion.div
+        ref={topRef}
+        className="relative w-full h-1/4"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1.2,
+          delay: 0.4,
+          ease: [0.4, 0, 0.2, 1],
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white" />
+        <HeroTreeMap
+          width={dimensions.top.width}
+          height={dimensions.top.height}
+        />
+      </motion.div>
+      <div className="relative flex-grow flex flex-col items-center justify-center px-4">
+        <div className="w-full max-w-[90rem] text-center space-y-6">
           <motion.h1
             variants={textVariants}
             initial="hidden"
@@ -48,7 +74,7 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.2,
             }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black"
+            className="text-xl md:text-2xl lg:text-3xl font-bold text-black whitespace-nowrap"
           >
             WELCOME TO
           </motion.h1>
@@ -62,9 +88,9 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.4,
             }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[#40B4B4]"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#40B4B4] whitespace-nowrap"
           >
-            DISC NU
+            Develop & Innovate for Social Good
           </motion.h2>
 
           <motion.p
@@ -76,19 +102,20 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.6,
             }}
-            className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8"
+            className="text-base md:text-lg lg:text-xl text-gray-600 whitespace-nowrap"
           >
-            A Northwestern University community dedicated to Developing &
-            Innovating for Social Change
+            Northwestern University's premier hub for tech innovation and social
+            impact
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.5,
               delay: 0.8,
             }}
+            className="flex justify-center items-center gap-6"
           >
             <Button
               className="bg-[#40B4B4] hover:bg-[#369999] text-white font-semibold"
@@ -101,19 +128,22 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-
       <motion.div
-        ref={containerRef}
-        className="w-1/2 h-5/6 my-auto"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        ref={bottomRef}
+        className="relative w-full h-1/4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 2,
+          duration: 1.2,
           delay: 0.4,
           ease: [0.4, 0, 0.2, 1],
         }}
       >
-        <HeroTreeMap width={dimensions.width} height={dimensions.height} />
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/50 to-white" />
+        <HeroTreeMap
+          width={dimensions.bottom.width}
+          height={dimensions.bottom.height}
+        />
       </motion.div>
     </div>
   );
