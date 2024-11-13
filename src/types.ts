@@ -8,3 +8,9 @@ export interface Company {
   logo: Logo;
   website: string;
 }
+
+export interface Client {
+  name: string;
+  logo: Logo;
+  website: string;
+}

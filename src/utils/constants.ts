@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, Mail, Youtube } from "lucide-react";
-import { Company } from "@/types";
+import { Company, Client } from "@/types";
 export const footerSections = [
   {
     title: "About",
@@ -91,6 +91,57 @@ export const socialMediaLinks = [
     icon: Youtube,
     link: "https://youtube.com/@disc_university",
     label: "YouTube",
+  },
+];
+
+export const clients: Client[] = [
+  {
+    name: "Books and Breakfast",
+    logo: {
+      type: "image",
+      src: "/books_and_breakfast_logo.png",
+    },
+    website: "https://booksandbreakfast.org/",
+  },
+  {
+    name: "Chicago Furniture Bank",
+    logo: {
+      type: "image",
+      src: "/cfb.jpg",
+    },
+    website: "https://chicagofurniturebank.org/",
+  },
+  {
+    name: "Good news Partners",
+    logo: {
+      type: "image",
+      src: "/good-news-partners.png",
+    },
+    website: "https://www.goodnewspartners.org/",
+  },
+  {
+    name: "Kids in Danger",
+    logo: {
+      type: "image",
+      src: "/kid-logo-header.png",
+    },
+    website: "https://www.kidsindanger.org/",
+  },
+  {
+    name: "Urban Tables",
+    logo: {
+      type: "image",
+      src: "/urban-tables.png",
+    },
+    website: "https://www.urbantables.org/",
+  },
+  {
+    name: "World Relief Chicago",
+    logo: {
+      type: "image",
+      src: "/world-relief.png",
+    },
+    website: "https://worldreliefchicago.org/",
   },
 ];
 

@@ -191,7 +191,7 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
       });
     };
 
-    const intervalId = setInterval(animateRandomNode, 1200);
+    const intervalId = setInterval(animateRandomNode, 1000);
     return () => clearInterval(intervalId);
   }, [nodes, isInitialAnimationComplete]);
 
