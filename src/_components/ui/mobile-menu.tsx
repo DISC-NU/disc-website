@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Button } from "@/_components/ui/button";
 import {
@@ -21,6 +21,28 @@ export default function MobileMenu() {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const scrollToSection = useCallback(
+    (e: React.MouseEvent, sectionId: string) => {
+      e.preventDefault();
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        const navHeight = 60;
+        const buffer = 264;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navHeight - buffer;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+        setIsOpen(false);
+      }
+    },
+    []
+  );
 
   const listItemVariants = {
     closed: { opacity: 0, x: 20 },
@@ -47,9 +69,11 @@ export default function MobileMenu() {
 
   const MobileNavItem = ({
     href,
+    onClick,
     children,
   }: {
     href: string;
+    onClick?: (e: React.MouseEvent) => void;
     children: React.ReactNode;
   }) => (
     <motion.li
@@ -60,6 +84,7 @@ export default function MobileMenu() {
     >
       <Link
         href={href}
+        onClick={onClick}
         className="block rounded-md py-4 text-base font-medium text-foreground transition-colors hover:bg-secondary-300/10"
       >
         {children}
@@ -113,18 +138,35 @@ export default function MobileMenu() {
                         animate={isOpen ? "open" : "closed"}
                       >
                         <div className="space-y-1">
-                          <MobileNavItem href="/">Home</MobileNavItem>
-                          <MobileNavItem href="/about">About</MobileNavItem>
-                          <MobileNavItem href="/docs">
-                            Documentation
+                          <MobileNavItem
+                            href="#about"
+                            onClick={(e) => scrollToSection(e, "intro")}
+                          >
+                            About
                           </MobileNavItem>
-                          <MobileNavItem href="/blog">Blog</MobileNavItem>
-                          <MobileNavItem href="/faq">FAQ</MobileNavItem>
-                          <MobileNavItem href="/changelog">
-                            Changelog
+                          <MobileNavItem
+                            href="#features"
+                            onClick={(e) => scrollToSection(e, "features")}
+                          >
+                            What We Do
                           </MobileNavItem>
-                          <MobileNavItem href="https://github.com/yourusername">
-                            GitHub
+                          <MobileNavItem
+                            href="#projects"
+                            onClick={(e) => scrollToSection(e, "projects")}
+                          >
+                            Projects
+                          </MobileNavItem>
+                          <MobileNavItem
+                            href="#team"
+                            onClick={(e) => scrollToSection(e, "team")}
+                          >
+                            Team
+                          </MobileNavItem>
+                          <MobileNavItem
+                            href="#faq"
+                            onClick={(e) => scrollToSection(e, "faq")}
+                          >
+                            FAQ
                           </MobileNavItem>
                         </div>
                       </motion.ul>
