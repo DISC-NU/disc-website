@@ -26,10 +26,10 @@ export function IntroSection() {
         <br />
         <br />
         We believe in the power of collaboration across disciplines. By
-        combining technical expertise with creative problem-solving, we've built
-        lasting partnerships with organizations throughout the Evanston/Chicago
-        area. Our project teams blend computer science, design, and social
-        impact to create solutions that matter.
+        combining technical expertise with creative problem-solving, we&aposve
+        built lasting partnerships with organizations throughout the
+        Evanston/Chicago area. Our project teams blend computer science, design,
+        and social impact to create solutions that matter.
       </p>
 
       <div className="mt-16 flex flex-col">
@@ -49,9 +49,9 @@ export function IntroSection() {
           Through hands-on projects and mentorship, we empower students to grow
           beyond the classroom. Our teams work directly with community partners,
           gaining real-world experience while making a meaningful difference.
-          Having grown to over 300 members, we're proud to foster an environment
-          where technical innovation meets social responsibility, creating
-          technology solutions that serve our community's needs.
+          Having grown to over 300 members, we&aposre proud to foster an
+          environment where technical innovation meets social responsibility,
+          creating technology solutions that serve our community&aposs needs.
           <br />
           <br />
           DISC has become a stepping stone for many of our members towards

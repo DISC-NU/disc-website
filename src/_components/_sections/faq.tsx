@@ -8,12 +8,6 @@ import {
 import { motion } from "framer-motion";
 
 export default function FAQSection() {
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 },
-  };
-
   return (
     <section id="faq" className="py-32 flex justify-center px-4">
       <motion.div
@@ -45,6 +39,7 @@ export default function FAQSection() {
           <Accordion type="single" collapsible className="w-full space-y-2">
             {[1, 2, 3, 4, 5].map((item, index) => (
               <AccordionItem
+                key={index}
                 value={`item-${item}`}
                 className="border rounded-lg px-4 py-2 bg-white shadow-sm hover:shadow-md transition-shadow duration-200 data-[state=open]:shadow-md"
               >

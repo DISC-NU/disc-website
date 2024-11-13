@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Button } from "@/_components/ui/button";
 import {
   Sheet,
-  SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -15,6 +14,7 @@ import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function MobileMenu() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 

@@ -12,11 +12,12 @@ export function ClientProjectsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
         <div className="flex flex-col px-2">
           <p className="text-gray-500 text-md leading-relaxed">
-            Our project portfolio showcases the diverse range of solutions we've
-            developed for our community partners. One of our notable projects is
-            Books & Breakfast, a mobile application designed to streamline
-            operations for a local before-school program that provides
-            nutritious meals and academic support to elementary school students.
+            Our project portfolio showcases the diverse range of solutions
+            we&aposve developed for our community partners. One of our notable
+            projects is Books & Breakfast, a mobile application designed to
+            streamline operations for a local before-school program that
+            provides nutritious meals and academic support to elementary school
+            students.
             <br />
             <br />
             Through close collaboration with program staff and volunteers, we

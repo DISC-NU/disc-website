@@ -104,8 +104,8 @@ export default function HeroSection() {
             }}
             className="text-base md:text-lg lg:text-xl text-gray-600 lg:whitespace-nowrap px-2"
           >
-            Northwestern University's premier hub for tech innovation and social
-            impact
+            Northwestern University&apos;s premier hub for tech innovation and
+            social impact
           </motion.p>
 
           <motion.div

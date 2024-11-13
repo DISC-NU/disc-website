@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const isProduction = process.env.NODE_ENV === "production";
+const repoName = "disc-website";
 
 const nextConfig = {
   output: "export",
-  basePath: isProduction ? "/disc-website" : "",
+  basePath: isProduction ? `/${repoName}` : "",
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProduction ? "/disc-website" : "",
+  assetPrefix: isProduction ? `/${repoName}/` : "",
+  trailingSlash: true,
 };
 
 export default nextConfig;

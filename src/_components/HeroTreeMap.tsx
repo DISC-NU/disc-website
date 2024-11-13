@@ -9,6 +9,10 @@ interface TreeMapProps {
   height: number;
 }
 
+type HierarchyNode = d3.HierarchyRectangularNode<TreeNode> & {
+  _colorValue?: string;
+};
+
 const colorPalette = [
   "#40B4B4", // Base teal
   "#4AC0C0", // Lighter teal
@@ -28,16 +32,14 @@ const colorPalette = [
 
 export default function HeroTreeMap({ width, height }: TreeMapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const [nodes, setNodes] = useState<d3.HierarchyRectangularNode<TreeNode>[]>(
-    []
-  );
+  const [nodes, setNodes] = useState<HierarchyNode[]>([]);
   const [isInitialAnimationComplete, setIsInitialAnimationComplete] =
     useState(false);
 
-  const animateNode = (node: d3.HierarchyRectangularNode<TreeNode>) => {
+  const animateNode = (node: HierarchyNode) => {
     d3.select(svgRef.current)
       .selectAll("rect")
-      .filter((d: any) => d === node)
+      .filter((d) => d === node)
       .transition()
       .duration(900)
       .ease(d3.easeSinInOut)
@@ -54,7 +56,8 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
       .transition()
       .duration(900)
       .ease(d3.easeSinInOut)
-      .attr("fill", (d: any) => d._colorValue)
+      // @ts-expect-error - d3 types are not up to date
+      .attr("fill", (d: HierarchyNode) => d._colorValue || "")
       .attrTween("transform", () => {
         return (t) => {
           const scale = 1 + 0.04 * (1 - Math.sin(Math.PI * (t + 0.5)));
@@ -74,7 +77,7 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
 
     const data: TreeNode = {
       name: "Company",
-      children: Array.from({ length: 10 }, (_, i) => generateRandomData(1, 5)),
+      children: Array.from({ length: 10 }, () => generateRandomData(1, 5)),
     };
 
     const root = d3
@@ -92,14 +95,10 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
 
     treemapLayout(root);
 
-    const allNodes = root.descendants();
-    const leaves = root.leaves();
+    const leaves = root.leaves() as HierarchyNode[];
     const sortedLeaves = leaves.sort((a, b) => (b.value || 0) - (a.value || 0));
 
-    const getColorForNode = (
-      node: d3.HierarchyNode<TreeNode>,
-      index: number
-    ) => {
+    const getColorForNode = (node: HierarchyNode, index: number) => {
       const normalizedIndex = index / (leaves.length - 1);
       if (normalizedIndex < 0.2) {
         return colorPalette.slice(8, 11)[Math.floor(normalizedIndex * 15)];
@@ -115,28 +114,29 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
     };
 
     sortedLeaves.forEach((node, index) => {
-      (node as any)._colorValue = getColorForNode(node, index);
+      node._colorValue = getColorForNode(node, index);
     });
 
     const cell = svg
       .selectAll("g")
       .data(root.leaves())
       .join("g")
-      // @ts-expect-error something with d3
-      .attr("transform", (d) => `translate(${d.x0},${d.y0})`);
+      // @ts-expect-error - d3 types are not up to date
+      .attr("transform", (d: HierarchyNode) => `translate(${d.x0},${d.y0})`);
 
     cell
       .append("rect")
-      // @ts-expect-error something with d3
-      .attr("width", (d) => d.x1 - d.x0)
-      // @ts-expect-error something with d3
-      .attr("height", (d) => d.y1 - d.y0)
-      .attr("fill", (d: any) => d._colorValue)
+      // @ts-expect-error - d3 types are not up to date
+      .attr("width", (d: HierarchyNode) => d.x1 - d.x0)
+      // @ts-expect-error - d3 types are not up to date
+      .attr("height", (d: HierarchyNode) => d.y1 - d.y0)
+      // @ts-expect-error - d3 types are not up to date
+      .attr("fill", (d: HierarchyNode) => d._colorValue || "")
       .attr("stroke", "#fff")
       .attr("stroke-width", 0.5)
       .style("transition", "all 0.6s cubic-bezier(0.4, 0, 0.2, 1)");
-    // @ts-expect-error something with d3
-    setNodes(root.leaves());
+
+    setNodes(leaves);
   }, [width, height]);
 
   useEffect(() => {

@@ -10,6 +10,7 @@ export const generateRandomData = (
 ): TreeNode => {
   const node: TreeNode = { name: `Node ${depth}-${breadth}` };
   if (depth < 3) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     node.children = Array.from({ length: breadth }, (_, i) =>
       generateRandomData(depth + 1, Math.max(2, Math.floor(Math.random() * 5)))
     );
