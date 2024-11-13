@@ -18,7 +18,7 @@ interface TeamMemberCardProps {
 
 export default function MeetTheTeam() {
   const TeamMemberCard = ({ member }: TeamMemberCardProps) => (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
         <Image
           src={member.image}
@@ -73,7 +73,7 @@ export default function MeetTheTeam() {
 
   return (
     <section className="py-12 flex justify-center px-4">
-      <div className="max-w-4xl">
+      <div className="w-full max-w-4xl">
         <h2 className="text-4xl font-bold text-center">
           <span className="relative">
             <span className="relative z-10">Meet The Team Behind DISC</span>
@@ -94,19 +94,26 @@ export default function MeetTheTeam() {
         </p>
 
         <div className="mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            {teamMembers.slice(0, 4).map((member, index) => (
-              <TeamMemberCard key={index} member={member} />
-            ))}
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="hidden lg:block lg:col-span-1"></div>
-            {teamMembers.slice(4).map((member, index) => (
-              <div key={index} className="lg:col-span-1">
-                <TeamMemberCard member={member} />
+          {/* Container for all cards */}
+          <div className="w-full">
+            {/* First row with 4 members */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+              {teamMembers.slice(0, 4).map((member, index) => (
+                <div key={index} className="w-full">
+                  <TeamMemberCard member={member} />
+                </div>
+              ))}
+            </div>
+            {/* Second row with 3 members centered */}
+            <div className="flex justify-center w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-3/4">
+                {teamMembers.slice(4).map((member, index) => (
+                  <div key={index} className="w-full">
+                    <TeamMemberCard member={member} />
+                  </div>
+                ))}
               </div>
-            ))}
-            <div className="hidden lg:block lg:col-span-1"></div>
+            </div>
           </div>
         </div>
       </div>

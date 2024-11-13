@@ -260,18 +260,6 @@ export const teamMembers = [
   },
   {
     position: "Technical Lead",
-    name: "Ethan Pineda",
-    grade: "Senior",
-    background: "Computer Science, Latinx Studies",
-    image: "/ethan.jpeg",
-    social: {
-      linkedin: "https://www.linkedin.com/in/ethanpineda/",
-      instagram: "https://www.instagram.com/ethanpinedaa/",
-      github: "https://github.com/ethanpaneraa",
-    },
-  },
-  {
-    position: "Technical Lead",
     name: "Amy Liao",
     grade: "Senior",
     background: "Computer Science",
@@ -280,6 +268,18 @@ export const teamMembers = [
       linkedin: "https://www.linkedin.com/in/amyzliao/",
       instagram: "https://www.instagram.com/ammmy_liao/",
       github: "https://github.com/amyzliao",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Ethan Pineda",
+    grade: "Senior",
+    background: "Computer Science, Latinx Studies",
+    image: "/ethan.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ethanpineda/",
+      instagram: "https://www.instagram.com/ethanpinedaa/",
+      github: "https://github.com/ethanpaneraa",
     },
   },
   {

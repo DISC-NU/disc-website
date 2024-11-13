@@ -78,7 +78,7 @@ export default function HeroSection() {
             }}
             className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8"
           >
-            A Northwestern University community dedicated to Designing &
+            A Northwestern University community dedicated to Developing &
             Innovating for Social Change
           </motion.p>
 
