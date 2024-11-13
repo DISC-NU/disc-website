@@ -6,37 +6,37 @@ export default function CTASection() {
           className="absolute inset-0"
           style={{
             background: `
-            linear-gradient(135deg, 
-              rgba(94, 206, 206, 0.08) 0%, 
-              rgba(208, 240, 240, 0.05) 50%,
-              rgba(230, 247, 247, 0.03) 100%
-            ),
-            radial-gradient(circle at 0% 0%, 
-              rgba(77, 204, 204, 0.3) 0%, 
-              rgba(77, 204, 204, 0) 60%
-            ),
-            radial-gradient(circle at 100% 0%, 
-              rgba(185, 233, 233, 0.2) 0%, 
-              rgba(185, 233, 233, 0) 50%
-            ),
-            radial-gradient(circle at 100% 100%, 
-              rgba(64, 180, 180, 0.25) 0%, 
-              rgba(64, 180, 180, 0) 60%
-            ),
-            radial-gradient(circle at 0% 100%, 
-              rgba(94, 206, 206, 0.2) 0%, 
-              rgba(94, 206, 206, 0) 50%
-            ),
-            linear-gradient(180deg, 
-              rgba(208, 240, 240, 0.1) 0%, 
-              rgba(94, 206, 206, 0.15) 100%
-            )
-          `,
+              linear-gradient(135deg, 
+                rgba(94, 206, 206, 0.08) 0%, 
+                rgba(208, 240, 240, 0.05) 50%,
+                rgba(230, 247, 247, 0.03) 100%
+              ),
+              radial-gradient(circle at 0% 0%, 
+                rgba(77, 204, 204, 0.3) 0%, 
+                rgba(77, 204, 204, 0) 60%
+              ),
+              radial-gradient(circle at 100% 0%, 
+                rgba(185, 233, 233, 0.2) 0%, 
+                rgba(185, 233, 233, 0) 50%
+              ),
+              radial-gradient(circle at 100% 100%, 
+                rgba(64, 180, 180, 0.25) 0%, 
+                rgba(64, 180, 180, 0) 60%
+              ),
+              radial-gradient(circle at 0% 100%, 
+                rgba(94, 206, 206, 0.2) 0%, 
+                rgba(94, 206, 206, 0) 50%
+              ),
+              linear-gradient(180deg, 
+                rgba(208, 240, 240, 0.1) 0%, 
+                rgba(94, 206, 206, 0.15) 100%
+              )
+            `,
           }}
         />
 
         <div className="relative mx-auto max-w-4xl flex flex-col items-center px-6 text-center">
-          <h2 className="text-5xl font-bold sm:text-7xl whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] p-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] p-4 md:whitespace-nowrap">
             Ready to make an impact?
           </h2>
 
@@ -45,10 +45,10 @@ export default function CTASection() {
               href="https://discord.gg/mqRQ7s9CyS"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-12 py-6 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
+              className="group relative inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
             >
               <svg
-                className="h-8 w-8 transition-transform duration-300 group-hover:scale-110"
+                className="h-6 w-6 sm:h-8 sm:w-8 transition-transform duration-300 group-hover:scale-110"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -58,12 +58,12 @@ export default function CTASection() {
               <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>
 
-            <p className="mt-6 text-lg text-gray-500">
+            <p className="mt-6 text-base sm:text-lg text-gray-500">
               Already a member? Share DISC with others!
             </p>
           </div>
 
-          <div className="mt-16 flex flex-wrap justify-center gap-8 text-gray-500">
+          <div className="mt-16 flex flex-wrap justify-center gap-4 sm:gap-8 text-sm sm:text-base text-gray-500 px-2">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-[#40B4B4]" />
               <span>300+ Members</span>
@@ -79,7 +79,7 @@ export default function CTASection() {
           </div>
         </div>
       </section>
-      <p className="mt-10 px-4 py-24 text-center text-sm text-gray-500">
+      <p className="mt-10 px-4 py-24 text-center text-xs sm:text-sm text-gray-500">
         * Stay tuned for our Discover program applications for Winter & Spring
         2025 👀👀{" "}
       </p>

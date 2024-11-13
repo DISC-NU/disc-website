@@ -31,9 +31,9 @@ export default function AboutSection() {
     <section className="mt-36 flex flex-col items-center px-4 py-12">
       <div className="max-w-6xl w-full">
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold whitespace-nowrap text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-center px-2">
             At DISC, we build{" "}
-            <span className="inline-flex relative">
+            <span className="inline-block md:inline-flex relative">
               <span className="relative z-10 text-[#14BD95]">
                 technology for social good
               </span>
@@ -47,7 +47,7 @@ export default function AboutSection() {
             </span>
           </h1>
 
-          <p className="mt-4 max-w-4xl text-gray-500 text-md leading-relaxed mx-auto py-4">
+          <p className="mt-4 max-w-4xl text-gray-500 text-md leading-relaxed mx-auto py-4 px-2">
             Since 2017, DISC has been transforming how Northwestern students
             engage with technology and community impact. What started as a small
             student group has grown into a dynamic community of innovators,
@@ -64,7 +64,7 @@ export default function AboutSection() {
         </div>
 
         <div className="mt-16 flex flex-col">
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center px-2">
             <span className="relative text-center">
               <span className="relative z-10">Our Impact</span>
               <span
@@ -76,7 +76,7 @@ export default function AboutSection() {
               ></span>
             </span>
           </h2>
-          <p className="mt-6 text-gray-500 leading-relaxed max-w-4xl mx-auto">
+          <p className="mt-6 text-gray-500 leading-relaxed max-w-4xl mx-auto px-2">
             Through hands-on projects and mentorship, we empower students to
             grow beyond the classroom. Our teams work directly with community
             partners, gaining real-world experience while making a meaningful
@@ -87,7 +87,7 @@ export default function AboutSection() {
         </div>
 
         <div className="mt-16">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center px-2">
             <span className="relative">
               <span className="relative z-10">What We Do</span>
               <span
@@ -168,9 +168,9 @@ export default function AboutSection() {
         </div>
 
         <div className="mt-36">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center px-2">
             Don't know how to code?{" "}
-            <span className="inline-flex relative">
+            <span className="inline-block md:inline-flex relative">
               <span className="relative z-10 text-[#14BD95]">
                 We got you covered
               </span>
@@ -185,7 +185,7 @@ export default function AboutSection() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col px-2">
               <p className="text-gray-500 text-md leading-relaxed">
                 Join our comprehensive Fall Workshop Series, where we'll guide
                 you through building modern web applications from scratch. Over
@@ -202,7 +202,7 @@ export default function AboutSection() {
               </p>
 
               <motion.div
-                className="mt-8"
+                className="mt-8 flex justify-center lg:justify-start"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}

@@ -74,7 +74,7 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.2,
             }}
-            className="text-xl md:text-2xl lg:text-3xl font-bold text-black whitespace-nowrap"
+            className="text-xl md:text-2xl lg:text-3xl font-bold text-black md:whitespace-nowrap"
           >
             WELCOME TO
           </motion.h1>
@@ -88,7 +88,7 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.4,
             }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#40B4B4] whitespace-nowrap"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#40B4B4] lg:whitespace-nowrap px-2"
           >
             Develop & Innovate for Social Good
           </motion.h2>
@@ -102,7 +102,7 @@ export default function HeroSection() {
               ease: [0.4, 0, 0.2, 1],
               delay: 0.6,
             }}
-            className="text-base md:text-lg lg:text-xl text-gray-600 whitespace-nowrap"
+            className="text-base md:text-lg lg:text-xl text-gray-600 lg:whitespace-nowrap px-2"
           >
             Northwestern University's premier hub for tech innovation and social
             impact
