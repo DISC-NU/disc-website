@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <div>
+    <div className="py-24">
       <section className="relative min-h-screen w-full flex items-center justify-center">
         <div
           className="absolute inset-0"
@@ -79,7 +79,7 @@ export default function CTASection() {
           </div>
         </div>
       </section>
-      <p className="mt-10 px-4 text-center text-sm text-gray-500">
+      <p className="mt-10 px-4 py-24 text-center text-sm text-gray-500">
         * Stay tuned for our Discover program applications for Winter & Spring
         2025 👀👀{" "}
       </p>

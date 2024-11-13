@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
+import MobileMenu from "@/_components/ui/mobile-menu";
 const NavItem = ({
   href,
   target = "_self",
@@ -125,16 +125,16 @@ export default async function Header() {
                 </NavigationMenu>
               </nav>
             </div>
-            {/* <div className="lg:hidden">
-              <MobileMenu user={user} handleSignOut={handleSignOut} />
-            </div> */}
+            <div className="lg:hidden">
+              <MobileMenu />
+            </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
                 <Link
-                  href="/login"
+                  href="https://disc-fall-2024-workshop-series-website.vercel.app/"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
                 >
-                  Sign in
+                  Workshop Series
                 </Link>
                 <Button className="bg-[#40B4B4] hover:bg-[#369999] text-white font-semibold">
                   <a href="https://discord.gg/mqRQ7s9CyS">Join DISC</a>

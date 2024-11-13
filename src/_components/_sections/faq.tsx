@@ -15,7 +15,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="mt-36 flex justify-center px-4">
+    <section className="py-32 flex justify-center px-4">
       <motion.div
         className="max-w-4xl w-full"
         initial="initial"

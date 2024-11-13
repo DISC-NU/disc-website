@@ -191,6 +191,22 @@ export const companies: Company[] = [
     },
     website: "https://www.omnisoc.com/",
   },
+  {
+    name: "Uline",
+    logo: {
+      type: "image",
+      src: "/uline.png",
+    },
+    website: "https://www.uline.com/",
+  },
+  {
+    name: "Epsilon3",
+    logo: {
+      type: "image",
+      src: "/ep3.png",
+    },
+    website: "https://www.epsilon3.io/",
+  },
 ];
 
 export const teamMembers = [
@@ -219,30 +235,6 @@ export const teamMembers = [
     },
   },
   {
-    position: "Technical Lead",
-    name: "Amy Liao",
-    grade: "Senior",
-    background: "Computer Science",
-    image: "/amy.jpg",
-    social: {
-      linkedin: "https://www.linkedin.com/in/amyzliao/",
-      instagram: "https://www.instagram.com/ammmy_liao/",
-      github: "https://github.com/amyzliao",
-    },
-  },
-  {
-    position: "Technical Lead",
-    name: "Ethan Pineda",
-    grade: "Senior",
-    background: "Computer Science, Latinx Studies",
-    image: "/ethan.jpeg",
-    social: {
-      linkedin: "https://www.linkedin.com/in/ethanpineda/",
-      instagram: "https://www.instagram.com/ethanpinedaa/",
-      github: "https://github.com/ethanpaneraa",
-    },
-  },
-  {
     position: "VP Member Development",
     name: "Joanna Soltys",
     grade: "Junior",
@@ -264,6 +256,42 @@ export const teamMembers = [
       linkedin: "https://www.linkedin.com/in/jackyz21/",
       instagram: "https://www.instagram.com/jackyzhang1219/",
       github: "https://github.com/JackyZhang1219",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Ethan Pineda",
+    grade: "Senior",
+    background: "Computer Science, Latinx Studies",
+    image: "/ethan.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ethanpineda/",
+      instagram: "https://www.instagram.com/ethanpinedaa/",
+      github: "https://github.com/ethanpaneraa",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Amy Liao",
+    grade: "Senior",
+    background: "Computer Science",
+    image: "/amy.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/amyzliao/",
+      instagram: "https://www.instagram.com/ammmy_liao/",
+      github: "https://github.com/amyzliao",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Annand Patel",
+    grade: "Junior",
+    background: "Computer Science",
+    image: "/annand.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/aanand-patel1/",
+      instagram: "https://www.instagram.com/aanandpatel123/",
+      github: "https://github.com/aanandp123",
     },
   },
 ];

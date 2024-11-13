@@ -104,7 +104,7 @@ export default function HeroSection() {
 
       <motion.div
         ref={containerRef}
-        className="w-1/2 h-full"
+        className="w-1/2 h-5/6 my-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{

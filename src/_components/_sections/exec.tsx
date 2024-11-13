@@ -72,9 +72,9 @@ export default function MeetTheTeam() {
   );
 
   return (
-    <section className="mt-36 flex justify-center px-4">
+    <section className="py-12 flex justify-center px-4">
       <div className="max-w-4xl">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-4xl font-bold text-center">
           <span className="relative">
             <span className="relative z-10">Meet The Team Behind DISC</span>
             <span

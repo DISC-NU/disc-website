@@ -136,7 +136,6 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
     setNodes(root.leaves());
   }, [width, height]);
 
-  // Rest of the component remains the same...
   useEffect(() => {
     if (nodes.length === 0) return;
     const animateInitialNodes = async () => {
