@@ -15,7 +15,7 @@ export default function HeroSection() {
   const textVariants = {
     hidden: {
       opacity: 0,
-      filter: "blur(20px)",
+      filter: "blur(12px)",
     },
     visible: {
       opacity: 1,
@@ -57,7 +57,7 @@ export default function HeroSection() {
           ease: [0.4, 0, 0.2, 1],
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white" />
         <HeroTreeMap
           width={dimensions.top.width}
           height={dimensions.top.height}

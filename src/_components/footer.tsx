@@ -1,6 +1,26 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { footerSections, socialMediaLinks } from "@/utils/constants";
+import { LucideIcon } from "lucide-react";
+
+interface FooterLink {
+  text: string;
+  href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+}
+
+interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+interface SocialMediaLink {
+  icon: LucideIcon;
+  link: string;
+  label: string;
+}
+const typedFooterSections = footerSections as FooterSection[];
+const typedSocialMediaLinks = socialMediaLinks as SocialMediaLink[];
 
 export default function Footer() {
   return (
@@ -16,7 +36,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {footerSections.map(({ title, links }, idx) => (
+        {typedFooterSections.map(({ title, links }, idx) => (
           <div key={idx}>
             <h5 className="font-semibold">{title}</h5>
             <ul className="mt-4 space-y-2 text-neutral-500 dark:text-neutral-400">
@@ -52,7 +72,7 @@ export default function Footer() {
 
       <div className="flex flex-col items-center justify-between gap-2.5 border-t py-3.5 text-neutral-500 dark:text-neutral-400 sm:flex-row-reverse">
         <div className="-mr-2 flex items-center gap-1">
-          {socialMediaLinks.map(({ icon: Icon, link, label }) => (
+          {typedSocialMediaLinks.map(({ icon: Icon, link, label }) => (
             <Button
               key={label}
               variant="ghost"

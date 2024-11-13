@@ -122,17 +122,20 @@ export default function HeroTreeMap({ width, height }: TreeMapProps) {
       .selectAll("g")
       .data(root.leaves())
       .join("g")
+      // @ts-expect-error something with d3
       .attr("transform", (d) => `translate(${d.x0},${d.y0})`);
 
     cell
       .append("rect")
+      // @ts-expect-error something with d3
       .attr("width", (d) => d.x1 - d.x0)
+      // @ts-expect-error something with d3
       .attr("height", (d) => d.y1 - d.y0)
       .attr("fill", (d: any) => d._colorValue)
       .attr("stroke", "#fff")
       .attr("stroke-width", 0.5)
       .style("transition", "all 0.6s cubic-bezier(0.4, 0, 0.2, 1)");
-
+    // @ts-expect-error something with d3
     setNodes(root.leaves());
   }, [width, height]);
 
