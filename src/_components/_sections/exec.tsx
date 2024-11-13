@@ -18,7 +18,7 @@ interface TeamMemberCardProps {
 
 export default function MeetTheTeam() {
   const TeamMemberCard = ({ member }: TeamMemberCardProps) => (
-    <div className="flex flex-col w-full">
+    <div id="team" className="flex flex-col w-full">
       <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
         <Image
           src={member.image}

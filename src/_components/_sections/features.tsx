@@ -27,7 +27,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <div className="mt-16">
+    <div id="features" className="mt-16">
       <HeaderWithHighlight>What We Do</HeaderWithHighlight>
 
       <motion.div

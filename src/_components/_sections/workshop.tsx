@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import Safari from "@/components/ui/safari";
+import { Button } from "@/_components/ui/button";
+import Safari from "@/_components/ui/safari";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export function WorkshopSection() {

@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/_components/ui/accordion";
 import { motion } from "framer-motion";
 
 export default function FAQSection() {
@@ -15,7 +15,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-32 flex justify-center px-4">
+    <section id="faq" className="py-32 flex justify-center px-4">
       <motion.div
         className="max-w-4xl w-full"
         initial="initial"

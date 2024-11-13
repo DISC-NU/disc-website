@@ -1,77 +1,57 @@
-import { ReactNode, forwardRef, ComponentPropsWithoutRef } from "react";
+"use client";
+
+import { ReactNode, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from "@/_components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { Button } from "@/_components/ui/button";
 import MobileMenu from "@/_components/ui/mobile-menu";
+
 const NavItem = ({
   href,
-  target = "_self",
+  onClick,
   children,
 }: {
   href: string;
-  target?: React.HTMLAttributeAnchorTarget;
+  onClick?: (e: React.MouseEvent) => void;
   children: ReactNode;
 }) => (
   <NavigationMenuLink
     asChild
     className={navigationMenuTriggerStyle()}
-    href={href}
-    target={target}
+    onClick={onClick}
   >
     <Link href={href}>{children}</Link>
   </NavigationMenuLink>
 );
 
-const DropdownNavItem = ({
-  trigger,
-  children,
-}: {
-  trigger: string;
-  children: ReactNode;
-}) => (
-  <NavigationMenuItem>
-    <NavigationMenuTrigger>{trigger}</NavigationMenuTrigger>
-    <NavigationMenuContent>{children}</NavigationMenuContent>
-  </NavigationMenuItem>
-);
+export default function Header() {
+  const scrollToSection = useCallback(
+    (e: React.MouseEvent, sectionId: string) => {
+      e.preventDefault();
+      const section = document.getElementById(sectionId);
 
-// ListItem component for dropdown content
-const ListItem = forwardRef<
-  HTMLAnchorElement,
-  ComponentPropsWithoutRef<"a"> & { title: string; href: string }
->(({ className, title, children, href, ...props }, ref) => (
-  <li>
-    <NavigationMenuLink asChild>
-      <Link
-        ref={ref}
-        href={href}
-        className={cn(
-          "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-secondary-300/10 hover:text-accent-foreground focus:bg-secondary-300/10 focus:text-accent-foreground",
-          className
-        )}
-        {...props}
-      >
-        <div className="text-sm font-medium leading-none">{title}</div>
-        <p className="line-clamp-2 text-sm leading-snug text-gray-600/90 dark:text-gray-500">
-          {children}
-        </p>
-      </Link>
-    </NavigationMenuLink>
-  </li>
-));
-ListItem.displayName = "ListItem";
+      if (section) {
+        const navHeight = 60;
+        const buffer = 264;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navHeight - buffer;
 
-export default async function Header() {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    },
+    []
+  );
+
   return (
     <header className="fixed left-0 right-0 top-0 z-50 p-4 transition-all duration-300 ease-in-out">
       <div className="mx-auto max-w-[1070px]">
@@ -90,36 +70,42 @@ export default async function Header() {
               <Link
                 href="/"
                 className="flex flex-shrink-0 items-center"
-                aria-label="DISC LOGOs"
+                aria-label="DISC Logo"
               >
                 <div className="text-2xl font-bold">DISC</div>
               </Link>
               <nav className="ml-4 hidden md:block" aria-label="Main menu">
                 <NavigationMenu>
                   <NavigationMenuList className="text-black/60 dark:text-gray-500">
-                    <DropdownNavItem trigger="Resources">
-                      <ul className="grid w-[400px] gap-3 bg-background p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                        <ListItem href="/about" title="About">
-                          Learn more about our platform
-                        </ListItem>
-                        <ListItem href="/blog" title="Blog">
-                          Read insights on development
-                        </ListItem>
-                        <ListItem href="/faq" title="FAQ">
-                          Frequently asked questions
-                        </ListItem>
-                        <ListItem href="/changelog" title="Changelog">
-                          See what&apos;s new
-                        </ListItem>
-                      </ul>
-                    </DropdownNavItem>
-
-                    <NavItem href="/docs">Documentation</NavItem>
                     <NavItem
-                      href="https://github.com/yourusername"
-                      target="_blank"
+                      href="#about"
+                      onClick={(e) => scrollToSection(e, "intro")}
                     >
-                      GitHub
+                      About
+                    </NavItem>
+                    <NavItem
+                      href="#features"
+                      onClick={(e) => scrollToSection(e, "features")}
+                    >
+                      What We Do
+                    </NavItem>
+                    <NavItem
+                      href="#projects"
+                      onClick={(e) => scrollToSection(e, "projects")}
+                    >
+                      Projects
+                    </NavItem>
+                    <NavItem
+                      href="#team"
+                      onClick={(e) => scrollToSection(e, "team")}
+                    >
+                      Team
+                    </NavItem>
+                    <NavItem
+                      href="#faq"
+                      onClick={(e) => scrollToSection(e, "faq")}
+                    >
+                      FAQ
                     </NavItem>
                   </NavigationMenuList>
                 </NavigationMenu>

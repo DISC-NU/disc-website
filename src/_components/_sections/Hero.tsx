@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import HeroTreeMap from "@/_components/HeroTreeMap";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/_components/ui/button";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "@/_components/ui/card";
 import { LucideIcon } from "lucide-react";
 
 interface FeatureCardProps {
