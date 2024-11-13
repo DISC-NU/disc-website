@@ -29,10 +29,16 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: List public directory
+        run: ls -la public/
+
+      - name: List out directory
+        run: ls -la out/
+
       - name: Add .nojekyll file
         run: |
           touch ./out/.nojekyll
-          cp -r .next/static ./out/_next/
+          cp -r public/* out/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

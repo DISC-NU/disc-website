@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 import Iphone15Pro from "@/_components/ui/iphone-15-pro";
 
+const getImagePath = (src: string) => {
+  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+};
+
 export function ClientProjectsSection() {
   return (
     <div id="projects" className="mt-36">
@@ -13,7 +17,7 @@ export function ClientProjectsSection() {
         <div className="flex flex-col px-2">
           <p className="text-gray-500 text-md leading-relaxed">
             Our project portfolio showcases the diverse range of solutions
-            we&aposve developed for our community partners. One of our notable
+            we&apos;ve developed for our community partners. One of our notable
             projects is Books & Breakfast, a mobile application designed to
             streamline operations for a local before-school program that
             provides nutritious meals and academic support to elementary school
@@ -40,7 +44,7 @@ export function ClientProjectsSection() {
             <Iphone15Pro
               width={240}
               height={489}
-              src="/books_and_breakfast.png"
+              src={getImagePath("/books_and_breakfast.png")}
               className="w-full relative z-10"
             />
           </div>

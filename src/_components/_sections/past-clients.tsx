@@ -18,6 +18,10 @@ interface MarqueeProps {
   direction?: "normal" | "reverse";
 }
 
+const getImagePath = (src: string) => {
+  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+};
+
 const ClientLogo = ({ logo, name, website }: Client) => {
   return (
     <a
@@ -28,11 +32,12 @@ const ClientLogo = ({ logo, name, website }: Client) => {
     >
       <div className="transform transition-all duration-200 hover:scale-110 w-32 h-16 relative">
         <Image
-          src={logo.src}
+          src={getImagePath(logo.src)}
           alt={`${name} logo`}
           fill
           className="object-contain transition-opacity duration-200 group-hover:opacity-70"
           sizes="(max-width: 128px) 100vw, 128px"
+          unoptimized
         />
       </div>
     </a>

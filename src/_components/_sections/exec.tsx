@@ -17,59 +17,65 @@ interface TeamMemberCardProps {
 }
 
 export default function MeetTheTeam() {
-  const TeamMemberCard = ({ member }: TeamMemberCardProps) => (
-    <div id="team" className="flex flex-col w-full">
-      <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
-        <Image
-          src={member.image}
-          alt={`${member.name}'s profile picture`}
-          layout="fill"
-          objectFit="cover"
-          className="hover:scale-105 transition-transform duration-300"
-        />
-      </div>
+  const TeamMemberCard = ({ member }: TeamMemberCardProps) => {
+    const imagePath =
+      process.env.NODE_ENV === "production"
+        ? `/disc-website${member.image}`
+        : member.image;
+    return (
+      <div id="team" className="flex flex-col w-full">
+        <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
+          <Image
+            src={imagePath}
+            alt={`${member.name}'s profile picture`}
+            layout="fill"
+            objectFit="cover"
+            className="hover:scale-105 transition-transform duration-300"
+          />
+        </div>
 
-      <div className="space-y-2">
-        <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-        <p className="font-medium">
-          <span className="relative">
-            <span className="relative z-10 text-black text-medium">
-              {member.position}
+        <div className="space-y-2">
+          <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+          <p className="font-medium">
+            <span className="relative">
+              <span className="relative z-10 text-black text-medium">
+                {member.position}
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full"
+                style={{
+                  height: "0.5rem",
+                  background: "rgba(20, 189, 149, 0.20)",
+                }}
+              ></span>
             </span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "0.5rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
-          </span>
-        </p>
-        <p className="text-gray-500 text-sm">{member.background}</p>
+          </p>
+          <p className="text-gray-500 text-sm">{member.background}</p>
 
-        <div className="flex gap-4 mt-4">
-          <a
-            href={member.social.linkedin}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href={member.social.instagram}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
-          >
-            <Instagram size={20} />
-          </a>
-          <a
-            href={member.social.github}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
-          >
-            <Github size={20} />
-          </a>
+          <div className="flex gap-4 mt-4">
+            <a
+              href={member.social.linkedin}
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href={member.social.instagram}
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href={member.social.github}
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <Github size={20} />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <section className="py-12 flex justify-center px-4">
