@@ -30,6 +30,10 @@ const NavItem = ({
   </NavigationMenuLink>
 );
 
+const getImagePath = (src: string) => {
+  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+};
+
 export default function Header() {
   const scrollToSection = useCallback(
     (e: React.MouseEvent, sectionId: string) => {
@@ -62,10 +66,11 @@ export default function Header() {
           <div className="flex h-12 items-center justify-between">
             <div className="flex gap-2 items-center">
               <Image
-                src="/disc_logo.png"
+                src={getImagePath("/disc_logo.png")}
                 alt="DISC Logo"
                 width={40}
                 height={40}
+                unoptimized
               />
               <Link
                 href="/"
