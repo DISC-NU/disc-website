@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, Youtube } from "lucide-react";
+import { Instagram, Linkedin, Mail, Github } from "lucide-react";
 import { Company, Client } from "@/types";
 export const footerSections = [
   {
@@ -6,19 +6,11 @@ export const footerSections = [
     links: [
       {
         text: "About Us",
-        href: "/about",
+        href: "#about",
       },
       {
         text: "Executive Board",
-        href: "/board",
-      },
-      {
-        text: "Constitution",
-        href: "/constitution",
-      },
-      {
-        text: "Contact",
-        href: "/contact",
+        href: "#team",
       },
     ],
   },
@@ -26,20 +18,8 @@ export const footerSections = [
     title: "Programs",
     links: [
       {
-        text: "Events",
-        href: "/events",
-      },
-      {
-        text: "Workshops",
-        href: "/workshops",
-      },
-      {
-        text: "Mentorship",
-        href: "/mentorship",
-      },
-      {
         text: "Projects",
-        href: "/projects",
+        href: "/#projects",
       },
     ],
   },
@@ -51,16 +31,8 @@ export const footerSections = [
         href: "/newsletter",
       },
       {
-        text: "Blog",
-        href: "/blog",
-      },
-      {
-        text: "Career Resources",
-        href: "/careers",
-      },
-      {
         text: "Get Involved",
-        href: "/get-involved",
+        href: "#about",
       },
     ],
   },
@@ -69,28 +41,23 @@ export const footerSections = [
 export const socialMediaLinks = [
   {
     icon: Instagram,
-    link: "https://instagram.com/disc_university",
+    link: "https://www.instagram.com/disc_nu/",
     label: "Instagram",
   },
   {
-    icon: Facebook,
-    link: "https://facebook.com/discuniversity",
-    label: "Facebook",
-  },
-  {
     icon: Linkedin,
-    link: "https://linkedin.com/company/disc-university",
+    link: "https://www.linkedin.com/company/northwestern-develop-innovation-for-social-change-disc/",
     label: "LinkedIn",
   },
   {
     icon: Mail,
-    link: "mailto:disc@university.edu",
+    link: "mailto:disc@u.northwestern.edu",
     label: "Email",
   },
   {
-    icon: Youtube,
-    link: "https://youtube.com/@disc_university",
-    label: "YouTube",
+    icon: Github,
+    link: "https://github.com/DISC-NU",
+    label: "Github",
   },
 ];
 

@@ -87,7 +87,7 @@ const Marquee = ({ children, direction = "normal" }: MarqueeProps) => {
 export default function CompanyMarquee() {
   return (
     <div className="relative w-full py-32 bg-background">
-      <div className=" w-lg flex flex-col items-center mb-12">
+      <div className=" w-lg flex flex-col items-center mb-12 py-24">
         <h2 className="text-4xl font-bold">
           <span className="relative">
             <span className="relative z-10">Where Our Members Work</span>

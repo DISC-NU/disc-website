@@ -85,8 +85,8 @@ const Marquee = ({ children, direction = "normal" }: MarqueeProps) => {
 
 export default function ClientMarquee() {
   return (
-    <div className="relative w-full py-12 bg-white">
-      <div className="flex flex-col gap-12 max-w-7xl items-center justify-center mx-auto">
+    <div className="relative w-full p-36 bg-white">
+      <div className="flex flex-col max-w-7xl items-center justify-center mx-auto">
         <Marquee>
           {clients.map((client, idx) => (
             <ClientLogo key={`${client.name}-${idx}`} {...client} />
