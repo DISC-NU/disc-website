@@ -27,7 +27,7 @@ const colorPalette = [
   "#1D5555", // deepest teal
   "#4DCCCC", // bright teal
   "#3AA3A3", // medium teal
-  "#2E8888", // dark medium teal
+  "#2E8888",
 ];
 
 export default function HeroTreeMap({ width, height }: TreeMapProps) {
