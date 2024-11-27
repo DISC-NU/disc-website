@@ -489,7 +489,7 @@ export default function DiscoverProgramPage() {
                 href="https://www.linkedin.com/in/aanand-patel1/"
                 className="underline font-bold"
               >
-                Annand
+                Aanand
               </Link>
               ) are well-versed in all of these technologies and will act as
               mentors/teachers for the entire duration of the program. However,
