@@ -797,6 +797,12 @@ export default function DiscoverProgramPage() {
             </span>
           </h2>
 
+          <p className="text-base text-gray-500 py-4 mb-8">
+            Studios are <strong>mandatory, in-person, weekly</strong> meetings.
+            They will be held every Monday from 7-8pm in Winter Quarter. The
+            time for Studio during Spring Quarter will be announced later.
+          </p>
+
           <ol className="relative border-s border-gray-200 ms-3">
             <li className="mb-12 ms-6">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
@@ -885,12 +891,6 @@ export default function DiscoverProgramPage() {
               </p>
             </li>
           </ol>
-
-          <p className="text-base text-gray-500 mt-8">
-            Studios are <strong>mandatory, in-person, weekly</strong> meetings.
-            They will be held every Monday from 7-8pm in Winter Quarter. The
-            time for Studio during Spring Quarter will be announced later.
-          </p>
         </section>
 
         <section className="mb-16">
