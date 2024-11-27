@@ -1,3 +1,4 @@
+import DiscoverProgramHero from "@/_components/_sections/DiscoverProgram/discover-hero";
 import ProgramOverview from "@/_components/_sections/DiscoverProgram/program-overview";
 import TechStack from "@/_components/_sections/DiscoverProgram/tech-stack";
 import Expectations from "@/_components/_sections/DiscoverProgram/expectations";
@@ -14,24 +15,7 @@ export default function DiscoverProgramPage() {
   return (
     <>
       <div className="w-full max-w-4xl mx-auto px-4 py-32">
-        <div className="space-y-6 mb-16">
-          <h1 className="text-4xl font-bold text-center">
-            <span className="relative">
-              <span className="relative z-10">Discover Program 2025</span>
-              <span
-                className="absolute bottom-0 left-0 w-full"
-                style={{
-                  height: "1.4375rem",
-                  background: "rgba(20, 189, 149, 0.20)",
-                }}
-              ></span>
-            </span>
-          </h1>
-          <p className="text-gray-500 text-center text-lg">
-            Connect, Create, and Make an Impact
-          </p>
-        </div>
-
+        <DiscoverProgramHero />
         <ProgramOverview />
         <TechStack />
         <Expectations />
@@ -48,8 +32,8 @@ export default function DiscoverProgramPage() {
         <ApplicationTimeline />
         <ApplicationProcess />
         <DiscoverFAQ />
-        <DiscoverCTA />
       </div>
+      <DiscoverCTA />
     </>
   );
 }
