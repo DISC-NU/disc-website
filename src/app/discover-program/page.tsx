@@ -781,7 +781,7 @@ export default function DiscoverProgramPage() {
 
           <p className="text-base text-gray-500 mb-8">
             Note: Specialized Technologies listed are project-specific
-            technologies which will be used in addition to DISC's standard tech
+            technologies which will be used in addition to DISC&apos;s standard tech
             stack of React/Node/Vercel/Supabase.
           </p>
 
