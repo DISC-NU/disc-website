@@ -1,8 +1,9 @@
 "use client";
 
-import { ReactNode, useCallback } from "react";
+import { ReactNode, useCallback, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -35,26 +36,68 @@ const getImagePath = (src: string) => {
 };
 
 export default function Header() {
-  const scrollToSection = useCallback(
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = useCallback(
     (e: React.MouseEvent, sectionId: string) => {
       e.preventDefault();
-      const section = document.getElementById(sectionId);
+      if (pathname !== "/") {
+        router.push("/");
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            const navHeight = 60;
+            const buffer = 264;
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition =
+              elementPosition + window.pageYOffset - navHeight - buffer;
 
-      if (section) {
-        const navHeight = 60;
-        const buffer = 264;
-        const elementPosition = section.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - navHeight - buffer;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }
+        }, 100);
+      } else {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const navHeight = 60;
+          const buffer = 264;
+          const elementPosition = section.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - navHeight - buffer;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
       }
     },
-    []
+    [pathname, router]
   );
+
+  useEffect(() => {
+    if (pathname === "/" && window.location.hash) {
+      const sectionId = window.location.hash.slice(1);
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const navHeight = 60;
+          const buffer = 264;
+          const elementPosition = section.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - navHeight - buffer;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    }
+  }, [pathname]);
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 p-4 transition-all duration-300 ease-in-out">
@@ -83,32 +126,32 @@ export default function Header() {
                 <NavigationMenu>
                   <NavigationMenuList className="text-black/60 dark:text-gray-500">
                     <NavItem
-                      href="#about"
-                      onClick={(e) => scrollToSection(e, "intro")}
+                      href="/#about"
+                      onClick={(e) => handleNavigation(e, "intro")}
                     >
                       About
                     </NavItem>
                     <NavItem
-                      href="#features"
-                      onClick={(e) => scrollToSection(e, "features")}
+                      href="/#features"
+                      onClick={(e) => handleNavigation(e, "features")}
                     >
                       What We Do
                     </NavItem>
                     <NavItem
-                      href="#projects"
-                      onClick={(e) => scrollToSection(e, "projects")}
+                      href="/#projects"
+                      onClick={(e) => handleNavigation(e, "projects")}
                     >
                       Projects
                     </NavItem>
                     <NavItem
-                      href="#team"
-                      onClick={(e) => scrollToSection(e, "team")}
+                      href="/#team"
+                      onClick={(e) => handleNavigation(e, "team")}
                     >
                       Team
                     </NavItem>
                     <NavItem
-                      href="#faq"
-                      onClick={(e) => scrollToSection(e, "faq")}
+                      href="/#faq"
+                      onClick={(e) => handleNavigation(e, "faq")}
                     >
                       FAQ
                     </NavItem>
@@ -121,6 +164,7 @@ export default function Header() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
+                <Link href="/discover-program">DISCover Program</Link>
                 <Link
                   href="https://disc-fall-2024-workshop-series-website.vercel.app/"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"

@@ -79,10 +79,6 @@ export default function CTASection() {
           </div>
         </div>
       </section>
-      <p className="mt-10 px-4 py-24 text-center text-xs sm:text-sm text-gray-500">
-        * Stay tuned for our Discover program applications for Winter & Spring
-        2025 👀👀{" "}
-      </p>
     </div>
   );
 }
