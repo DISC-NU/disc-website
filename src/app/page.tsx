@@ -1,8 +1,8 @@
-import HeroSection from "@/_components/_sections/Hero";
-import AboutSection from "@/_components/_sections/about";
-import MeetTheTeam from "@/_components/_sections/exec";
-import FAQSection from "@/_components/_sections/faq";
-import CTASection from "@/_components/_sections/cta";
+import HeroSection from "@/_components/_sections/LandingPage/Hero";
+import AboutSection from "@/_components/_sections/LandingPage/about";
+import MeetTheTeam from "@/_components/_sections/LandingPage/exec";
+import FAQSection from "@/_components/_sections/LandingPage/faq";
+import CTASection from "@/_components/_sections/LandingPage/cta";
 
 export default function Home() {
   return (

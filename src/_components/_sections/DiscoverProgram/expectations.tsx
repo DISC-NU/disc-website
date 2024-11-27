@@ -1,0 +1,55 @@
+export default function Expectations() {
+  return (
+    <section className="mb-16">
+      <h2 className="text-3xl font-bold mb-8">
+        <span className="relative">
+          <span className="relative z-10">Roles and Expectations</span>
+          <span
+            className="absolute bottom-0 left-0 w-full"
+            style={{
+              height: "1.4375rem",
+              background: "rgba(20, 189, 149, 0.20)",
+            }}
+          ></span>
+        </span>
+      </h2>
+
+      <div className="space-y-6 text-gray-500">
+        <p className="text-base leading-relaxed">
+          Because we are working with <strong>REAL</strong> clients to build
+          software that will have <strong>REAL</strong> users, the stakes are
+          high. To ensure that all projects are finished with production-level
+          quality, we enforce strict participation requirements for our program
+          members.
+        </p>
+
+        <p className="text-base text-gray-500 mb-6">
+          <strong>All program members are expected to:</strong>
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-base text-gray-500 mb-8">
+          <li>Prioritize DISC above (almost) all other commitments</li>
+          <li>
+            Spend minimum 3, average 5 hours per week on DISC-related meetings
+            and work
+          </li>
+          <li>
+            Attend studio every week (this is a 1-hour weekly meeting on Mondays
+            from 7-8pm during Winter)
+          </li>
+          <li>Attend the Winter Showcase and Spring Showcase</li>
+          <li>
+            Regularly communicate with the rest of their team, and with the
+            client whenever requested
+          </li>
+          <li>
+            Be a team player, taking the initiative to help out their teammates
+            in whatever ways they can
+          </li>
+          <li>
+            Be vocal about issues, seeking assistance from DISC exec when needed
+          </li>
+        </ul>
+      </div>
+    </section>
+  );
+}
