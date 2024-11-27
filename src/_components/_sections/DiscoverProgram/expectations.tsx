@@ -1,9 +1,9 @@
 export default function Expectations() {
   return (
-    <section className="mb-16" id="expectations">
+    <section className="mb-8" id="expectations">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
-          <span className="relative z-10">Roles and Expectations</span>
+          <span className="relative z-10">Participant Expectations</span>
           <span
             className="absolute bottom-0 left-0 w-full"
             style={{

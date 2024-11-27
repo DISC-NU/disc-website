@@ -1,10 +1,10 @@
-export default function TeamStructure() {
+export default function Roles() {
   return (
-    <section className="mb-16" id="team-structure">
+    <section className="mb-16" id="roles">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10 text-black">
-            Team Structure and Layout
+            Roles
           </span>
           <span
             className="absolute bottom-0 left-0 w-full"
@@ -17,6 +17,9 @@ export default function TeamStructure() {
       </h2>
 
       <div className="flex flex-col gap-6">
+        <p className="text-base leading-relaxed">
+          On each team, roles are divided as follows:
+        </p>
         <div className="p-4 bg-white rounded-lg shadow">
           <div className="flex items-start gap-3 text-base text-gray-500">
             <span className="text-2xl">👔</span>
