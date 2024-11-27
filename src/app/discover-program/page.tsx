@@ -935,7 +935,7 @@ export default function DiscoverProgramPage() {
                   not looking for experts, we are looking for students who have
                   dipped their toe in the web dev water and now want to make
                   their first splash! As long as you have basic familiarity with
-                  one or more parts of our tech stack (we teach all of it in our
+                  one or more parts of our tech stack (we teach all of it in our{" "}
                   <Link
                     href="https://disc-fall-2024-workshop-series-website.vercel.app/"
                     className="underline font-bold"
