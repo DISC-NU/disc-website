@@ -654,9 +654,6 @@ export default function DiscoverProgramPage() {
                       Provide feedback to other team members on their work,
                       taking the initiative to help out others when requested
                     </li>
-                    <li>
-                      This role will likely include writing some frontend code
-                    </li>
                   </ul>
                 </span>
               </div>
@@ -666,7 +663,7 @@ export default function DiscoverProgramPage() {
                 <span className="text-2xl">💻</span>
                 <span>
                   <strong className="text-lg font-semibold text-[#14BD95]">
-                    Designers/Engineers (3-4 per team)
+                    Engineers (3-4 per team)
                   </strong>
                   <ul className="list-disc pl-5 mt-2 space-y-2">
                     <li>
@@ -781,8 +778,8 @@ export default function DiscoverProgramPage() {
 
           <p className="text-base text-gray-500 mb-8">
             Note: Specialized Technologies listed are project-specific
-            technologies which will be used in addition to DISC&apos;s standard tech
-            stack of React/Node/Vercel/Supabase.
+            technologies which will be used in addition to DISC&apos;s standard
+            tech stack of React/Node/Vercel/Supabase.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -792,138 +789,108 @@ export default function DiscoverProgramPage() {
           </div>
         </section>
 
-        <section className="mb-8 py-16">
-          <h2 className="text-3xl font-bold mb-6">
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">
             <span className="relative">
-              <span className="relative z-10">Timelines</span>
-              <span
-                className="absolute bottom-0 left-0 w-full"
-                style={{
-                  height: "1.4375rem",
-                  background: "rgba(20, 189, 149, 0.20)",
-                }}
-              ></span>
+              <span className="relative z-10">Application Timeline</span>
+              <span className="absolute bottom-0 left-0 w-full h-6 bg-green-200/20"></span>
             </span>
           </h2>
 
-          <p className="text-base text-gray-500 mb-8">
+          <ol className="relative border-s border-gray-200 ms-3">
+            <li className="mb-12 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <Calendar className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="flex items-center mb-2 text-lg font-semibold text-gray-900">
+                First Studio & Client Prep
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Winter Quarter
+              </time>
+              <p className="text-base text-gray-500">
+                First studio (fun program kickoff event), and prep for meeting
+                clients
+              </p>
+            </li>
+
+            <li className="mb-12 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <UserCheck className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Initial Client Meetings
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Winter Quarter - Week 4
+              </time>
+              <p className="text-base text-gray-500">
+                First client meetings occur
+              </p>
+            </li>
+
+            <li className="mb-12 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <Calendar className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Winter Development
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Winter Quarter - Weeks 5-9
+              </time>
+              <p className="text-base text-gray-500">Work on projects</p>
+            </li>
+
+            <li className="mb-12 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <CheckCircle className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Winter Showcase
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Winter Quarter - Week 10
+              </time>
+              <p className="text-base text-gray-500">
+                <strong>Winter Showcase</strong> (during studio)
+              </p>
+            </li>
+
+            <li className="mb-12 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <Calendar className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Spring Development
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Spring Quarter - Weeks 1-8
+              </time>
+              <p className="text-base text-gray-500">Work on projects</p>
+            </li>
+
+            <li className="ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-[#40B4B4] rounded-full -start-4 ring-8 ring-white">
+                <CheckCircle className="w-4 h-4 text-white" />
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Final Project Showcase
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                Spring Quarter - Week 9
+              </time>
+              <p className="text-base text-gray-500">
+                <strong>Final Project Showcase</strong> (during studio)
+              </p>
+            </li>
+          </ol>
+
+          <p className="text-base text-gray-500 mt-8">
             Studios are <strong>mandatory, in-person, weekly</strong> meetings.
             They will be held every Monday from 7-8pm in Winter Quarter. The
-            time for Studio durnig Spring Quarter will be announced later.
+            time for Studio during Spring Quarter will be announced later.
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  1
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  First Studio & Client Prep
-                </h3>
-                <p className="text-base text-gray-400">
-                  Winter Quarter - Week 3
-                </p>
-                <p className="text-base text-gray-500 mt-1">
-                  First studio (fun program kickoff event), and prep for meeting
-                  clients
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  2
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Initial Client Meetings
-                </h3>
-                <p className="text-base text-gray-400">
-                  Winter Quarter - Week 4
-                </p>
-                <p className="text-base text-gray-500 mt-1">
-                  First client meetings occur
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  3
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Winter Development
-                </h3>
-                <p className="text-base text-gray-400">
-                  Winter Quarter - Weeks 5-9
-                </p>
-                <p className="text-base text-gray-500 mt-1">Work on projects</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  4
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Winter Showcase
-                </h3>
-                <p className="text-base text-gray-400">
-                  Winter Quarter - Week 10
-                </p>
-                <p className="text-base text-gray-500 mt-1">
-                  <strong>Winter Showcase</strong> (during studio)
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  5
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Spring Development
-                </h3>
-                <p className="text-base text-gray-400">
-                  Spring Quarter - Weeks 1-8
-                </p>
-                <p className="text-base text-gray-500 mt-1">Work on projects</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-8 h-8 bg-[#40B4B4] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  6
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg text-gray-900">
-                  Final Project Showcase
-                </h3>
-                <p className="text-base text-gray-400">
-                  Spring Quarter - Week 9
-                </p>
-                <p className="text-base text-gray-500 mt-1">
-                  <strong>Final Project Showcase</strong> (during studio)
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         <section className="mb-16">
@@ -969,8 +936,13 @@ export default function DiscoverProgramPage() {
                   dipped their toe in the web dev water and now want to make
                   their first splash! As long as you have basic familiarity with
                   one or more parts of our tech stack (we teach all of it in our
-                  fall workshop series), you can be confident in your
-                  application.
+                  <Link
+                    href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+                    className="underline font-bold"
+                  >
+                    fall workshop series
+                  </Link>
+                  ), you can be confident in your application.
                 </p>
               </div>
             </div>
@@ -1196,10 +1168,11 @@ export default function DiscoverProgramPage() {
             <Accordion type="single" collapsible className="w-full space-y-2">
               <AccordionItem
                 value="item-1"
-                className="border rounded-lg px-4 py-2 bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="border rounded-lg px-4 py-2 bg-white shadow-sm hover:shadow-md transition-shadow duration-200 text-left"
               >
-                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-2">
-                  I don&apos;t have any experience, should I apply?
+                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-2 text-left">
+                  I don&apos;t have any experience, should I still apply to the
+                  program?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-500">
                   <p className="mb-4">
@@ -1331,95 +1304,97 @@ export default function DiscoverProgramPage() {
           </div>
         </section>
       </div>
-      <div className="relative min-h-96 w-full flex flex-col items-center justify-center">
+      <div className="relative flex h-screen w-full items-center justify-center">
         <div
           className="absolute inset-0"
           style={{
             background: `
-              linear-gradient(135deg, 
-                rgba(94, 206, 206, 0.08) 0%, 
-                rgba(208, 240, 240, 0.05) 50%,
-                rgba(230, 247, 247, 0.03) 100%
-              ),
-              radial-gradient(circle at 0% 0%, 
-                rgba(77, 204, 204, 0.3) 0%, 
-                rgba(77, 204, 204, 0) 60%
-              ),
-              radial-gradient(circle at 100% 0%, 
-                rgba(185, 233, 233, 0.2) 0%, 
-                rgba(185, 233, 233, 0) 50%
-              ),
-              radial-gradient(circle at 100% 100%, 
-                rgba(64, 180, 180, 0.25) 0%, 
-                rgba(64, 180, 180, 0) 60%
-              ),
-              radial-gradient(circle at 0% 100%, 
-                rgba(94, 206, 206, 0.2) 0%, 
-                rgba(94, 206, 206, 0) 50%
-              ),
-              linear-gradient(180deg, 
-                rgba(208, 240, 240, 0.1) 0%, 
-                rgba(94, 206, 206, 0.15) 100%
-              )
-            `,
+            linear-gradient(135deg, 
+              rgba(94, 206, 206, 0.08) 0%, 
+              rgba(208, 240, 240, 0.05) 50%,
+              rgba(230, 247, 247, 0.03) 100%
+            ),
+            radial-gradient(circle at 0% 0%, 
+              rgba(77, 204, 204, 0.3) 0%, 
+              rgba(77, 204, 204, 0) 60%
+            ),
+            radial-gradient(circle at 100% 0%, 
+              rgba(185, 233, 233, 0.2) 0%, 
+              rgba(185, 233, 233, 0) 50%
+            ),
+            radial-gradient(circle at 100% 100%, 
+              rgba(64, 180, 180, 0.25) 0%, 
+              rgba(64, 180, 180, 0) 60%
+            ),
+            radial-gradient(circle at 0% 100%, 
+              rgba(94, 206, 206, 0.2) 0%, 
+              rgba(94, 206, 206, 0) 50%
+            ),
+            linear-gradient(180deg, 
+              rgba(208, 240, 240, 0.1) 0%, 
+              rgba(94, 206, 206, 0.15) 100%
+            )
+          `,
           }}
         />
-        <div className="mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
-            Apply to the Discover Program
-          </h2>
-          <p className="text-gray-500 text-lg">
-            And take the first step towards building impactful projects
-          </p>
-        </div>
+        <div className="flex flex-col items-center justify-center px-4 text-center">
+          <div className="mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
+              Apply to the Discover Program
+            </h2>
+            <p className="text-gray-500 text-lg">
+              And take the first step towards building impactful projects
+            </p>
+          </div>
 
-        <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd4pbbl1mhY8FhfFzGnw-t0HXvJGpOAflLzF3zvYgcYUNUh0Q/viewform"
-          target="_blank"
-          className="group relative inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-8 py-4 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
-        >
-          Apply Now
-          <svg
-            className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4pbbl1mhY8FhfFzGnw-t0HXvJGpOAflLzF3zvYgcYUNUh0Q/viewform"
+            target="_blank"
+            className="group relative inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-8 py-4 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
-          </svg>
-          <div className="absolute inset-0 rounded-xl bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-        </Link>
+            Apply Now
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+            <div className="absolute inset-0 rounded-xl bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </Link>
 
-        <div className="mt-8 space-y-2">
-          <p className="text-gray-500">
-            Questions? Contact us at{" "}
-            <a
-              href="mailto:disc@u.northwestern.edu"
-              className="text-[#40B4B4] hover:underline font-medium"
-            >
-              disc@u.northwestern.edu
-            </a>{" "}
-            or join our{" "}
-            <Link
-              href="https://discord.gg/disc"
-              className="text-[#40B4B4] hover:underline font-medium"
-            >
-              DISCord
-            </Link>
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
-            <div className="flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
-              <span>5-10 minute application</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
-              <span>Applications due Jan 4th</span>
+          <div className="mt-8 space-y-4">
+            <p className="text-gray-500">
+              Questions? Contact us at{" "}
+              <a
+                href="mailto:disc@u.northwestern.edu"
+                className="text-[#40B4B4] hover:underline font-medium"
+              >
+                disc@u.northwestern.edu
+              </a>{" "}
+              or join our{" "}
+              <Link
+                href="https://discord.gg/disc"
+                className="text-[#40B4B4] hover:underline font-medium"
+              >
+                DISCord
+              </Link>
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+              <div className="flex items-center gap-2">
+                <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
+                <span>5-10 minute application</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
+                <span>Applications due Jan 4th</span>
+              </div>
             </div>
           </div>
         </div>
