@@ -15,7 +15,7 @@ const SectionNavigation = () => {
       { id: "expectations", label: "Participant Expectations" },
       { id: "roles", label: "Roles" },
       { id: "project-descriptions", label: "Project Descriptions" },
-      { id: "application-timeline", label: "Application Timeline" },
+      { id: "program-timeline", label: "Program Timeline" },
       { id: "application-process", label: "Application Process" },
       { id: "faq", label: "FAQ" },
       { id: "cta", label: "Apply Now" },

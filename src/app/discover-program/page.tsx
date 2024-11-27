@@ -3,9 +3,9 @@ import DiscoverProgramHero from "@/_components/_sections/DiscoverProgram/discove
 import ProgramOverview from "@/_components/_sections/DiscoverProgram/program-overview";
 import TechStack from "@/_components/_sections/DiscoverProgram/tech-stack";
 import Expectations from "@/_components/_sections/DiscoverProgram/expectations";
-import TeamStructure from "@/_components/_sections/DiscoverProgram/team-structure";
+import TeamStructure from "@/_components/_sections/DiscoverProgram/roles";
 import ProjectDescriptions from "@/_components/_sections/DiscoverProgram/project-descriptions";
-import ApplicationTimeline from "@/_components/_sections/DiscoverProgram/application-timeline";
+import ApplicationTimeline from "@/_components/_sections/DiscoverProgram/program-timeline";
 import ApplicationProcess from "@/_components/_sections/DiscoverProgram/application-process";
 import DiscoverFAQ from "@/_components/_sections/DiscoverProgram/discover-faq";
 import DiscoverCTA from "@/_components/_sections/DiscoverProgram/discover-cta";

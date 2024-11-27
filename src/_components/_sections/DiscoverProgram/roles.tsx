@@ -1,4 +1,4 @@
-export default function TeamStructure() {
+export default function Roles() {
   return (
     <section className="mb-16" id="roles">
       <h2 className="text-3xl font-bold mb-8">
