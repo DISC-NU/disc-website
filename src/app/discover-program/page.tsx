@@ -14,7 +14,7 @@ export default function DiscoverProgramPage() {
       <div className="space-y-6 mb-16">
         <h1 className="text-4xl font-bold text-center">
           <span className="relative">
-            <span className="relative z-10">DISCover Program 2025</span>
+            <span className="relative z-10">Discover Program 2025</span>
             <span
               className="absolute bottom-0 left-0 w-full"
               style={{
@@ -113,7 +113,7 @@ export default function DiscoverProgramPage() {
               Initial Client Meetings
             </h3>
             <time className="block mb-3 text-sm font-normal text-gray-400">
-              Week 5
+              Week 3
             </time>
             <p className="text-gray-500">
               Meet with your client and understand their needs and expectations.
@@ -125,7 +125,7 @@ export default function DiscoverProgramPage() {
               Winter Development Sprint
             </h3>
             <time className="block mb-3 text-sm font-normal text-gray-400">
-              Weeks 6-9
+              Weeks 5-9
             </time>
             <p className="text-gray-500">
               Begin building your solution with regular check-ins and
@@ -283,7 +283,7 @@ export default function DiscoverProgramPage() {
                 1/19/25
               </time>
               <p className="text-base font-normal text-gray-500">
-                Appectances will be released alongside team assignments
+                Acceptances will be released alongside team assignments
               </p>
             </div>
           </li>

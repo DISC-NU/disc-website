@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/_components/ui/button";
 import {
   Sheet,
@@ -17,31 +18,53 @@ export default function MobileMenu() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const scrollToSection = useCallback(
+  const handleNavigation = useCallback(
     (e: React.MouseEvent, sectionId: string) => {
       e.preventDefault();
-      const section = document.getElementById(sectionId);
 
-      if (section) {
-        const navHeight = 60;
-        const buffer = 264;
-        const elementPosition = section.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - navHeight - buffer;
+      if (pathname !== "/") {
+        router.push("/");
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            const navHeight = 60;
+            const buffer = 264;
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition =
+              elementPosition + window.pageYOffset - navHeight - buffer;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-        setIsOpen(false);
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+            setIsOpen(false);
+          }
+        }, 100);
+      } else {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const navHeight = 60;
+          const buffer = 264;
+          const elementPosition = section.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - navHeight - buffer;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+          setIsOpen(false);
+        }
       }
     },
-    []
+    [pathname, router]
   );
 
   const listItemVariants = {
@@ -139,32 +162,32 @@ export default function MobileMenu() {
                       >
                         <div className="space-y-1">
                           <MobileNavItem
-                            href="#about"
-                            onClick={(e) => scrollToSection(e, "intro")}
+                            href="/#about"
+                            onClick={(e) => handleNavigation(e, "intro")}
                           >
                             About
                           </MobileNavItem>
                           <MobileNavItem
-                            href="#features"
-                            onClick={(e) => scrollToSection(e, "features")}
+                            href="/#features"
+                            onClick={(e) => handleNavigation(e, "features")}
                           >
                             What We Do
                           </MobileNavItem>
                           <MobileNavItem
-                            href="#projects"
-                            onClick={(e) => scrollToSection(e, "projects")}
+                            href="/#projects"
+                            onClick={(e) => handleNavigation(e, "projects")}
                           >
                             Projects
                           </MobileNavItem>
                           <MobileNavItem
-                            href="#team"
-                            onClick={(e) => scrollToSection(e, "team")}
+                            href="/#team"
+                            onClick={(e) => handleNavigation(e, "team")}
                           >
                             Team
                           </MobileNavItem>
                           <MobileNavItem
-                            href="#faq"
-                            onClick={(e) => scrollToSection(e, "faq")}
+                            href="/#faq"
+                            onClick={(e) => handleNavigation(e, "faq")}
                           >
                             FAQ
                           </MobileNavItem>
@@ -173,6 +196,14 @@ export default function MobileMenu() {
                     </nav>
                   </div>
                   <div className="flex flex-col mt-auto gap-4 border-t pt-6">
+                    <Link href="/discover-program">
+                      <Button
+                        variant="outline"
+                        className="w-full justify-center text-base"
+                      >
+                        DISCover Program
+                      </Button>
+                    </Link>
                     <Link href="https://disc-fall-2024-workshop-series-website.vercel.app/">
                       <Button
                         variant="outline"

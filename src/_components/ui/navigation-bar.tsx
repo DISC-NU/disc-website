@@ -164,7 +164,7 @@ export default function Header() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
-                <Link href="/discover-program">DISCover Program</Link>
+                <Link href="/discover-program">Discover Program</Link>
                 <Link
                   href="https://disc-fall-2024-workshop-series-website.vercel.app/"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
