@@ -2,7 +2,7 @@ import ProjectCard from "@/_components/ui/project-card";
 import { projects } from "@/utils/constants";
 export default function ProjectDescriptions() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="project-descriptions">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Project Descriptions</span>

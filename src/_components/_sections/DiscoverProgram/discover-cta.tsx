@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function DiscoverCTA() {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center">
+    <div
+      className="relative flex h-screen w-full items-center justify-center"
+      id="cta"
+    >
       <div
         className="absolute inset-0"
         style={{

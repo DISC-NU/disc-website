@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TechStack() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="tech-stack">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Tech Stack</span>

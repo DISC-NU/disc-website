@@ -1,3 +1,4 @@
+import SectionNavigation from "@/_components/ui/section-navigation";
 import DiscoverProgramHero from "@/_components/_sections/DiscoverProgram/discover-hero";
 import ProgramOverview from "@/_components/_sections/DiscoverProgram/program-overview";
 import TechStack from "@/_components/_sections/DiscoverProgram/tech-stack";
@@ -14,6 +15,7 @@ import WarningAlert from "@/_components/ui/warning-alert";
 export default function DiscoverProgramPage() {
   return (
     <>
+      <SectionNavigation />
       <div className="w-full max-w-4xl mx-auto px-4 py-32">
         <DiscoverProgramHero />
         <ProgramOverview />

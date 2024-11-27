@@ -2,7 +2,7 @@ import { Calendar, UserCheck, CheckCircle } from "lucide-react";
 
 export default function ApplicationTimeline() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="application-timeline">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Application Timeline</span>

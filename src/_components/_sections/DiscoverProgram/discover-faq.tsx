@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 export default function DiscoverFAQ() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="faq">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Discover Program FAQ</span>

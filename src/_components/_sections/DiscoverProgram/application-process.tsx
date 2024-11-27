@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ApplicationProcess() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="application-process">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Application Process</span>

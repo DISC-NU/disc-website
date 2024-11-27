@@ -1,6 +1,6 @@
 export default function ProgramOverview() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="program-overview">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10">Program Overview</span>

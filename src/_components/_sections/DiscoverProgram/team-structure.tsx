@@ -1,6 +1,6 @@
 export default function TeamStructure() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="team-structure">
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10 text-black">
