@@ -4,7 +4,6 @@ import ProgramOverview from "@/_components/_sections/DiscoverProgram/program-ove
 import TechStack from "@/_components/_sections/DiscoverProgram/tech-stack";
 import Expectations from "@/_components/_sections/DiscoverProgram/expectations";
 import TeamStructure from "@/_components/_sections/DiscoverProgram/team-structure";
-import ExpectationsSummary from "@/_components/_sections/DiscoverProgram/expectations-summary";
 import ProjectDescriptions from "@/_components/_sections/DiscoverProgram/project-descriptions";
 import ApplicationTimeline from "@/_components/_sections/DiscoverProgram/application-timeline";
 import ApplicationProcess from "@/_components/_sections/DiscoverProgram/application-process";
@@ -21,7 +20,6 @@ export default function DiscoverProgramPage() {
         <ProgramOverview />
         <TechStack />
         <Expectations />
-        <TeamStructure />
         <WarningAlert
           title="Important Notice"
           message="Participants who are not fulfilling expectations are subject to
@@ -29,7 +27,7 @@ export default function DiscoverProgramPage() {
             applicant waitlist will be maintained to reduce the impact of these
             potential removals on the teams and projects"
         />
-        <ExpectationsSummary />
+        <TeamStructure />
         <ProjectDescriptions />
         <ApplicationTimeline />
         <ApplicationProcess />

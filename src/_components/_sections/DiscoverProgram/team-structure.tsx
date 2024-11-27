@@ -4,7 +4,7 @@ export default function TeamStructure() {
       <h2 className="text-3xl font-bold mb-8">
         <span className="relative">
           <span className="relative z-10 text-black">
-            Team Structure and Layout
+            Roles
           </span>
           <span
             className="absolute bottom-0 left-0 w-full"
