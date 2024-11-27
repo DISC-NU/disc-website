@@ -1,7 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useMemo, memo } from "react";
 import { companies } from "@/utils/constants";
 import { Logo } from "@/types";
 
@@ -16,14 +14,24 @@ interface MarqueeProps {
   direction?: "normal" | "reverse";
 }
 
-const firstRow = companies.slice(0, Math.ceil(companies.length / 2));
-const secondRow = companies.slice(Math.ceil(companies.length / 2));
-
-const getImagePath = (src: string) => {
-  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+const useCompanyRows = () => {
+  return useMemo(() => {
+    const midPoint = Math.ceil(companies.length / 2);
+    return {
+      firstRow: companies.slice(0, midPoint),
+      secondRow: companies.slice(midPoint),
+    };
+  }, []);
 };
 
-const CompanyLogo = ({ logo, name, website }: CompanyLogoProps) => {
+const getImagePath = (src: string) => {
+  const isProduction = process.env.NODE_ENV === "production";
+  return isProduction ? `/disc-website${src}` : src;
+};
+
+const CompanyLogo = memo(({ logo, name, website }: CompanyLogoProps) => {
+  const imagePath = useMemo(() => getImagePath(logo.src), [logo.src]);
+
   return (
     <a
       href={website}
@@ -33,71 +41,82 @@ const CompanyLogo = ({ logo, name, website }: CompanyLogoProps) => {
     >
       <div className="transform transition-all duration-200 hover:scale-110 w-32 h-16 relative">
         <Image
-          src={getImagePath(logo.src)}
+          src={imagePath}
           alt={`${name} logo`}
           fill
           className="object-contain transition-opacity duration-200 group-hover:opacity-70"
           sizes="(max-width: 128px) 100vw, 128px"
+          loading="lazy"
           unoptimized
+          priority={false}
         />
       </div>
     </a>
   );
-};
+});
 
-const Marquee = ({ children, direction = "normal" }: MarqueeProps) => {
+CompanyLogo.displayName = "CompanyLogo";
+
+const Marquee = memo(({ children, direction = "normal" }: MarqueeProps) => {
+  const maskStyle = useMemo(
+    () => ({
+      maskImage:
+        "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
+      WebkitMaskImage:
+        "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
+    }),
+    []
+  );
+
+  const directionStyle = useMemo(
+    () => ({
+      direction: direction === "reverse" ? "rtl" : "ltr",
+    }),
+    [direction]
+  );
+
   return (
     <div
       className="flex w-full overflow-hidden [--gap:1rem] [--duration:40s]"
-      style={{
-        maskImage:
-          "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
-        WebkitMaskImage:
-          "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
-      }}
+      style={maskStyle}
     >
-      <div
-        className="flex shrink-0 items-center gap-4 animate-marquee"
-        style={{
-          direction: direction === "reverse" ? "rtl" : "ltr",
-        }}
-      >
-        {children}
-      </div>
-      <div
-        className="flex shrink-0 items-center gap-4 animate-marquee"
-        style={{
-          direction: direction === "reverse" ? "rtl" : "ltr",
-        }}
-      >
-        {children}
-      </div>
-      <div
-        className="flex shrink-0 items-center gap-4 animate-marquee"
-        style={{
-          direction: direction === "reverse" ? "rtl" : "ltr",
-        }}
-      >
-        {children}
-      </div>
+      {[1, 2, 3].map((key) => (
+        <div
+          key={key}
+          className="flex shrink-0 items-center gap-4 animate-marquee"
+          // @ts-expect-error idk
+          style={directionStyle}
+        >
+          {children}
+        </div>
+      ))}
     </div>
   );
-};
+});
+
+Marquee.displayName = "Marquee";
 
 export default function CompanyMarquee() {
+  const { firstRow, secondRow } = useCompanyRows();
+
+  const titleStyle = useMemo(
+    () => ({
+      height: "1.4375rem",
+      background: "rgba(20, 189, 149, 0.20)",
+    }),
+    []
+  );
+
   return (
     <div className="relative w-full py-32 bg-background">
-      <div className=" w-lg flex flex-col items-center mb-12 py-24">
+      <div className="w-lg flex flex-col items-center mb-12 py-24">
         <h2 className="text-4xl font-bold">
           <span className="relative">
             <span className="relative z-10">Where Our Members Work</span>
             <span
               className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "1.4375rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
+              style={titleStyle}
+            />
           </span>
         </h2>
       </div>
