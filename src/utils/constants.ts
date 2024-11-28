@@ -293,7 +293,7 @@ export const teamMembers = [
     name: "Ethan Pineda",
     grade: "Senior",
     background: "Computer Science, Latinx Studies",
-    image: "/ethan.jpeg",
+    image: "/ethan2.jpeg",
     social: {
       linkedin: "https://www.linkedin.com/in/ethanpineda/",
       instagram: "https://www.instagram.com/ethanpinedaa/",
@@ -302,7 +302,7 @@ export const teamMembers = [
   },
   {
     position: "Technical Lead",
-    name: "Annand Patel",
+    name: "Aanand Patel",
     grade: "Junior",
     background: "Computer Science",
     image: "/annand.jpg",
