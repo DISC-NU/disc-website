@@ -11,7 +11,6 @@ const DiscoverProgramBanner = () => {
           Discover Program Application Now Available!!!
         </AlertTitle>
         <AlertDescription className="text-gray-600">
-          Join our exciting discovery program and unlock new opportunities.
           Click to learn more.
         </AlertDescription>
       </Alert>
