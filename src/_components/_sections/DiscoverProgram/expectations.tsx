@@ -4,9 +4,8 @@ export default function Expectations() {
   return (
     <section className="mb-16" id="expectations">
       <HeaderWithHighlight highlight={true} center={false} className="mb-8">
-        Roles and Expectations
+        Participant Expectations
       </HeaderWithHighlight>
-
       <div className="space-y-6 text-gray-500">
         <p className="text-base leading-relaxed">
           Because we are working with <strong>REAL</strong> clients to build

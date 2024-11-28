@@ -1,14 +1,14 @@
 import { Calendar, UserCheck, CheckCircle } from "lucide-react";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
-export default function ApplicationTimeline() {
+export default function ProgramTimeline() {
   return (
     <section className="mb-16" id="application-timeline">
       <HeaderWithHighlight highlight={true} center={false} className="mb-8">
-        Application Timeline
+        Program Timeline
       </HeaderWithHighlight>
 
-      <p className="text-base text-gray-500 py-4 mb-8">
+      <p className="text-base text-gray-500 mb-8">
         Studios are <strong>mandatory, in-person, weekly</strong> meetings. They
         will be held every Monday from 7-8pm in Winter Quarter. The time for
         Studio during Spring Quarter will be announced later.
@@ -23,11 +23,12 @@ export default function ApplicationTimeline() {
             First Studio & Client Prep
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            Winter Quarter
+            Winter Quarter - Week 3
           </time>
           <p className="text-base text-gray-500">
-            First studio (fun program kickoff event), and prep for meeting
-            clients
+            The first studio will be a fun program kickoff event.
+            <br />
+            Teams start preparing for their first client meetings.
           </p>
         </li>
 
@@ -41,7 +42,9 @@ export default function ApplicationTimeline() {
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Winter Quarter - Week 4
           </time>
-          <p className="text-base text-gray-500">First client meetings occur</p>
+          <p className="text-base text-gray-500">
+            Teams meet with clients for the first time.
+          </p>
         </li>
 
         <li className="mb-12 ms-6">
@@ -49,12 +52,14 @@ export default function ApplicationTimeline() {
             <Calendar className="w-4 h-4 text-white" />
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
-            Winter Development
+            App Development
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Winter Quarter - Weeks 5-9
           </time>
-          <p className="text-base text-gray-500">Work on projects</p>
+          <p className="text-base text-gray-500">
+            Teams continuously work on projects.
+          </p>
         </li>
 
         <li className="mb-12 ms-6">
@@ -68,7 +73,10 @@ export default function ApplicationTimeline() {
             Winter Quarter - Week 10
           </time>
           <p className="text-base text-gray-500">
-            <strong>Winter Showcase</strong> (during studio)
+            An official midway checkpoint for teams to show off their progress.
+            <br />
+            Held during extended studio time (normal studio time + one hour
+            after).
           </p>
         </li>
 
@@ -77,12 +85,14 @@ export default function ApplicationTimeline() {
             <Calendar className="w-4 h-4 text-white" />
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
-            Spring Development
+            App Development
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Spring Quarter - Weeks 1-8
           </time>
-          <p className="text-base text-gray-500">Work on projects</p>
+          <p className="text-base text-gray-500">
+            Teams continuously work on projects.
+          </p>
         </li>
 
         <li className="ms-6">
@@ -96,7 +106,11 @@ export default function ApplicationTimeline() {
             Spring Quarter - Week 9
           </time>
           <p className="text-base text-gray-500">
-            <strong>Final Project Showcase</strong> (during studio)
+            Teams present final projects to clients and the broader DISC
+            community.
+            <br />
+            Held during extended studio time (normal studio time + one hour
+            after).
           </p>
         </li>
       </ol>

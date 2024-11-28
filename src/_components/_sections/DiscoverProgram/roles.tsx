@@ -4,10 +4,13 @@ export default function TeamStructure() {
   return (
     <section className="mb-16" id="team-structure">
       <HeaderWithHighlight highlight={true} center={false} className="mb-8">
-        Team Structure and Layout
+        Team Roles and Responsibilities
       </HeaderWithHighlight>
 
       <div className="flex flex-col gap-6">
+        <p className="text-base leading-relaxed">
+          On each team, roles are divided as follows:
+        </p>
         <div className="p-4 bg-white rounded-lg shadow">
           <div className="flex items-start gap-3 text-base text-gray-500">
             <span className="text-2xl">👔</span>
