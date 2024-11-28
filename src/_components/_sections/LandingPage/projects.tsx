@@ -11,7 +11,9 @@ const getImagePath = (src: string) => {
 export function ClientProjectsSection() {
   return (
     <div id="projects" className="mt-36">
-      <HeaderWithHighlight>Previous Client Projects</HeaderWithHighlight>
+      <HeaderWithHighlight highlight={true}>
+        Previous Client Projects
+      </HeaderWithHighlight>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
         <div className="flex flex-col px-2">

@@ -1,14 +1,12 @@
 import { Calendar, UserCheck, CheckCircle } from "lucide-react";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function ProgramTimeline() {
   return (
-    <section className="mb-16" id="program-timeline">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10">Program Timeline</span>
-          <span className="absolute bottom-0 left-0 w-full h-6 bg-green-200/20"></span>
-        </span>
-      </h2>
+    <section className="mb-16" id="application-timeline">
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Program Timeline
+      </HeaderWithHighlight>
 
       <p className="text-base text-gray-500 mb-8">
         Studios are <strong>mandatory, in-person, weekly</strong> meetings. They
@@ -29,7 +27,7 @@ export default function ProgramTimeline() {
           </time>
           <p className="text-base text-gray-500">
             The first studio will be a fun program kickoff event.
-            <br/>
+            <br />
             Teams start preparing for their first client meetings.
           </p>
         </li>
@@ -44,7 +42,9 @@ export default function ProgramTimeline() {
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Winter Quarter - Week 4
           </time>
-          <p className="text-base text-gray-500">Teams meet with clients for the first time.</p>
+          <p className="text-base text-gray-500">
+            Teams meet with clients for the first time.
+          </p>
         </li>
 
         <li className="mb-12 ms-6">
@@ -57,7 +57,9 @@ export default function ProgramTimeline() {
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Winter Quarter - Weeks 5-9
           </time>
-          <p className="text-base text-gray-500">Teams continuously work on projects.</p>
+          <p className="text-base text-gray-500">
+            Teams continuously work on projects.
+          </p>
         </li>
 
         <li className="mb-12 ms-6">
@@ -72,8 +74,9 @@ export default function ProgramTimeline() {
           </time>
           <p className="text-base text-gray-500">
             An official midway checkpoint for teams to show off their progress.
-            <br/>
-            Held during extended studio time (normal studio time + one hour after).
+            <br />
+            Held during extended studio time (normal studio time + one hour
+            after).
           </p>
         </li>
 
@@ -87,7 +90,9 @@ export default function ProgramTimeline() {
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             Spring Quarter - Weeks 1-8
           </time>
-          <p className="text-base text-gray-500">Teams continuously work on projects.</p>
+          <p className="text-base text-gray-500">
+            Teams continuously work on projects.
+          </p>
         </li>
 
         <li className="ms-6">
@@ -101,9 +106,11 @@ export default function ProgramTimeline() {
             Spring Quarter - Week 9
           </time>
           <p className="text-base text-gray-500">
-            Teams present final projects to clients and the broader DISC community.
-            <br/>
-            Held during extended studio time (normal studio time + one hour after).
+            Teams present final projects to clients and the broader DISC
+            community.
+            <br />
+            Held during extended studio time (normal studio time + one hour
+            after).
           </p>
         </li>
       </ol>

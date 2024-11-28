@@ -1,20 +1,11 @@
-export default function Roles() {
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
+
+export default function TeamStructure() {
   return (
-    <section className="mb-16" id="roles">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10 text-black">
-            Roles
-          </span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h2>
+    <section className="mb-16" id="team-structure">
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Team Roles and Responsibilities
+      </HeaderWithHighlight>
 
       <div className="flex flex-col gap-6">
         <p className="text-base leading-relaxed">

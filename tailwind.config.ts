@@ -11,6 +11,7 @@ const config: Config = {
     "./_components/**/*.{js,ts,jsx,tsx,mdx}",
     "./_components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["before:bg-greenHighlight"],
   theme: {
     extend: {
       colors: {
@@ -54,6 +55,7 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        greenHighlight: "rgba(20, 189, 149, 0.20)",
       },
       borderRadius: {
         lg: "var(--radius)",

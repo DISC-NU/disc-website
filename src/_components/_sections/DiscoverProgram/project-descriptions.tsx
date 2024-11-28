@@ -1,20 +1,13 @@
 import ProjectCard from "@/_components/ui/project-card";
 import { projects } from "@/utils/constants";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
+
 export default function ProjectDescriptions() {
   return (
     <section className="mb-16" id="project-descriptions">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10">Project Descriptions</span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h2>
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Client Overviews and Project Descriptions
+      </HeaderWithHighlight>
 
       <p className="text-base text-gray-500 mb-8">
         Note: Specialized Technologies listed are project-specific technologies

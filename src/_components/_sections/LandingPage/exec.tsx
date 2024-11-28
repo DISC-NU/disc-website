@@ -2,6 +2,7 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { teamMembers } from "@/utils/constants";
 import { memo, useMemo } from "react";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 interface TeamMemberCardProps {
   member: {
@@ -121,18 +122,9 @@ export default function MeetTheTeam() {
   return (
     <section className="py-12 flex justify-center px-4">
       <div className="w-full max-w-4xl">
-        <h2 className="text-4xl font-bold text-center">
-          <span className="relative">
-            <span className="relative z-10">Meet The Team Behind DISC</span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "1.4375rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
-          </span>
-        </h2>
+        <HeaderWithHighlight highlight={true}>
+          Meet the Team
+        </HeaderWithHighlight>
 
         <p className="mt-6 text-gray-500 text-md">
           Meet the passionate individuals driving innovation and social impact

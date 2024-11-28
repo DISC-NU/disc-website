@@ -1,21 +1,14 @@
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
+
 export function IntroSection() {
   return (
     <div id="intro" className="flex flex-col">
-      <h1 className="text-3xl md:text-4xl font-bold text-center px-2">
-        At DISC, we build{" "}
-        <span className="inline-block md:inline-flex relative">
-          <span className="relative z-10 text-[#14BD95]">
-            technology for social good
-          </span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h1>
+      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex justify-center items-center">
+        <h1>At DISC, we build </h1>
+        <HeaderWithHighlight highlight={true} green={true}>
+          technology for social good
+        </HeaderWithHighlight>
+      </div>
 
       <p className="mt-4 max-w-4xl text-gray-500 text-md leading-relaxed mx-auto py-4 px-2">
         Since 2017, DISC has been transforming how Northwestern students engage
@@ -33,18 +26,7 @@ export function IntroSection() {
       </p>
 
       <div className="mt-16 flex flex-col">
-        <h2 className="text-3xl md:text-4xl font-bold text-center px-2">
-          <span className="relative text-center">
-            <span className="relative z-10">Our Impact</span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "1.4375rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
-          </span>
-        </h2>
+        <HeaderWithHighlight highlight={true}>Our Mission</HeaderWithHighlight>
         <p className="mt-6 text-gray-500 leading-relaxed max-w-4xl mx-auto px-2">
           Through hands-on projects and mentorship, we empower students to grow
           beyond the classroom. Our teams work directly with community partners,

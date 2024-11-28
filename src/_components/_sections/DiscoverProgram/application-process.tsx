@@ -1,21 +1,13 @@
 import { Calendar, UserCheck, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function ApplicationProcess() {
   return (
     <section className="mb-16" id="application-process">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10">Application Process</span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h2>
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Application Process
+      </HeaderWithHighlight>
 
       <ol className="relative border-s border-gray-200 ms-3">
         <li className="mb-12 ms-6">
