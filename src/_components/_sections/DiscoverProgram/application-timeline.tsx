@@ -1,14 +1,12 @@
 import { Calendar, UserCheck, CheckCircle } from "lucide-react";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function ApplicationTimeline() {
   return (
     <section className="mb-16" id="application-timeline">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10">Application Timeline</span>
-          <span className="absolute bottom-0 left-0 w-full h-6 bg-green-200/20"></span>
-        </span>
-      </h2>
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Application Timeline
+      </HeaderWithHighlight>
 
       <p className="text-base text-gray-500 py-4 mb-8">
         Studios are <strong>mandatory, in-person, weekly</strong> meetings. They

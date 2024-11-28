@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/_components/ui/button";
 import Safari from "@/_components/ui/safari";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 const getImagePath = (src: string) => {
   return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
@@ -11,21 +12,12 @@ const getImagePath = (src: string) => {
 export function WorkshopSection() {
   return (
     <div className="mt-36">
-      <h1 className="text-3xl md:text-4xl font-bold text-center px-2">
-        Don&apos;t know how to code?{" "}
-        <span className="inline-block md:inline-flex relative">
-          <span className="relative z-10 text-[#14BD95]">
-            We&apos;ve got you covered
-          </span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h1>
+      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex items-center justify-center">
+        <h1 className="">Don&apos;t know how to code? </h1>
+        <HeaderWithHighlight highlight={true} green={true}>
+          We got you covered
+        </HeaderWithHighlight>
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
         <div className="flex flex-col px-2">

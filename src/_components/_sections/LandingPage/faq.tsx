@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/_components/ui/accordion";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 import { motion } from "framer-motion";
 
 export default function FAQSection() {
@@ -22,18 +23,9 @@ export default function FAQSection() {
           },
         }}
       >
-        <h2 className="text-4xl font-bold text-center">
-          <span className="relative">
-            <span className="relative z-10">Frequently Asked Questions</span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={{
-                height: "1.4375rem",
-                background: "rgba(20, 189, 149, 0.20)",
-              }}
-            ></span>
-          </span>
-        </h2>
+        <HeaderWithHighlight highlight={true}>
+          Frequently Asked Questions
+        </HeaderWithHighlight>
 
         <div className="mt-8">
           <Accordion type="single" collapsible className="w-full space-y-2">

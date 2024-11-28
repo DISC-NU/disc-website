@@ -1,18 +1,11 @@
+import SubheadingWithHighlight from "@/_components/ui/subheading-with-highlight";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 export default function ProgramOverview() {
   return (
     <section className="mb-16" id="program-overview">
-      <h2 className="text-3xl font-bold mb-8">
-        <span className="relative">
-          <span className="relative z-10">Program Overview</span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h2>
+      <HeaderWithHighlight highlight={true} center={false} className="mb-8">
+        Discover Program Overview
+      </HeaderWithHighlight>
 
       <div className="space-y-6 text-gray-500">
         <p className="text-base leading-relaxed">
@@ -26,18 +19,9 @@ export default function ProgramOverview() {
         </p>
       </div>
 
-      <h3 className="text-2xl font-bold mb-8 mt-12">
-        <span className="relative">
-          <span className="relative z-10">What You&apos;ll Gain</span>
-          <span
-            className="absolute bottom-0 left-0 w-full"
-            style={{
-              height: "1.4375rem",
-              background: "rgba(20, 189, 149, 0.20)",
-            }}
-          ></span>
-        </span>
-      </h3>
+      <HeaderWithHighlight highlight={true} center={false} className="py-12">
+        What you&apos;ll get out of the program
+      </HeaderWithHighlight>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-4 bg-white rounded-lg shadow">

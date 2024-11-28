@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactNode, useMemo, memo } from "react";
 import { companies } from "@/utils/constants";
+import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 import { Logo } from "@/types";
 
 interface CompanyLogoProps {
@@ -99,26 +100,12 @@ Marquee.displayName = "Marquee";
 export default function CompanyMarquee() {
   const { firstRow, secondRow } = useCompanyRows();
 
-  const titleStyle = useMemo(
-    () => ({
-      height: "1.4375rem",
-      background: "rgba(20, 189, 149, 0.20)",
-    }),
-    []
-  );
-
   return (
-    <div className="relative w-full py-32 bg-background">
+    <div className="relative w-full py-32">
       <div className="w-lg flex flex-col items-center mb-12 py-24">
-        <h2 className="text-4xl font-bold">
-          <span className="relative">
-            <span className="relative z-10">Where Our Members Work</span>
-            <span
-              className="absolute bottom-0 left-0 w-full"
-              style={titleStyle}
-            />
-          </span>
-        </h2>
+        <HeaderWithHighlight highlight={true}>
+          Where our Members Work
+        </HeaderWithHighlight>
       </div>
       <div className="flex flex-col gap-12 max-w-7xl items-center justify-center mx-auto">
         <Marquee>

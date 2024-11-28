@@ -1,4 +1,4 @@
-export function HeaderWithHighlight({
+export default function SubheadingWithHighlight({
   children,
   highlight = false,
   className = "",
@@ -17,7 +17,7 @@ export function HeaderWithHighlight({
         color: green ? "#14BD95" : "black",
         textAlign: center ? "center" : "left",
       }}
-      className={`text-3xl md:text-4xl font-bold px-2 ${className}`}
+      className={`text-3xl font-bold px-2 ${className}`}
     >
       <span className="inline-block md:inline relative">
         {highlight ? (
