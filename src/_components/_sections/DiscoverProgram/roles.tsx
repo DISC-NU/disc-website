@@ -2,7 +2,7 @@ import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function TeamStructure() {
   return (
-    <section className="mb-16" id="team-structure">
+    <section className="mb-16" id="roles">
       <HeaderWithHighlight highlight={true} center={false} className="mb-8">
         Team Roles and Responsibilities
       </HeaderWithHighlight>

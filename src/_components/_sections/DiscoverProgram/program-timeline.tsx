@@ -3,7 +3,7 @@ import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function ProgramTimeline() {
   return (
-    <section className="mb-16" id="application-timeline">
+    <section className="mb-16" id="program-timeline">
       <HeaderWithHighlight highlight={true} center={false} className="mb-8">
         Program Timeline
       </HeaderWithHighlight>

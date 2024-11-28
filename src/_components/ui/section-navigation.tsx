@@ -112,20 +112,6 @@ const SectionNavigation = () => {
           </ul>
         </nav>
       </div>
-      <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        main {
-          padding-bottom: calc(
-            4rem + 64px
-          ); /* Adjust based on your navigation height */
-        }
-      `}</style>
     </>
   );
 };
