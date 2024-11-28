@@ -19,6 +19,23 @@ export const metadata: Metadata = {
   title: "Develop & Innovate for Social Change",
   description:
     "DISC is a student organization at Northwestern University. We empower students through technology and innovation.",
+  openGraph: {
+    title: "Develop & Innovate for Social Change",
+    description:
+      "DISC is a student organization at Northwestern University. We empower students through technology and innovation.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "DISC Website Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
