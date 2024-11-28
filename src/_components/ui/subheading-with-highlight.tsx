@@ -21,7 +21,7 @@ export default function SubheadingWithHighlight({
     >
       <span className="inline-block md:inline relative">
         {highlight ? (
-          <span className="inline-flex relative before:absolute before:inset-0 before:bg-greenHighlight before:-z-10 before:-rotate-1 before:translate-y-1/4">
+          <span className="inline-flex relative before:absolute before:inset-0 bg-greenHighlight before:-z-10 before:-rotate-1 before:translate-y-1/4">
             {children}
           </span>
         ) : (
