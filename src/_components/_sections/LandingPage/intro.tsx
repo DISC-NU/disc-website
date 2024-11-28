@@ -3,7 +3,7 @@ import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 export function IntroSection() {
   return (
     <div id="intro" className="flex flex-col">
-      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex justify-center items-center">
+      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex flex-col lg:flex-row justify-center items-center">
         <h1>At DISC, we build </h1>
         <HeaderWithHighlight highlight={true} green={true}>
           technology for social good
