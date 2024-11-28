@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactNode, memo, useMemo } from "react";
 import { clients } from "@/utils/constants";
+import SubheadingWithHighlight from "@/_components/ui/subheading-with-highlight";
 
 interface Client {
   name: string;
@@ -105,8 +106,11 @@ export default function ClientMarquee() {
   const clientItems = useClientItems();
 
   return (
-    <div className="relative w-full p-36 bg-white">
-      <div className="flex flex-col max-w-7xl items-center justify-center mx-auto">
+    <div className="relative w-full py-24 bg-white">
+      <SubheadingWithHighlight highlight={true} className="py-12 mb-12">
+        DISC Client Portfolio
+      </SubheadingWithHighlight>
+      <div className="flex flex-col max-w-7xl items-center justify-center mx-auto gap-12">
         <Marquee>{clientItems}</Marquee>
       </div>
     </div>

@@ -11,8 +11,8 @@ const getImagePath = (src: string) => {
 
 export function WorkshopSection() {
   return (
-    <div className="mt-36">
-      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex items-center justify-center">
+    <div className="py-48 mb-24">
+      <div className="text-3xl md:text-4xl font-bold text-center px-2 flex flex-col lg:flex-row items-center justify-center">
         <h1 className="">Don&apos;t know how to code? </h1>
         <HeaderWithHighlight highlight={true} green={true}>
           We got you covered
