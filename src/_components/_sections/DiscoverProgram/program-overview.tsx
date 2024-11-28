@@ -1,4 +1,3 @@
-import SubheadingWithHighlight from "@/_components/ui/subheading-with-highlight";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 export default function ProgramOverview() {
   return (
