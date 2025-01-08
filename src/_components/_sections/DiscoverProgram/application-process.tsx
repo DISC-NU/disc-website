@@ -16,9 +16,6 @@ export default function ApplicationProcess() {
           </span>
           <h3 className="flex items-center mb-2 text-lg font-semibold text-gray-900">
             Step 1: Apply
-            <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
-              Current
-            </span>
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             11/26/24 - 1/4/25
@@ -30,7 +27,11 @@ export default function ApplicationProcess() {
             >
               LINK TO APPLICATION
             </Link>
-            <p>The application closes at 11:59pm CST on January 4th, 2025.</p>
+            <p>
+              The application closes at 11:59pm CST on January 4th, 2025. 
+              The form will remain open until midway through the program, but those who apply after January 4
+              will only be considered for the waitlist.
+            </p>
             <p>
               The application will provide an opportunity to submit your work
               from the{" "}
@@ -57,6 +58,9 @@ export default function ApplicationProcess() {
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             Step 2: Interview
+            <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
+              Current
+            </span>
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             1/6/25 - 1/17/25

@@ -153,6 +153,25 @@ export default function DiscoverFAQ() {
               </ul>
             </AccordionContent>
           </AccordionItem>
+
+          <AccordionItem
+            value="item-6"
+            className="border rounded-lg px-4 py-2 bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
+          >
+            <AccordionTrigger className="text-lg font-semibold text-gray-900 py-2">
+              What if I missed the application deadline?
+            </AccordionTrigger>
+            <AccordionContent className="text-gray-500">
+              <p>
+                You can apply to join the waitlist until midway through the program.
+                It&apos;s the same form as the main application, only those who fill it out after the January 4 deadline
+                will only be considered for the waitlist.
+                Additional program spots might open if new clients are added or members leave the program. 
+                We will offer these open spots to people on the waitlist based on best fit. 
+                There is no guarantee anyone will make it off the waitlist.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </div>
     </section>

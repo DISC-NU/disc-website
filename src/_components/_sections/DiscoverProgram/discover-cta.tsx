@@ -41,7 +41,7 @@ export default function DiscoverCTA() {
       <div className="flex flex-col items-center justify-center px-4 text-center">
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
-            Apply to the Discover Program
+            Apply to the Discover Program waitlist
           </h2>
           <p className="text-gray-500 text-lg">
             And take the first step towards building impactful projects
@@ -94,7 +94,7 @@ export default function DiscoverCTA() {
             </div>
             <div className="flex items-center gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
-              <span>Applications due Jan 4th</span>
+              <span>Waitlist applications due week 10 of winter quarter</span>
             </div>
           </div>
         </div>
