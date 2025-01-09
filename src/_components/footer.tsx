@@ -27,7 +27,10 @@ export default function Footer() {
     <footer className="mx-auto mt-32 w-full max-w-screen-xl px-4 sm:px-6">
       <div className="grid grid-cols-2 gap-x-2 gap-y-8 pb-12 sm:grid-cols-4 sm:gap-6 xl:grid-cols-6">
         <div className="col-span-full mb-2 sm:mb-8 xl:col-span-2 xl:mb-0">
-          <Link className="-ml-1 inline-block dark:invert font-bold" href="/">
+          <Link
+            className="-ml-1 inline-block dark:invert font-bold text-[#40B4B4]"
+            href="/"
+          >
             Develop & Innovate for Social Change
           </Link>
           <p className="mt-5 text-sm leading-[1.75] text-neutral-500 dark:text-neutral-400">
@@ -38,7 +41,7 @@ export default function Footer() {
 
         {typedFooterSections.map(({ title, links }, idx) => (
           <div key={idx}>
-            <h5 className="font-semibold">{title}</h5>
+            <h5 className="font-semibold text-[#40B4B4]">{title}</h5>
             <ul className="mt-4 space-y-2 text-neutral-500 dark:text-neutral-400">
               {links.map(({ text, href, target = "_self" }, idx) => (
                 <li key={idx}>
@@ -56,7 +59,7 @@ export default function Footer() {
         ))}
 
         <div>
-          <h5 className="font-semibold">Join Us</h5>
+          <h5 className="font-semibold text-[#40B4B4]">Join Us</h5>
           <p className="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
             Interested in becoming a member? Check out our{" "}
             <Link
