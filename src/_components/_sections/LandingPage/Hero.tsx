@@ -126,7 +126,7 @@ export default function HeroSection() {
                 window.open("https://discord.gg/mqRQ7s9CyS", "_blank")
               }
             >
-              Join today
+              Join Discord
             </Button>
           </motion.div>
         </div>

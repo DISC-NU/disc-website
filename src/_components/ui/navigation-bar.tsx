@@ -114,14 +114,9 @@ export default function Header() {
                 width={40}
                 height={40}
                 unoptimized
+                onClick={() => router.push("/")}
+                className="cursor-pointer"
               />
-              <Link
-                href="/"
-                className="flex flex-shrink-0 items-center"
-                aria-label="DISC Logo"
-              >
-                <div className="text-2xl font-bold">DISC</div>
-              </Link>
               <nav className="ml-4 hidden md:block" aria-label="Main menu">
                 <NavigationMenu>
                   <NavigationMenuList className="text-black/60 dark:text-gray-500">
@@ -154,6 +149,12 @@ export default function Header() {
                       onClick={(e) => handleNavigation(e, "faq")}
                     >
                       FAQ
+                    </NavItem>
+                    <NavItem
+                      href="#footer"
+                      onClick={(e) => handleNavigation(e, "footer")}
+                    >
+                      Sign Up
                     </NavItem>
                   </NavigationMenuList>
                 </NavigationMenu>
