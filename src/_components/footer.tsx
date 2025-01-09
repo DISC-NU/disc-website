@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { footerSections, socialMediaLinks } from "@/utils/constants";
 import { LucideIcon } from "lucide-react";
+import ListservSignup from "@/_components/ListServSignupForm";
 
 interface FooterLink {
   text: string;
@@ -24,7 +25,10 @@ const typedSocialMediaLinks = socialMediaLinks as SocialMediaLink[];
 
 export default function Footer() {
   return (
-    <footer className="mx-auto mt-32 w-full max-w-screen-xl px-4 sm:px-6">
+    <footer
+      className="mx-auto mt-12 w-full max-w-screen-xl px-4 sm:px-6"
+      id="footer"
+    >
       <div className="grid grid-cols-2 gap-x-2 gap-y-8 pb-12 sm:grid-cols-4 sm:gap-6 xl:grid-cols-6">
         <div className="col-span-full mb-2 sm:mb-8 xl:col-span-2 xl:mb-0">
           <Link
@@ -58,18 +62,21 @@ export default function Footer() {
           </div>
         ))}
 
-        <div>
+        <div className="col-span-2">
           <h5 className="font-semibold text-[#40B4B4]">Join Us</h5>
-          <p className="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
-            Interested in becoming a member? Check out our{" "}
-            <Link
-              href="/membership"
-              className="text-primary-700 underline-offset-1 hover:underline"
-            >
-              membership page
-            </Link>
-            .
-          </p>
+          <div className="mt-4 space-y-4">
+            <p className="text-sm text-neutral-500 dark:text-neutral-400">
+              Interested in becoming a member? Check out our{" "}
+              <Link
+                href="/membership"
+                className="text-primary-700 underline-offset-1 hover:underline"
+              >
+                membership page
+              </Link>
+              .
+            </p>
+            <ListservSignup />
+          </div>
         </div>
       </div>
 
