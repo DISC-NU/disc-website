@@ -27,7 +27,7 @@ const useCompanyRows = () => {
 
 const getImagePath = (src: string) => {
   const isProduction = process.env.NODE_ENV === "production";
-  return isProduction ? `/disc-website${src}` : src;
+  return isProduction ? src : src;
 };
 
 const CompanyLogo = memo(({ logo, name, website }: CompanyLogoProps) => {

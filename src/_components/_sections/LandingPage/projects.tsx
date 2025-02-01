@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 import Iphone15Pro from "@/_components/ui/iphone-15-pro";
 
-const getImagePath = (src: string) => {
-  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
-};
+// const getImagePath = (src: string) => {
+//   return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+// };
 
 export function ClientProjectsSection() {
   return (
@@ -46,7 +46,7 @@ export function ClientProjectsSection() {
             <Iphone15Pro
               width={240}
               height={489}
-              src={getImagePath("/books_and_breakfast.png")}
+              src="/books_and_breakfast.png"
               className="w-full relative z-10"
             />
           </div>

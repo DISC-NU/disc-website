@@ -3,10 +3,10 @@ import Image from "next/image";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function TechStack() {
-  const getImagePath = (src: string) => {
-    const isProduction = process.env.NODE_ENV === "production";
-    return isProduction ? `/disc-website${src}` : src;
-  };
+  // const getImagePath = (src: string) => {
+  //   const isProduction = process.env.NODE_ENV === "production";
+  //   return isProduction ? `/disc-website${src}` : src;
+  // };
 
   return (
     <section className="mb-16" id="tech-stack">
@@ -23,7 +23,7 @@ export default function TechStack() {
 
         <div className="flex items-center justify-center mb-24">
           <Image
-            src={getImagePath("/discover-tech-stack.png")}
+            src="/discover-tech-stack.png"
             alt="Tech Stack"
             width={800}
             height={400}

@@ -5,9 +5,9 @@ import { Button } from "@/_components/ui/button";
 import Safari from "@/_components/ui/safari";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
-const getImagePath = (src: string) => {
-  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
-};
+// const getImagePath = (src: string) => {
+//   return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+// };
 
 export function WorkshopSection() {
   return (
@@ -61,7 +61,7 @@ export function WorkshopSection() {
         <Safari
           url="disc-fall-2024-workshop-series-website.vercel.app"
           className="w-full h-full shadow-2xl"
-          src={getImagePath("/workshop_preview.png")}
+          src="/workshop_preview.png"
         />
       </div>
     </div>

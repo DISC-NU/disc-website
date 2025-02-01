@@ -31,9 +31,9 @@ const NavItem = ({
   </NavigationMenuLink>
 );
 
-const getImagePath = (src: string) => {
-  return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
-};
+// const getImagePath = (src: string) => {
+//   return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+// };
 
 export default function Header() {
   const pathname = usePathname();
@@ -109,7 +109,7 @@ export default function Header() {
           <div className="flex h-12 items-center justify-between">
             <div className="flex gap-2 items-center">
               <Image
-                src={getImagePath("/disc_logo.png")}
+                src="/disc_logo.png"
                 alt="DISC Logo"
                 width={40}
                 height={40}

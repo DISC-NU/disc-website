@@ -46,10 +46,7 @@ const SocialLinks = memo(
 SocialLinks.displayName = "SocialLinks";
 const TeamMemberCard = memo(({ member }: TeamMemberCardProps) => {
   const imagePath = useMemo(
-    () =>
-      process.env.NODE_ENV === "production"
-        ? `/disc-website${member.image}`
-        : member.image,
+    () => (process.env.NODE_ENV === "production" ? member.image : member.image),
     [member.image]
   );
 

@@ -19,7 +19,7 @@ interface MarqueeProps {
 
 const useImagePath = (src: string) => {
   return useMemo(() => {
-    return process.env.NODE_ENV === "production" ? `/disc-website${src}` : src;
+    return process.env.NODE_ENV === "production" ? src : src;
   }, [src]);
 };
 
