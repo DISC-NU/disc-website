@@ -150,12 +150,6 @@ export default function Header() {
                     >
                       FAQ
                     </NavItem>
-                    <NavItem
-                      href="#footer"
-                      onClick={(e) => handleNavigation(e, "footer")}
-                    >
-                      Sign Up
-                    </NavItem>
                   </NavigationMenuList>
                 </NavigationMenu>
               </nav>
@@ -165,6 +159,12 @@ export default function Header() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
+                <Link
+                  href="/clients"
+                  className="text-sm font-medium text-gray-700 hover:text-gray-900"
+                >
+                  For Clients
+                </Link>
                 <Link
                   href="/discover-program"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
