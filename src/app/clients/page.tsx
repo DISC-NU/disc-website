@@ -50,7 +50,6 @@ const ClientPage = () => {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <HeaderWithHighlight highlight={true}>
@@ -230,8 +229,8 @@ const ClientPage = () => {
             Ready to Build Something Impactful?
           </h2>
           <p className="text-xl text-gray-500 mb-8">
-            Let's discuss how we can help bring your ideas to life and create
-            positive change in your community.
+            Let&apos;s discuss how we can help bring your ideas to life and
+            create positive change in your community.
           </p>
           <div className="space-y-4">
             <Button
