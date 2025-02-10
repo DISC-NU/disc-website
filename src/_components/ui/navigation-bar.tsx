@@ -172,7 +172,7 @@ export default function Header() {
                   Discover Program
                 </Link>
                 <Link
-                  href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+                  href="https://workshops.discnu.org"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
                 >
                   Workshop Series
