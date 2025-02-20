@@ -36,7 +36,7 @@ export default function ApplicationProcess() {
               The application will provide an opportunity to submit your work
               from the{" "}
               <Link
-                href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+                href="https://workshops.discnu.org/"
                 className="underline font-bold"
               >
                 fall workshop series
@@ -76,7 +76,7 @@ export default function ApplicationProcess() {
               technical competence. Applicants can expect to be quizzed on
               anything taught in our{" "}
               <Link
-                href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+                href="https://workshops.discnu.org/"
                 className="underline font-bold"
               >
                 fall workshop series

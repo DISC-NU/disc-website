@@ -38,7 +38,7 @@ export default function DiscoverFAQ() {
                 you have basic familiarity with one or more parts of our tech
                 stack (we teach all of it in our{" "}
                 <Link
-                  href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+                  href="https://workshops.discnu.org/"
                   className="underline font-bold"
                 >
                   fall workshop series
