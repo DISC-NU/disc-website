@@ -203,7 +203,7 @@ export default function TechStack() {
           do expect participants to have basic familiarity with one or more of
           these technologies before the program begins (check out our fall{" "}
           <Link
-            href="https://disc-fall-2024-workshop-series-website.vercel.app/"
+            href="https://workshops.discnu.org/"
             className="underline font-bold"
           >
             workshop series website
