@@ -48,7 +48,7 @@ export function WorkshopSection() {
               className="bg-[#14BD95] hover:bg-[#14BD95]/90 text-white"
               onClick={() =>
                 window.open(
-                  "https://disc-fall-2024-workshop-series-website.vercel.app/",
+                  "https://workshops.discnu.org/",
                   "_blank"
                 )
               }
@@ -59,7 +59,7 @@ export function WorkshopSection() {
         </div>
 
         <Safari
-          url="disc-fall-2024-workshop-series-website.vercel.app"
+          url="https://workshops.discnu.org/"
           className="w-full h-full shadow-2xl"
           src="/workshop_preview.png"
         />
