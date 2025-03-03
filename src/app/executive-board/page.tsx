@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 import { Button } from "@/_components/ui/button";
 import { motion } from "framer-motion";
-import WarningAlert from "@/_components/ui/warning-alert";
 import SubheadingWithHighlight from "@/_components/ui/subheading-with-highlight";
 import Link from "next/link";
 import { Card, CardContent } from "@/_components/ui/card";
@@ -346,14 +345,15 @@ export default function ExecApplicationPage() {
               </motion.div>
             </div>
 
-            <div className="mt-8">
-              <WarningAlert
-                title="Important Notice"
-                message="Please note that all applicants must be available to attend weekly exec meetings during the 2025-2026 academic year. The exact meeting time will be determined based on the availability of all exec members."
-              />
+            <div className="mt-6 max-w-lg mx-auto">
+              <p className="text-gray-500 text-center text-sm">
+                *Please note that some roles will have a different timelines and
+                or interview stages/rounds. Please refer to the applicatôn form
+                for more details.
+              </p>
             </div>
           </div>
-          <div className="mt-24">
+          <div className="mt-40  min-h-screen">
             <HeaderWithHighlight
               highlight={true}
               center={true}
