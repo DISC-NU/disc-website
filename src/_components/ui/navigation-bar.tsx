@@ -166,6 +166,12 @@ export default function Header() {
                   For Clients
                 </Link> */}
                 <Link
+                  href="/executive-board"
+                  className="text-sm font-medium text-gray-700 hover:text-gray-900"
+                >
+                  Executive Board Applications
+                </Link>
+                <Link
                   href="/discover-program"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
                 >
