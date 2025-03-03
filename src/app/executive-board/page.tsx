@@ -8,8 +8,13 @@ import SubheadingWithHighlight from "@/_components/ui/subheading-with-highlight"
 import Link from "next/link";
 import { Card, CardContent } from "@/_components/ui/card";
 
+interface TabRefsType {
+  [key: string]: HTMLDivElement | null;
+}
+
 export default function ExecApplicationPage() {
   const [activeTab, setActiveTab] = useState("technical-lead");
+  const [tabRefs, setTabRefs] = useState<TabRefsType>({});
 
   const roles = [
     {
@@ -215,7 +220,6 @@ export default function ExecApplicationPage() {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
       <section className="py-32 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-16">
           <HeaderWithHighlight highlight={true} green={true}>
@@ -228,11 +232,8 @@ export default function ExecApplicationPage() {
           </p>
         </div>
       </section>
-
-      {/* Timeline & Roles Sections Combined */}
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Timeline Cards */}
           <div className="mb-16">
             <HeaderWithHighlight
               highlight={true}
@@ -293,7 +294,6 @@ export default function ExecApplicationPage() {
                   </p>
                 </div>
               </motion.div>
-
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -353,8 +353,6 @@ export default function ExecApplicationPage() {
               />
             </div>
           </div>
-
-          {/* Roles Section with Tabs */}
           <div className="mt-24">
             <HeaderWithHighlight
               highlight={true}
@@ -365,24 +363,58 @@ export default function ExecApplicationPage() {
             </HeaderWithHighlight>
 
             <div className="mb-8 flex justify-center">
-              <div className="inline-flex border border-[#40B4B4]/20 rounded-full p-1 bg-white shadow-sm overflow-x-auto max-w-full">
+              <div className="inline-flex border border-[#40B4B4]/20 rounded-full p-1 bg-white shadow-sm overflow-x-auto max-w-full relative">
                 {roles.map((role) => (
-                  <Button
+                  <div
                     key={role.id}
-                    onClick={() => setActiveTab(role.id)}
-                    variant="ghost"
-                    className={`rounded-full px-4 py-2 text-sm whitespace-nowrap ${
-                      activeTab === role.id
-                        ? "bg-[#40B4B4] text-white"
-                        : "text-gray-600 hover:text-[#40B4B4]"
-                    }`}
+                    ref={(el) => {
+                      if (el && !tabRefs[role.id]) {
+                        setTabRefs((prev) => ({
+                          ...prev,
+                          [role.id]: el,
+                        }));
+                      }
+                    }}
                   >
-                    {role.title}
-                  </Button>
+                    <div
+                      onClick={() => setActiveTab(role.id)}
+                      className={`
+                      rounded-full
+                      px-4
+                      py-2
+                      text-sm
+                      whitespace-nowrap
+                      relative
+                      z-20
+                      cursor-pointer
+                      font-medium
+                      transition-colors
+                      ${
+                        activeTab === role.id
+                          ? "text-white"
+                          : "text-gray-600 hover:text-[#40B4B4]"
+                      }
+                    `}
+                    >
+                      {role.title}
+                    </div>
+                  </div>
                 ))}
+                <motion.div
+                  className="absolute top-1 bottom-1 rounded-full bg-[#40B4B4] z-10"
+                  layoutId="activeTabBackground"
+                  transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 30,
+                  }}
+                  style={{
+                    width: tabRefs[activeTab]?.offsetWidth || "auto",
+                    left: tabRefs[activeTab]?.offsetLeft || 0,
+                  }}
+                />
               </div>
             </div>
-
             <motion.div
               key={activeTab}
               initial={{ opacity: 0, y: 10 }}
@@ -485,7 +517,6 @@ export default function ExecApplicationPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <HeaderWithHighlight highlight={true} center={true} className="mb-12">
@@ -506,12 +537,14 @@ export default function ExecApplicationPage() {
               <p className="text-gray-500">
                 Any Northwestern undergraduate or graduate student who will be
                 enrolled during the 2025-2026 academic year is eligible to
-                apply. <br />
-                <strong>
-                  Note: All executive board members must be present and on
-                  campus during their four quarter tenure (Spring 2025 - Spring
-                  2026). Unfortunately,, there are no exceptions to this.
-                </strong>
+                apply.
+                <br />
+                <br />
+                <strong>Note:</strong> We will still consider applications from
+                students who will be studying abroad or on co-op during the
+                academic year. However, all exec members must be available to
+                attend weekly exec meetings and fulfill their role-specific
+                responsibilities.
               </p>
             </motion.div>
 
