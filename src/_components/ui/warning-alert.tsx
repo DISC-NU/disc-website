@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { Alert, AlertTitle, AlertDescription } from "@/_components/ui/alert";
 import { AlertCircle } from "lucide-react";
 
 interface WarningAlertProps {

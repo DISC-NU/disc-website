@@ -204,6 +204,14 @@ export default function MobileMenu() {
                         DISCover Program
                       </Button>
                     </Link>
+                    <Link href="/executive-board">
+                      <Button
+                        variant="outline"
+                        className="w-full justify-center text-base"
+                      >
+                        Executive Board Applications
+                      </Button>
+                    </Link>
                     <Link href="https://disc-fall-2024-workshop-series-website.vercel.app/">
                       <Button
                         variant="outline"
