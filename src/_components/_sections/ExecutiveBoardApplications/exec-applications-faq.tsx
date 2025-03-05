@@ -3,7 +3,7 @@ import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export const FAQSection: React.FC = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <HeaderWithHighlight highlight={true} center={true} className="mb-12">
           Executive Board Applications FAQ

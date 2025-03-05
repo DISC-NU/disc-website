@@ -200,6 +200,10 @@ const roles: Role[] = [
         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
       </svg>
     ),
+    timeCommitment: [
+      "~1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
+      "Additional 1-2 hours per general member event (helping with catering order pickup and setup, SOFO reimbursements / ledger updates)",
+    ],
     lookingFor: [
       "Anyone who is detail-oriented, organized, and good at keeping track of deadlines",
       "Someone who takes initiative and accountability",

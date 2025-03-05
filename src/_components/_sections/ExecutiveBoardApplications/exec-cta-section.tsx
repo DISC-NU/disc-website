@@ -14,18 +14,15 @@ export const CallToAction: React.FC = () => {
             at Northwestern.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-[#40B4B4] hover:bg-[#369999] text-white"
-              onClick={() =>
-                window.open(
-                  "https://forms.gle/YourApplicationFormLink",
-                  "_blank"
-                )
-              }
-            >
-              Application Form
-            </Button>
+            <Link href="/">
+              <Button
+                variant="outline"
+                size="lg"
+                className="bg-[#40B4B4] hover:bg-[#369999] text-white"
+              >
+                Application Form
+              </Button>
+            </Link>
             <Link href="/#team">
               <Button
                 variant="outline"

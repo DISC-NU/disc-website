@@ -11,7 +11,7 @@ export default function ExecApplicationPage(): React.ReactNode {
     <div className="w-full">
       <HeroSection />
       <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <ApplicationTimeline />
           <RolesTabs />
         </div>

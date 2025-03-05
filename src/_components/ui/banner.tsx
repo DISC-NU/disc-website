@@ -9,7 +9,7 @@ const DiscoverProgramBanner = () => {
         <AlertCircle className="h-4 w-4 text-[#40B4B4]" />
         <AlertTitle className="text-[rgb(64,180,180)] font-extrabold">
           Executive Board Applications are now open! Applications are due by
-          11:59 PM on [date].
+          11:59 PM on March 16th at 11:59 PM.
         </AlertTitle>
         <AlertDescription className="text-gray-600">
           Click to learn more.
