@@ -8,7 +8,6 @@ export const FAQSection: React.FC = () => {
         <HeaderWithHighlight highlight={true} center={true} className="mb-12">
           Executive Board Applications FAQ
         </HeaderWithHighlight>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FAQItem
             question="Who can apply to be on the exec board?"
