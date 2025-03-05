@@ -17,6 +17,7 @@ export interface Client {
 
 export interface Role {
   id: string;
+  seats: number;
   title: string;
   icon: React.ReactNode;
   timeCommitment?: string[];

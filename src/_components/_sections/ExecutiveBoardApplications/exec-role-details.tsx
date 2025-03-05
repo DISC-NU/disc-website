@@ -70,7 +70,9 @@ export const RoleDetails = ({ role }: { role: Role }) => (
   <div className="mt-8 mb-10">
     <div className="mb-6 flex items-center">
       <div className="p-3 bg-teal-100 rounded-lg mr-4">{role.icon}</div>
-      <h2 className="text-2xl font-bold text-gray-800">{role.title}</h2>
+      <h2 className="text-2xl font-bold text-gray-800">
+        {role.title} - {role.seats} Seats Available
+      </h2>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -8,6 +8,7 @@ import { RoleDetails } from "@/_components/_sections/ExecutiveBoardApplications/
 const roles: Role[] = [
   {
     id: "technical-lead",
+    seats: 3,
     title: "Technical Lead",
     icon: (
       <svg
@@ -57,6 +58,7 @@ const roles: Role[] = [
   },
   {
     id: "vp-business",
+    seats: 1,
     title: "VP Business Development",
     icon: (
       <svg
@@ -103,6 +105,7 @@ const roles: Role[] = [
   },
   {
     id: "vp-member",
+    seats: 1,
     title: "VP Member Development",
     icon: (
       <svg
@@ -141,6 +144,7 @@ const roles: Role[] = [
   },
   {
     id: "vp-marketing",
+    seats: 1,
     title: "VP Marketing",
     icon: (
       <svg
@@ -183,6 +187,7 @@ const roles: Role[] = [
   },
   {
     id: "treasurer",
+    seats: 1,
     title: "Treasurer",
     icon: (
       <svg
@@ -201,11 +206,11 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "~1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
-      "Additional 1-2 hours per general member event (helping with catering order pickup and setup, SOFO reimbursements / ledger updates)",
+      "1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
+      "Additional 1-3 hours per event with catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
     ],
     lookingFor: [
-      "Anyone who is detail-oriented, organized, and good at keeping track of deadlines",
+      "Someone who is detail-oriented, organized, and good at keeping track of deadlines",
       "Someone who takes initiative and accountability",
     ],
     responsibilities: [

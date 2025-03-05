@@ -1,4 +1,5 @@
 import { Info, Calendar, UserPlus } from "lucide-react";
+import Link from "next/link";
 
 export const RoleExpectationsNotice: React.FC = () => {
   return (
@@ -23,8 +24,11 @@ export const RoleExpectationsNotice: React.FC = () => {
             <Calendar className="text-[#40B4B4]" size={20} />
           </div>
           <p className="text-gray-700">
-            To apply, fill out this form once for each role that you are
-            interested in by{" "}
+            To apply, fill out the following{" "}
+            <Link href="/#team" className="font-bold underline">
+              application
+            </Link>{" "}
+            and submit it for the role(s) you are interested in by{" "}
             <span className="font-semibold">
               March 16th, 2025 at 11:59 PM CST
             </span>

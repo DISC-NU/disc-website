@@ -1,0 +1,9 @@
+[11:08:30 2025-03-05] FETCHING Version 2.39.5
+[11:08:30 2025-03-05] CREATING /Users/ethanpineda/.spicetify
+[11:08:30 2025-03-05] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.39.5/spicetify-2.39.5-darwin-arm64.tar.gz
+[11:08:36 2025-03-05] EXTRACTING /Users/ethanpineda/.spicetify/spicetify.tar.gz
+[11:08:36 2025-03-05] SETTING EXECUTABLE PERMISSIONS TO /Users/ethanpineda/.spicetify/spicetify
+[11:08:36 2025-03-05] REMOVING /Users/ethanpineda/.spicetify/spicetify.tar.gz
+[11:08:36 2025-03-05] spicetify path already set in /Users/ethanpineda/.zshrc, continuing...
+[11:08:36 2025-03-05] spicetify v2.39.5 was installed successfully to /Users/ethanpineda/.spicetify
+[11:08:36 2025-03-05] Run 'spicetify --help' to get started
