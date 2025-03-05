@@ -3,7 +3,7 @@
 import { ApplicationTimeline } from "@/_components/_sections/ExecutiveBoardApplications/application-timeline";
 import { RolesTabs } from "@/_components/_sections/ExecutiveBoardApplications/role-tabs";
 import { FAQSection } from "@/_components/_sections/ExecutiveBoardApplications/exec-applications-faq";
-import { CallToAction } from "@/_components/_sections/ExecutiveBoardApplications/call-to-action";
+import { CallToAction } from "@/_components/_sections/ExecutiveBoardApplications/exec-cta-section";
 import { HeroSection } from "@/_components/_sections/ExecutiveBoardApplications/exec-applications-hero";
 
 export default function ExecApplicationPage(): React.ReactNode {

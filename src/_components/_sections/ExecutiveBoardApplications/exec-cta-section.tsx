@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export const CallToAction: React.FC = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-[#40B4B4]/10 to-white">
+    <section className="py-24 px-4 bg-gradient-to-br from-[#40B4B4]/10 to-white min-h-3.5 mb-60">
       <div className="max-w-4xl mx-auto text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-[#40B4B4]">
-            Ready to Help Lead DISC?
+            Apply to Join the Greatest Team at Northwestern
           </h2>
           <p className="text-lg text-gray-500 mb-8">
             Join our executive board and be part of shaping DISC&apos;s future
@@ -24,7 +24,7 @@ export const CallToAction: React.FC = () => {
                 )
               }
             >
-              Apply Now
+              Application Form
             </Button>
             <Link href="/#team">
               <Button
