@@ -212,7 +212,7 @@ export default function MobileMenu() {
                         Executive Board Applications
                       </Button>
                     </Link>
-                    <Link href="https://disc-fall-2024-workshop-series-website.vercel.app/">
+                    <Link href="https://workshops.discnu.org/">
                       <Button
                         variant="outline"
                         className="w-full justify-center text-base"
