@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/_components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/_components/ui/input";
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,7 @@ import {
   DialogTitle,
   DialogFooter,
   DialogClose,
-} from "@/components/ui/dialog";
+} from "@/_components/ui/dialog";
 
 export default function ListservSignup() {
   const [firstName, setFirstName] = useState("");
