@@ -71,7 +71,8 @@ export const RoleDetails = ({ role }: { role: Role }) => (
     <div className="mb-6 flex items-center">
       <div className="p-3 bg-teal-100 rounded-lg mr-4">{role.icon}</div>
       <h2 className="text-2xl font-bold text-gray-800">
-        {role.title} - {role.seats} Seats Available
+        {role.title} - {role.seats} {role.seats === 1 ? "Seat" : "Seats"}{" "}
+        Available
       </h2>
     </div>
 

@@ -79,7 +79,9 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "Fall Quarter and Start of Winter Quarter: 3-4 hours/week (Weekly exec meeting, client sourcing)",
+      "Fall Quarter and Start of Winter Quarter: 3-4 hours/week",
+      "Weekly exec meeting",
+      "Works related to client sourcing",
       "Other weeks are relatively lighter (~1-2 hours/week)",
     ],
     lookingFor: [
@@ -124,8 +126,12 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "~2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with core scheduling)",
-      "Additional ~4-6 hours per general member event (finding venue, coordinating marketing, food, slides, attending event)",
+      "~2 hours/week during non-event weeks",
+      "Weekly exec meeting",
+      "Brainstorming and proposing new general member events to Exec",
+      "Helping out other Exec with core DISC scheduling (workshops, studios, etc.)",
+      "~4-5 hours/week during general member event weeks",
+      "Note: There are roughly 2-3 general member events per quarter",
     ],
     lookingFor: [
       "Someone who is enthusiastic and excited about making DISC a supportive and fun community",
@@ -162,9 +168,14 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "Average of ~3 hours/week (Weekly exec meetings, creating flyers, drafting announcements, managing communications)",
-      "~5 hours/week during busy periods (events, application periods, recruitment periods)",
-      "~1-2 hours/week during lighter periods",
+      "Average of ~3 hours/week",
+      "Weekly exec meetings",
+      "Creating flyers for upcoming events",
+      "Drafting announcements, reminders, emails, and marketing messages",
+      "Discord, Instagram, and email announcements",
+      "Replying to member emails",
+      "Weeks directly before and during general member events, application periods, and recruitment periods tend to be heavier (~5 hours/week)",
+      "Note: There are roughly 2-3 general member events per quarter",
     ],
     lookingFor: [
       "Experience designing promotional materials and managing social media accounts (Instagram, Discord, etc.)",
@@ -207,7 +218,8 @@ const roles: Role[] = [
     ),
     timeCommitment: [
       "1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
-      "Additional 1-3 hours per event with catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
+      "3-5 hours/week during weeks with event catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
+      "Note: There are roughly 2-3 events we cater per quarter",
     ],
     lookingFor: [
       "Someone who is detail-oriented, organized, and good at keeping track of deadlines",
