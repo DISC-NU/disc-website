@@ -21,23 +21,6 @@ export const RoleExpectationsNotice: React.FC = () => {
 
         <div className="flex items-start gap-3">
           <div className="mt-1 shrink-0">
-            <Calendar className="text-[#40B4B4]" size={20} />
-          </div>
-          <p className="text-gray-700">
-            To apply, fill out the following{" "}
-            <Link href="/#team" className="font-bold underline">
-              application
-            </Link>{" "}
-            and submit it for the role(s) you are interested in by{" "}
-            <span className="font-semibold">
-              March 16th, 2025 at 11:59 PM CST
-            </span>
-            .
-          </p>
-        </div>
-
-        <div className="flex items-start gap-3">
-          <div className="mt-1 shrink-0">
             <Info className="text-[#40B4B4]" size={20} />
           </div>
           <p className="text-gray-700">
@@ -48,6 +31,22 @@ export const RoleExpectationsNotice: React.FC = () => {
           </p>
         </div>
 
+        <div className="flex items-start gap-3">
+          <div className="mt-1 shrink-0">
+            <Calendar className="text-[#40B4B4]" size={20} />
+          </div>
+          <p className="text-gray-700">
+            To apply, fill out this{" "}
+            <Link href="/#team" className="font-bold underline">
+              application
+            </Link>{" "}
+            and submit it for the role(s) you are interested in by{" "}
+            <span className="font-semibold">
+              March 16th, 2025 at 11:59 PM CST
+            </span>
+            .
+          </p>
+        </div>
         <div className="flex items-start gap-3 bg-[#40B4B4]/5 p-4 rounded-lg">
           <div className="mt-1 shrink-0">
             <UserPlus className="text-[#40B4B4]" size={20} />
@@ -55,13 +54,13 @@ export const RoleExpectationsNotice: React.FC = () => {
           <div>
             <p className="text-gray-700">
               <span className="font-semibold">
-                By applying, you are committing to DISC for not only next school
-                year but also for this upcoming spring quarter.
+                By applying, you are committing to DISC for not only the next
+                school year but also for this upcoming spring quarter.
               </span>{" "}
-              Your Exec workload will be minimal this upcoming quarter, but we
-              will be asking you to attend weekly Exec meetings and shadow
-              present members in preparation for taking on their roles in the
-              coming school year.
+              Your exec workload will be minimal during spring 2025, but we will
+              be asking you to attend weekly exec meetings and shadow present
+              members in preparation for taking on their roles in the coming
+              school year.
             </p>
           </div>
         </div>

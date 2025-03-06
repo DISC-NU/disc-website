@@ -6,12 +6,12 @@ export const FAQSection: React.FC = () => {
     <section className="py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <HeaderWithHighlight highlight={true} center={true} className="mb-12">
-          Executive Board Applications FAQ
+          FAQs
         </HeaderWithHighlight>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FAQItem
             question="Who can apply to be on the exec board?"
-            answer="Any Northwestern undergraduate or graduate student who will be enrolled during the 2025-2026 academic year is eligible to apply.<br /><br /><strong>Note:</strong> We will still consider applications from students who will be studying abroad or on co-op during the academic year. However, all exec members must be available to attend weekly exec meetings and fulfill their role-specific responsibilities."
+            answer="Any Northwestern undergraduate or graduate student who will be enrolled during the 2025-2026 academic year is eligible to apply.<br /><br /><strong>Note:</strong> We will consider applications from students who will be studying abroad or on co-op during the academic year. However, all exec members must be available to attend weekly exec meetings and fulfill their role-specific responsibilities."
             delay={0.1}
           />
           <FAQItem
@@ -21,7 +21,7 @@ export const FAQSection: React.FC = () => {
           />
           <FAQItem
             question="Can I apply for multiple positions?"
-            answer="Yes, you can apply for multiple positions. Just indicate your preferences in the application form. Note that you will be copy and pasting some of your responses as well (for more generic questions)."
+            answer="Yes, you can apply for multiple positions. Just indicate your preferences in the application form. <br /><br /><strong>Note:</strong> You must submit a separate application for each role you are interested in (aka fill out the form multiple times). For generic application questions, you can copy and paste your responses."
             delay={0.3}
           />
           <FAQItem

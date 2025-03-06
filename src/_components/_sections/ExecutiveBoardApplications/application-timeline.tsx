@@ -5,15 +5,15 @@ export const ApplicationTimeline: React.FC = () => {
   return (
     <div className="mb-16">
       <HeaderWithHighlight highlight={true} center={true} className="mb-12">
-        Executive Board Application Timeline
+        Application Timeline
       </HeaderWithHighlight>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <TimelineStep
           number="1"
           title="Application Opens"
-          date="March 6th"
-          description="The application form opens for all executive board positions."
+          date="March 6th - 16th"
+          description="The application window opens for all executive board positions."
           delay={0.1}
         />
         <TimelineStep

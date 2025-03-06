@@ -10,7 +10,8 @@ export const RoleDetails: React.FC<RoleDetailsProps> = ({ role }) => {
           {role.icon}
         </div>
         <SubheadingWithHighlight highlight={true} center={false} green={true}>
-          {role.title} - {role.seats} Seats Available
+          {role.title} - {role.seats} {role.seats === 1 ? "Seat" : "Seats"}{" "}
+          Available
         </SubheadingWithHighlight>
       </div>
 
