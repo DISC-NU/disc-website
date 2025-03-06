@@ -1,9 +1,10 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import HeroTreeMap from "@/_components/HeroTreeMap";
-import { Button } from "@/_components/ui/button";
 import { motion } from "framer-motion";
 import DiscoverProgramBanner from "@/_components/ui/banner";
+import { PulsatingButton } from "@/_components/pulsating-button";
+
 export default function HeroSection() {
   const topRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -120,14 +121,16 @@ export default function HeroSection() {
             }}
             className="flex justify-center items-center gap-6"
           >
-            <Button
+            <PulsatingButton
               className="bg-[#40B4B4] hover:bg-[#369999] text-white font-semibold"
+              pulseColor="rgba(64, 180, 180, 0.4)"
+              duration="2s"
               onClick={() =>
                 window.open("https://discord.gg/mqRQ7s9CyS", "_blank")
               }
             >
               Join Discord
-            </Button>
+            </PulsatingButton>
           </motion.div>
         </div>
         <motion.div
