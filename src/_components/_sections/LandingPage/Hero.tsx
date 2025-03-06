@@ -130,11 +130,19 @@ export default function HeroSection() {
             </Button>
           </motion.div>
         </div>
-        <div className="mt-6 max-w-lg mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: 1,
+          }}
+          className="flex flex-col items-center space-y-4 mt-8"
+        >
           <p className="text-gray-500 text-center text-sm">
             *This organization is open to all enrolled Northwestern students.
           </p>
-        </div>
+        </motion.div>
       </div>
       <motion.div
         ref={bottomRef}
