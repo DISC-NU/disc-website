@@ -42,7 +42,7 @@ export const ApplicationTimeline: React.FC = () => {
       <div className="mt-6 max-w-lg mx-auto">
         <p className="text-gray-500 text-center text-sm">
           *Please note that some roles will have a different timelines and or
-          interview stages/rounds. Please refer to the applicatôn form for more
+          interview stages/rounds. Please refer to the application form for more
           details.
         </p>
       </div>

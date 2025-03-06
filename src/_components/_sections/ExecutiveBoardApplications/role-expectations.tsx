@@ -37,7 +37,10 @@ export const RoleExpectationsNotice: React.FC = () => {
           </div>
           <p className="text-gray-700">
             To apply, fill out this{" "}
-            <Link href="/#team" className="font-bold underline">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdkIlr0JeYuL-4662qnGcY61fpAxjSIX7m5ZWUX-nhMJQeBgg/viewform?usp=preview"
+              className="font-bold underline"
+            >
               application
             </Link>{" "}
             and submit it for the role(s) you are interested in by{" "}
