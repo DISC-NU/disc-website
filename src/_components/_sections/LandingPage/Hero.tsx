@@ -130,6 +130,11 @@ export default function HeroSection() {
             </Button>
           </motion.div>
         </div>
+        <div className="mt-6 max-w-lg mx-auto">
+          <p className="text-gray-500 text-center text-sm">
+            *This organization is open to all enrolled Northwestern students.
+          </p>
+        </div>
       </div>
       <motion.div
         ref={bottomRef}
