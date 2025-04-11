@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import HeroTreeMap from "@/_components/HeroTreeMap";
 import { motion } from "framer-motion";
-import DiscoverProgramBanner from "@/_components/ui/banner";
+// import DiscoverProgramBanner from "@/_components/ui/banner";
 import { PulsatingButton } from "@/_components/pulsating-button";
 
 export default function HeroSection() {
@@ -58,9 +58,9 @@ export default function HeroSection() {
           ease: [0.4, 0, 0.2, 1],
         }}
       >
-        <div className="absolute top-[92px] left-0 right-0 z-20 w-full max-w-[940px] mx-auto px-4">
+        {/* <div className="absolute top-[92px] left-0 right-0 z-20 w-full max-w-[940px] mx-auto px-4">
           <DiscoverProgramBanner />
-        </div>
+        </div> */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white" />
         <HeroTreeMap
           width={dimensions.top.width}
