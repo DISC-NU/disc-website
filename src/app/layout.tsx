@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/_components/ui/toaster";
+import AnnouncementBanner from "@/_components/ui/banner-announcements";
 import Header from "@/_components/ui/navigation-bar";
 import Footer from "@/_components/footer";
 const geistSans = localFont({
@@ -48,7 +49,8 @@ export default function RootLayout({
       <body
         className={`bg-background font-sans tracking-tight text-gray-900 antialiased`}
       >
-        <div className="flex min-h-screen flex-col overflow-hidden">
+        <AnnouncementBanner />
+        <div className="flex min-h-screen flex-col overflow-hidden pt-8 md:pt-8">
           <Header />
           {children}
           <Toaster />
