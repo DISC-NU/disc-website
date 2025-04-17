@@ -100,7 +100,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="fixed left-0 right-0 top-8 z-40 p-4 transition-all duration-300 ease-in-out">
+    <header className="fixed left-0 right-0 top-8 z-40 p-4 mt-8 md:mt-0 transition-all duration-300 ease-in-out">
       <div className="mx-auto max-w-[1070px]">
         <nav
           className="rounded-2xl border border-gray-200 bg-background px-2 transition-all duration-300 ease-in-out dark:border-gray-50"
