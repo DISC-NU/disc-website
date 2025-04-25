@@ -21,12 +21,12 @@ export default function ApplicationProcess() {
             11/26/24 - 1/4/25
           </time>
           <div className="text-base text-gray-500 space-y-2">
-            <Link
+            {/* <Link
               href="https://docs.google.com/forms/d/1EEoSZWhjfhWESPpIYJggNZkSiyrroSLB11pTmK3i2Wc/viewform?edit_requested=true&pli=1"
               className="underline font-bold hover:cursor-pointer"
             >
               LINK TO APPLICATION
-            </Link>
+            </Link> */}
             <p>
               The application closes at 11:59pm CST on January 4th, 2025. 
               The form will remain open until midway through the program, but those who apply after January 4
@@ -58,9 +58,6 @@ export default function ApplicationProcess() {
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             Step 2: Interview
-            <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
-              Current
-            </span>
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             1/6/25 - 1/17/25
@@ -93,6 +90,9 @@ export default function ApplicationProcess() {
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             Decisions Released
+            <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
+              Current
+            </span>
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             1/19/25
