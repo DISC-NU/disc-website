@@ -90,8 +90,8 @@ const TeamMemberCard = memo(({ member }: TeamMemberCardProps) => {
 TeamMemberCard.displayName = "TeamMemberCard";
 
 const TopTeamGrid = memo(() => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-    {teamMembers.slice(0, 4).map((member, index) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+    {teamMembers.slice(0, 5).map((member, index) => (
       <div key={`top-${member.name}-${index}`} className="w-full">
         <TeamMemberCard member={member} />
       </div>
@@ -103,8 +103,8 @@ TopTeamGrid.displayName = "TopTeamGrid";
 
 const BottomTeamGrid = memo(() => (
   <div className="flex justify-center w-full">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-3/4">
-      {teamMembers.slice(4).map((member, index) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full lg:w-3/4">
+      {teamMembers.slice(5).map((member, index) => (
         <div key={`bottom-${member.name}-${index}`} className="w-full">
           <TeamMemberCard member={member} />
         </div>
@@ -118,7 +118,7 @@ BottomTeamGrid.displayName = "BottomTeamGrid";
 export default function MeetTheTeam() {
   return (
     <section className="py-12 flex justify-center px-4">
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-5xl">
         <HeaderWithHighlight highlight={true}>
           Meet the Team
         </HeaderWithHighlight>
