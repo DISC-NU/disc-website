@@ -261,7 +261,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/paulafregene/",
       instagram: "https://www.instagram.com/iam_paulaaaa/",
-      github: "https://github.com/jmsoltys",
+      github: "https://github.com/paulafregene",
     },
   },
   {
@@ -273,7 +273,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/yong-yuhuang/",
       instagram: "https://www.instagram.com/yongs.h/",
-      github: "https://github.com/JackyZhang1219",
+      github: "https://github.com/yongssh",
     },
   },
   {
@@ -297,7 +297,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/",
       instagram: "https://www.instagram.com/jazlynh.o/",
-      github: "https://github.com/JackyZhang1219",
+      github: "https://github.com/jazlynho2028",
     },
   },
   {
@@ -309,7 +309,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/shah-vihaan/",
       instagram: "https://www.instagram.com/vihaanshah26/",
-      github: "https://github.com/amyzliao",
+      github: "https://github.com/vihaanshah26",
     },
   },
   {
@@ -321,7 +321,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/brock-brown-058216221/",
       instagram: "https://www.instagram.com/bbrockbrown/",
-      github: "https://github.com/ethanpaneraa",
+      github: "https://github.com/bbrockbrown",
     },
   },
   {
