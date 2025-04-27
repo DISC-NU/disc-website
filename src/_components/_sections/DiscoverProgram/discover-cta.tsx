@@ -41,14 +41,14 @@ export default function DiscoverCTA() {
       <div className="flex flex-col items-center justify-center px-4 text-center">
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
-            Apply to the Discover Program waitlist
+            Applications for the year have closed
           </h2>
           <p className="text-gray-500 text-lg">
-            And take the first step towards building impactful projects
+            We look forward to seeing you next year!
           </p>
         </div>
 
-        <Link
+        {/* <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLSd4pbbl1mhY8FhfFzGnw-t0HXvJGpOAflLzF3zvYgcYUNUh0Q/viewform"
           target="_blank"
           className="group relative inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-8 py-4 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
@@ -68,7 +68,7 @@ export default function DiscoverCTA() {
             />
           </svg>
           <div className="absolute inset-0 rounded-xl bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-        </Link>
+        </Link> */}
 
         <div className="mt-8 space-y-4">
           <p className="text-gray-500">
@@ -87,7 +87,7 @@ export default function DiscoverCTA() {
               DISCord
             </Link>
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
             <div className="flex items-center gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
               <span>5-10 minute application</span>
@@ -96,7 +96,7 @@ export default function DiscoverCTA() {
               <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
               <span>Waitlist applications due week 10 of winter quarter</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
