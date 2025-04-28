@@ -49,8 +49,7 @@ export default function RootLayout({
       <body
         className={`bg-background font-sans tracking-tight text-gray-900 antialiased`}
       >
-        <AnnouncementBanner />
-        <div className="flex min-h-screen flex-col overflow-hidden pt-8 md:pt-8">
+        <div className="flex min-h-screen flex-col overflow-hidden pt-0 md:pt-0">
           <Header />
           {children}
           <Toaster />
