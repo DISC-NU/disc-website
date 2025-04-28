@@ -269,7 +269,7 @@ export const teamMembers = [
     name: "Yong-yu Huang",
     grade: "Junior",
     background: "Computer Science, English",
-    image: "/yong-yu.JPEG",
+    image: "yong-yu.JPEG",
     social: {
       linkedin: "https://www.linkedin.com/in/yong-yuhuang/",
       instagram: "https://www.instagram.com/yongs.h/",

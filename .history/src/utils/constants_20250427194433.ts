@@ -257,7 +257,7 @@ export const teamMembers = [
     name: "Paula Fregene",
     grade: "Junior",
     background: "Computer Science",
-    image: "/paula.jpg",
+    image: "/paula.JPG",
     social: {
       linkedin: "https://www.linkedin.com/in/paulafregene/",
       instagram: "https://www.instagram.com/iam_paulaaaa/",
@@ -269,7 +269,7 @@ export const teamMembers = [
     name: "Yong-yu Huang",
     grade: "Junior",
     background: "Computer Science, English",
-    image: "/yong-yu.JPEG",
+    image: "yong-yu.jpeg",
     social: {
       linkedin: "https://www.linkedin.com/in/yong-yuhuang/",
       instagram: "https://www.instagram.com/yongs.h/",
