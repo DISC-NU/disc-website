@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/_components/ui/toaster";
 import Header from "@/_components/ui/navigation-bar";
 import Footer from "@/_components/footer";
+import AnnouncementBanner from "@/_components/ui/banner-announcements";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body
         className={`bg-background font-sans tracking-tight text-gray-900 antialiased`}
       >
+        <AnnouncementBanner />
         <div className="flex min-h-screen flex-col overflow-hidden pt-0 md:pt-0">
           <Header />
           {children}
