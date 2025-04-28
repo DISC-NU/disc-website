@@ -285,7 +285,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/ejeankuo/",
       instagram: "https://www.instagram.com/ejeankuo/",
-      github: "https://github.com/JackyZhang1219",
+      github: "https://github.com/ejeankuo",
     },
   },
   {
