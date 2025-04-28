@@ -159,12 +159,12 @@ export default function Header() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
-                <Link
+                {/* <Link
                   href="/clients"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
                 >
                   For Clients
-                </Link>
+                </Link> */}
                 {/* <Link
                   href="/executive-board"
                   className="text-sm font-medium text-gray-700 hover:text-gray-900"
