@@ -28,7 +28,7 @@ export default function ApplicationProcess() {
               LINK TO APPLICATION
             </Link> */}
             <p>
-              The application closes at 11:59pm CST on January 4th, 2025. 
+              Applications have NOT opened yet, but they will likely be due the first week of Winter Quarter. 
               The form will remain open until midway through the program, but those who apply after January 4
               will only be considered for the waitlist.
             </p>
@@ -90,9 +90,9 @@ export default function ApplicationProcess() {
           </span>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             Decisions Released
-            <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
+            {/* <span className="bg-[#40B4B4] bg-opacity-10 text-[#40B4B4] text-sm font-medium px-2.5 py-0.5 rounded ms-3">
               Current
-            </span>
+            </span> */}
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
             1/19/25

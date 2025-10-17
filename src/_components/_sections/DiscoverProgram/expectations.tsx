@@ -25,8 +25,7 @@ export default function Expectations() {
             and work
           </li>
           <li>
-            Attend studio every week (this is a 1-hour weekly meeting on Mondays
-            from 7-8pm during Winter)
+            Attend studio every week (this is a 1-hour weekly meeting decided by the beginning of the program)
           </li>
           <li>Attend the Winter Showcase and Spring Showcase</li>
           <li>

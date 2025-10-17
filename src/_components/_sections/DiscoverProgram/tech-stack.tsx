@@ -179,24 +179,24 @@ export default function TechStack() {
         <p className="text-base leading-relaxed mt-8">
           Our Tech Leads (
           <Link
-            href="https://www.linkedin.com/in/amyzliao/"
+            href="https://www.linkedin.com/in/christian-lee-b429032a9/"
             className="underline font-bold"
           >
-            Amy
+            Christian
           </Link>
           ,{" "}
           <Link
-            href="https://ethan-pineda.vercel.app/"
+            href="https://www.linkedin.com/in/brock-brown-058216221/"
             className="underline font-bold"
           >
-            Ethan
+            Brock
           </Link>
           ,{" "}
           <Link
-            href="https://www.linkedin.com/in/aanand-patel1/"
+            href="https://www.linkedin.com/in/shah-vihaan/"
             className="underline font-bold"
           >
-            Aanand
+            Vihaan
           </Link>
           ) are well-versed in all of these technologies and will act as
           mentors/teachers for the entire duration of the program. However, we

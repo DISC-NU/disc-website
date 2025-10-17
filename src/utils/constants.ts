@@ -68,7 +68,7 @@ export const clients: Client[] = [
       type: "image",
       src: "/books_and_breakfast_logo.png",
     },
-    website: "https://booksandbreakfast.org/",
+    website: "https://www.booksbreakfast.org",
   },
   {
     name: "Chicago Furniture Bank",
@@ -92,7 +92,7 @@ export const clients: Client[] = [
       type: "image",
       src: "/kid-logo-header.png",
     },
-    website: "https://www.kidsindanger.org/",
+    website: "https://volunteer.projecthelping.org/agency/detail/?agency_id=155608",
   },
   {
     name: "Urban Tables",
@@ -100,7 +100,7 @@ export const clients: Client[] = [
       type: "image",
       src: "/urban-tables.png",
     },
-    website: "https://www.urbantables.org/",
+    website: "https://www.urbantableschicago.com",
   },
   {
     name: "World Relief Chicago",
@@ -109,6 +109,62 @@ export const clients: Client[] = [
       src: "/world-relief.png",
     },
     website: "https://worldreliefchicago.org/",
+  },
+  {
+    name: "Sokana Collective",
+    logo: {
+      type: "image",
+      src: "/sokana-collective.png",
+    },
+    website: "https://www.sokanacollective.com",
+  },
+  {
+    name: "Institute for Therapy through the Arts",
+    logo: {
+      type: "image",
+      src: "/ita.png",
+    },
+    website: "https://itachicago.org",
+  },
+  {
+    name: "Avery's Helpful Hair Kit",
+    logo: {
+      type: "image",
+      src: "/averys.png",
+    },
+    website: "https://www.averyshelpfulhairkits.com/",
+  },
+  {
+    name: "North Shore Senior Center",
+    logo: {
+      type: "image",
+      src: "/nssc.jpg",
+    },
+    website: "https://www.nssc.org/",
+  },
+  {
+    name: "Clark Street Bird Sanctuary",
+    logo: {
+      type: "image",
+      src: "/csbs.jpeg",
+    },
+    website: "https://clarkstreetbeachbirdsanctuary.org/",
+  },
+  {
+    name: "Climate Action Evanston",
+    logo: {
+      type: "image",
+      src: "/clark.png",
+    },
+    website: "https://www.climateactionevanston.org/",
+  },
+  {
+    name: "The Recyclery",
+    logo: {
+      type: "image",
+      src: "/recyclery.png",
+    },
+    website: "https://www.therecyclery.org/",
   },
 ];
 
