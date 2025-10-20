@@ -41,10 +41,10 @@ export default function DiscoverCTA() {
       <div className="flex flex-col items-center justify-center px-4 text-center">
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
-            Applications for the year have closed
+            Applications for 2025-2026 will be opening in November
           </h2>
           <p className="text-gray-500 text-lg">
-            We look forward to seeing you next year!
+            We look forward to seeing you this year!
           </p>
         </div>
 
