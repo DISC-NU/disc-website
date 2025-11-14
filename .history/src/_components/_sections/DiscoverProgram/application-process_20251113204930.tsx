@@ -21,15 +21,15 @@ export default function ApplicationProcess() {
             11/24/25 - 1/3/26
           </time>
           <div className="text-base text-gray-500 space-y-2">
-            {/* <Link
+            <Link
               href="https://docs.google.com/forms/d/1EEoSZWhjfhWESPpIYJggNZkSiyrroSLB11pTmK3i2Wc/viewform?edit_requested=true&pli=1"
               className="underline font-bold hover:cursor-pointer"
             >
               LINK TO APPLICATION
-            </Link> */}
+            </Link>
             <p>
               Applications have NOT opened yet, but they will likely be due the first week of Winter Quarter. 
-              The form will remain open until midway through the program, but those who apply after January 3
+              The form will remain open until midway through the program, but those who apply after January 4
               will only be considered for the waitlist.
             </p>
             <p>

@@ -18,7 +18,7 @@ export default function ApplicationProcess() {
             Step 1: Apply
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            11/24/25 - 1/3/26
+            11/24/24 - 1/4/25
           </time>
           <div className="text-base text-gray-500 space-y-2">
             {/* <Link
@@ -29,7 +29,7 @@ export default function ApplicationProcess() {
             </Link> */}
             <p>
               Applications have NOT opened yet, but they will likely be due the first week of Winter Quarter. 
-              The form will remain open until midway through the program, but those who apply after January 3
+              The form will remain open until midway through the program, but those who apply after January 4
               will only be considered for the waitlist.
             </p>
             <p>
@@ -60,7 +60,7 @@ export default function ApplicationProcess() {
             Step 2: Interview
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            1/5/26 - 1/16/26
+            1/6/25 - 1/17/25
           </time>
           <div className="text-base text-gray-500 space-y-2">
             <p>
@@ -95,7 +95,7 @@ export default function ApplicationProcess() {
             </span> */}
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            1/18/26
+            1/19/25
           </time>
           <div className="text-base text-gray-500 space-y-2">
             <p>
