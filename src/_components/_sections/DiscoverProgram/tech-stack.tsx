@@ -108,10 +108,10 @@ export default function TechStack() {
                 , with:
                 <br />• User authentication:{" "}
                 <Link
-                  href="https://supabase.com/docs/guides/auth"
+                  href="https://firebase.google.com/docs/auth"
                   className="underline font-bold"
                 >
-                  Supabase Auth
+                  Firebase Auth
                 </Link>
               </span>
             </p>
@@ -124,17 +124,17 @@ export default function TechStack() {
                 <strong>Deployment</strong>:
                 <br />• Frontend and API:{" "}
                 <Link
-                  href="https://vercel.com/ethanpaneraas-projects"
+                  href="https://firebase.google.com"
                   className="underline font-bold"
                 >
-                  Vercel
+                  Firebase
                 </Link>
                 <br />• Database:{" "}
                 <Link
-                  href="https://supabase.com/"
+                  href="https://aws.amazon.com/rds/"
                   className="underline font-bold"
                 >
-                  Supabase
+                  AWS RDS
                 </Link>
               </span>
             </p>
