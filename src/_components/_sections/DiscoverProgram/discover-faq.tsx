@@ -89,7 +89,7 @@ export default function DiscoverFAQ() {
                 <p> Out of everything listed above, the first thing we look for is 
                     <strong> commitment </strong>. We expect a certain level of technical proficiency, 
                     but we also intentionally strive to make DISC as beginner-friendly 
-                    as possible by teaching the foundations we're looking for in our {" "}
+                    as possible by teaching the foundations we&apos;re looking for in our {" "}
                     <Link
                       href="https://workshops.discnu.org/"
                       className="underline font-bold"
