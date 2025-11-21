@@ -60,7 +60,7 @@ export default function ApplicationProcess() {
             Step 2: Interview
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            1/5/26 - 1/16/26
+            1/7/26 - 1/14/26
           </time>
           <div className="text-base text-gray-500 space-y-2">
             <p>
@@ -95,7 +95,7 @@ export default function ApplicationProcess() {
             </span> */}
           </h3>
           <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-            1/18/26
+            1/17/26
           </time>
           <div className="text-base text-gray-500 space-y-2">
             <p>

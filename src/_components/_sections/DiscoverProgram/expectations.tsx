@@ -19,7 +19,13 @@ export default function Expectations() {
           <strong>All program members are expected to:</strong>
         </p>
         <ul className="list-disc pl-5 space-y-2 text-base text-gray-500 mb-8">
-          <li>Prioritize DISC above (almost) all other commitments</li>
+          <li>Prioritize DISC above (almost) all other commitments.</li>
+            <ul>
+              <li className="list-disc ml-10 space-y-2 text-base text-gray-500">
+                While we encourage you to apply to similar programs like the IEEE technical program, you are only allowed to
+                accept <strong> one </strong>offer. We will be coordinating applications across our boards to enforce this policy!
+              </li>
+            </ul>
           <li>
             Spend minimum 3, average 5 hours per week on DISC-related meetings
             and work

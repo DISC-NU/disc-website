@@ -27,9 +27,10 @@ export default function DiscoverFAQ() {
             </AccordionTrigger>
             <AccordionContent className="text-gray-500">
               <p className="mb-4">
-                <strong>The short answer is, yes.</strong>
+                <strong>The short answer: yes.</strong>
               </p>
               <p>
+                <strong>The long answer: </strong>
                 The Discover Program is made for students who have little-to-no
                 experience to get their first taste of what it&apos;s like to
                 build tech projects in industry. We are not looking for experts,
@@ -57,7 +58,7 @@ export default function DiscoverFAQ() {
             </AccordionTrigger>
             <AccordionContent className="text-gray-500">
               <p className="mb-2">
-                In no particular order, we are looking for:
+                <strong> In short, we are looking for: </strong>
               </p>
               <ul className="space-y-2 pl-4">
                 <li>• People who are committed</li>
@@ -82,6 +83,37 @@ export default function DiscoverFAQ() {
                 <li>• Willingness to learn and grow</li>
                 <li>• A can-do attitude</li>
               </ul>
+              <br/>
+              <p>
+                <strong> The longer answer:</strong>
+                <p> Out of everything listed above, the first thing we look for is 
+                    <strong> commitment </strong>. We expect a certain level of technical proficiency, 
+                    but we also intentionally strive to make DISC as beginner-friendly 
+                    as possible by teaching the foundations we're looking for in our {" "}
+                    <Link
+                      href="https://workshops.discnu.org/"
+                      className="underline font-bold"
+                    >
+                     fall workshop series
+                    </Link>. Commitment can be shown through a combination
+                    of attending our fall workshop series and completing the “assignments” 
+                    associated with each workshop. 
+                </p>
+                <p>
+                    The application will provide an opportunity to submit your work from 
+                    the {" "}
+                    <Link
+                      href="https://workshops.discnu.org/"
+                      className="underline font-bold"
+                    >
+                     fall workshop series
+                    </Link> to demonstrate technical competency. 
+                    Therefore, we encourage you to apply with assignment submissions 
+                    for the best shot. We intentionally keep this application open over 
+                    winter break to give everyone the chance to improve their technical 
+                    proficiency and complete the assignments. 
+                </p>
+              </p>
             </AccordionContent>
           </AccordionItem>
 
@@ -164,7 +196,7 @@ export default function DiscoverFAQ() {
             <AccordionContent className="text-gray-500">
               <p>
                 You can apply to join the waitlist until midway through the program.
-                It&apos;s the same form as the main application, only those who fill it out after the January 4 deadline
+                It&apos;s the same form as the main application, only those who fill it out after the January 3 deadline
                 will only be considered for the waitlist.
                 Additional program spots might open if new clients are added or members leave the program. 
                 We will offer these open spots to people on the waitlist based on best fit. 
