@@ -1,7 +1,7 @@
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
-import ProjectCard from "@/_components/ui/project-card";
+// import ProjectCard from "@/_components/ui/project-card";
 import WarningAlert from "@/_components/ui/warning-alert";
-import { projects } from "@/utils/constants";
+// import { projects } from "@/utils/constants";
 
 export default function ProjectDescriptions() {
   return (
