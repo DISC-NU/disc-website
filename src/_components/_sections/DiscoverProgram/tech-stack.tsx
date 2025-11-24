@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 export default function TechStack() {
