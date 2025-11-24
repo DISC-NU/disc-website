@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ApplyButton() {
     return (
         <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd4pbbl1mhY8FhfFzGnw-t0HXvJGpOAflLzF3zvYgcYUNUh0Q/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfjXNoekCWPMoHDcF4006fzwy3fLQW8yW2DuDTTxFkOJ1Ix9A/viewform?usp=dialog"
           target="_blank"
           className="group relative inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#297777] to-[#40B4B4] px-8 py-4 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:from-[#246666] hover:to-[#35A3A3]"
         >
