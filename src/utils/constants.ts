@@ -466,6 +466,20 @@ export const projects = [
       "../c&w.png",
   },
   {
+    title: "Juleya Woodson - Youth and Community Learner Progress Tracker App",
+    mission:
+      "To support youth, adult learners, and community members by providing a centralized platform that tracks progress, strengthens program outcomes, and streamlines communication across education and workforce initiatives.",
+    description:
+      "Build a full-stack application that replaces scattered spreadsheets and multiple tools with a unified system for \
+      application intake, data tracking, and participant progress monitoring. Features include a customizable intake form \
+      that feeds directly into a secure database, editable fields for demographics and follow-ups, and a snapshot dashboard \
+      that highlights key metrics. The system is designed for youth programs, community organizations, and workforce development initiatives. ",
+    tech: "N/A",
+    link: "https://www.facebook.com/Ihopetheyunderstand/",
+    image_url:
+      "../juleyawoodson.jpg",
+  },
+  {
     title: "DISC - Client Outreach App",
     mission:
       "DISC is a student-run organization at Northwestern University that partners with local nonprofits and small businesses to deliver technology solutions and creative projects that drive social impact.",

@@ -1,7 +1,6 @@
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
-// import ProjectCard from "@/_components/ui/project-card";
-import WarningAlert from "@/_components/ui/warning-alert";
-// import { projects } from "@/utils/constants";
+import ProjectCard from "@/_components/ui/project-card";
+import { projects } from "@/utils/constants";
 
 export default function ProjectDescriptions() {
   return (
@@ -16,16 +15,11 @@ export default function ProjectDescriptions() {
         React/Node/Vercel/Supabase.
       </p>
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-      </div> */}
-
-      <WarningAlert
-        title="Important Notice"
-        message="Project descriptions are still being finalized. Please come back and check again once the Discover Program applications are open"
-      />
+      </div>
     </section>
   );
 }

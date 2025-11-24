@@ -21,15 +21,6 @@ export default function TechStack() {
           be easily deployed.
         </p>
 
-        <div className="flex items-center justify-center mb-24">
-          <Image
-            src="/discover-tech-stack.png"
-            alt="Tech Stack"
-            width={800}
-            height={400}
-          />
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-4 bg-white rounded-lg shadow">
             <p className="flex items-start gap-3 text-base text-gray-500">
