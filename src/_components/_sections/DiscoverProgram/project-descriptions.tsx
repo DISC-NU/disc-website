@@ -12,7 +12,7 @@ export default function ProjectDescriptions() {
       <p className="text-base text-gray-500 mb-8">
         Note: Specialized Technologies listed are project-specific technologies
         which will be used in addition to DISC&apos;s standard tech stack of
-        React/Node/Vercel/Supabase.
+        React/Node/AWS/Firebase.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

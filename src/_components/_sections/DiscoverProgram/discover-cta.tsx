@@ -75,7 +75,7 @@ export default function DiscoverCTA() {
             </div>
             <div className="flex items-center gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-[#40B4B4]" />
-              <span> Applications due week 1 of winter quarter</span>
+              <span> Applications due end of winter break</span>
             </div>
           </div>
         </div>
