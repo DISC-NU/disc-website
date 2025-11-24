@@ -8,10 +8,10 @@ const DiscoverProgramBanner = () => {
       <Alert className="cursor-pointer hover:bg-gray-50 bg-white shadow-sm border-[#40B4B4]">
         <AlertCircle className="h-4 w-4 text-[#40B4B4]" />
         <AlertTitle className="text-[rgb(64,180,180)] font-extrabold">
-          Discover Program Applications release November 24th!
+          Discover Program Applications are open!
         </AlertTitle>
         <AlertDescription className="text-gray-600">
-          View what our exciting discovery program looks like and unlock new opportunities.
+          View what our exciting discovery program looks like and apply now.
           Click to learn more.
         </AlertDescription>
       </Alert>
