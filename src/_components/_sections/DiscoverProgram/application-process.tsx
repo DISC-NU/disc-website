@@ -28,7 +28,7 @@ export default function ApplicationProcess() {
               LINK TO APPLICATION
             </Link> */}
             <p>
-              Applications have NOT opened yet, but they will likely be due the first week of Winter Quarter. 
+              Applications are due at the beginning of Winter Quarter. 
               The form will remain open until midway through the program, but those who apply after January 3
               will only be considered for the waitlist.
             </p>
