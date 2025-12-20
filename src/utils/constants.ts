@@ -511,4 +511,17 @@ export const projects = [
     image_url:
       "../disc_logo.png",
   },
+  {
+    title: "YWCA - Email Scheduling Dashboard",
+    mission:
+      "YWCA is dedicated to eliminating racism, empowering women and promoting peace, justice, freedom and dignity for all.",
+    description:
+      "Build a full-stack application that streamlines the mass emailing process. Features include creating email templates, \
+      choosing target audiences, and recording email engagement. This platform also includes a dashboard that shows an at-glance \
+      view of upcoming scheduled emails with quick actions to modify or cancel them.",
+    tech: "N/A",
+    link: "https://www.ywca.org",
+    image_url:
+      "../ywca.png",
+  },
 ];
