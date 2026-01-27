@@ -480,38 +480,6 @@ export const projects = [
       "../juleyawoodson.jpg",
   },
   {
-    title: "DISC - Client Outreach App",
-    mission:
-      "DISC is a student-run organization at Northwestern University that partners with local nonprofits and small businesses to deliver technology solutions and creative projects that drive social impact.",
-    description:
-      "Develop a comprehensive client relationship management platform to streamline DISC's project intake and communication \
-      workflows. The application will feature a public-facing proposal submission form for prospective clients and an internal \
-      admin dashboard for managing the full client lifecycle. Key functionality includes client profile management with \
-      customizable notes and tags, automated email campaigns for outreach and updates, deadline tracking and reminders, \
-      and integration capabilities with discnu.org. The system will organize historical client data by academic year, \
-      facilitate acceptance/rejection workflows, and tag projects requiring third-party integrations (Stripe, QuickBooks, etc.), \
-      enabling DISC to scale their operations while maintaining personalized client relationships.",
-    tech: "N/A",
-    link: "https://www.discnu.org/",
-    image_url:
-      "../disc_logo.png",
-  },
-  {
-    title: "DISC - Catering Community",
-    mission:
-      "DISC is a student-run organization at Northwestern University that partners with local nonprofits and small businesses to deliver technology solutions and creative projects that drive social impact.",
-    description:
-      "Create a centralized catering database to help Northwestern student organizations make informed decisions about event \
-      catering. The platform will allow clubs to create accounts, browse restaurant options, and access comprehensive catering \
-      histories including itemized pricing, total costs, photos, and peer ratings. Restaurant profiles will integrate with \
-      Google Maps API to display location data and menus. The system will aggregate reviews from past events, enabling clubs \
-      to quickly compare options and budget accurately based on real experiences from the Northwestern community.",
-    tech: "N/A",
-    link: "https://www.discnu.org/",
-    image_url:
-      "../disc_logo.png",
-  },
-  {
     title: "YWCA - Email Scheduling Dashboard",
     mission:
       "YWCA is dedicated to eliminating racism, empowering women and promoting peace, justice, freedom and dignity for all.",
