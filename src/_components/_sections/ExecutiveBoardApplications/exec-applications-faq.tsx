@@ -11,7 +11,7 @@ export const FAQSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FAQItem
             question="Who can apply to be on the exec board?"
-            answer="Any Northwestern undergraduate or graduate student who will be enrolled during the 2025-2026 academic year is eligible to apply.<br /><br /><strong>Note:</strong> We will consider applications from students who will be studying abroad or on co-op during the academic year. However, all exec members must be available to attend weekly exec meetings and fulfill their role-specific responsibilities."
+            answer="Any Northwestern undergraduate or graduate student who will be enrolled during the 2026-2027 academic year is eligible to apply.<br /><br /><strong>Note:</strong> We will consider applications from students who will be studying abroad or on co-op during the academic year. However, all exec members must be available to attend weekly exec meetings and fulfill their role-specific responsibilities."
             delay={0.1}
           />
           <FAQItem

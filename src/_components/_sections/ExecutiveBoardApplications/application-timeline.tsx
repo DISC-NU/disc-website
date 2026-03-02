@@ -12,14 +12,14 @@ export const ApplicationTimeline: React.FC = () => {
         <TimelineStep
           number="1"
           title="Application Opens"
-          date="March 6th - 16th"
+          date="March 2nd - 16th"
           description="The application window opens for all executive board positions."
           delay={0.1}
         />
         <TimelineStep
           number="2"
           title="Application Closes"
-          date="March 16th"
+          date="March 28th"
           description="All applications must be submitted by this date."
           delay={0.2}
         />

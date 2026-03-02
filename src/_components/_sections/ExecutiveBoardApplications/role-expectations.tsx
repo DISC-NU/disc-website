@@ -16,7 +16,7 @@ export const RoleExpectationsNotice: React.FC = () => {
       <div className="p-6 space-y-6">
         <p className="text-gray-700">
           Thank you for your interest in applying to join DISC&apos;s Exec Board
-          for the 2025-2026 school year!
+          for the 2026-2027 school year!
         </p>
 
         <div className="flex items-start gap-3">
@@ -45,7 +45,7 @@ export const RoleExpectationsNotice: React.FC = () => {
             </Link>{" "}
             and submit it for the role(s) you are interested in by{" "}
             <span className="font-semibold">
-              March 16th, 2025 at 11:59 PM CST
+              March 28th, 2026 at 11:59 PM CST
             </span>
             .
           </p>
@@ -60,7 +60,7 @@ export const RoleExpectationsNotice: React.FC = () => {
                 By applying, you are committing to DISC for not only the next
                 school year but also for this upcoming spring quarter.
               </span>{" "}
-              Your exec workload will be minimal during spring 2025, but we will
+              Your exec workload will be minimal during spring 2026, but we will
               be asking you to attend weekly exec meetings and shadow present
               members in preparation for taking on their roles in the coming
               school year.

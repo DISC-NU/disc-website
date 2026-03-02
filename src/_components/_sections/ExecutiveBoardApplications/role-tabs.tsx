@@ -30,6 +30,7 @@ const roles: Role[] = [
     timeCommitment: [
       "Fall Quarter: 10 hours/week (Weekly exec meeting, weekly workshop meeting, & weekly tech-lead syncs)",
       "Winter & Spring Quarters: 3 hours/week (Weekly exec meeting, tech-lead syncs)",
+      "In general, workload varies week to week depending on events, preparing templates, recruiting season, etc..."
     ],
     lookingFor: [
       "Teaching, mentoring, and coaching experience",
@@ -96,7 +97,6 @@ const roles: Role[] = [
     responsibilities: [
       "Source & Finalize Clients (Fall) - Research local nonprofits, perform email outreach, pitch DISC's mission, confirm projects",
       "Support client and project communications (Winter/Spring) - Ensure smooth introduction, address issues, replace projects if needed",
-      "Winter & Spring: engage corporate sponsors",
       "Attend weekly exec meetings",
     ],
     whyApply: [
@@ -148,94 +148,94 @@ const roles: Role[] = [
       "You'll have the opportunity to make DISC a warm and rewarding community for all of its members",
     ],
   },
-  {
-    id: "vp-marketing",
-    seats: 1,
-    title: "VP Marketing",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#14BD95"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-      </svg>
-    ),
-    timeCommitment: [
-      "Average of ~3 hours/week",
-      "Weekly exec meetings",
-      "Creating flyers for upcoming events",
-      "Drafting announcements, reminders, emails, and marketing messages",
-      "Discord, Instagram, and email announcements",
-      "Replying to member emails",
-      "Weeks directly before and during general member events, application periods, and recruitment periods tend to be heavier (~5 hours/week)",
-      "Note: There are roughly 2-3 general member events per quarter",
-    ],
-    lookingFor: [
-      "Experience designing promotional materials and managing social media accounts (Instagram, Discord, etc.)",
-      "Good at professional writing",
-      "Playfully serious attitude (likes to have fun with their work, but takes their job seriously)",
-      "Past experience in marketing, communications, or design is a plus but definitely not required!",
-    ],
-    responsibilities: [
-      "Publicize DISC events on social media, university channels, and through other clubs",
-      "Design promotional materials and corporate support package",
-      "Manage DISC's Instagram, ListServ, and Wildcat Connection",
-      "Take photos at DISC events",
-      "Respond to member emails",
-      "Attend weekly exec meetings",
-    ],
-    whyApply: [
-      "You'll get to design cool promotional materials that will be seen by members across the Northwestern community and industry executives",
-      "You'll be the public face of the club and interact with students, faculty and administrators who are interested in DISC",
-    ],
-  },
-  {
-    id: "treasurer",
-    seats: 1,
-    title: "Treasurer",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#14BD95"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <line x1="12" y1="1" x2="12" y2="23"></line>
-        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-      </svg>
-    ),
-    timeCommitment: [
-      "1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
-      "3-5 hours/week during weeks with event catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
-      "Note: There are roughly 2-3 events we cater per quarter",
-    ],
-    lookingFor: [
-      "Someone who is detail-oriented, organized, and good at keeping track of deadlines",
-      "Someone who takes initiative and accountability",
-    ],
-    responsibilities: [
-      "Take charge of all club finance matters, including managing the ledger, liaising with SOFO, and ensuring the club uses its funds responsibly",
-      "Work with the Co-Presidents to apply to grants",
-      "Attend weekly exec meetings",
-    ],
-    whyApply: [
-      "As the person in charge of our funds, you'll be a big part of many new events and initiatives!",
-      "Great experience if you're interested in corporate finance or accounting",
-      "You get to help us get free food",
-    ],
-  },
+  // {
+  //   id: "vp-marketing",
+  //   seats: 1,
+  //   title: "VP Marketing",
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="24"
+  //       height="24"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="#14BD95"
+  //       strokeWidth="2"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+  //     </svg>
+  //   ),
+  //   timeCommitment: [
+  //     "Average of ~3 hours/week",
+  //     "Weekly exec meetings",
+  //     "Creating flyers for upcoming events",
+  //     "Drafting announcements, reminders, emails, and marketing messages",
+  //     "Discord, Instagram, and email announcements",
+  //     "Replying to member emails",
+  //     "Weeks directly before and during general member events, application periods, and recruitment periods tend to be heavier (~5 hours/week)",
+  //     "Note: There are roughly 2-3 general member events per quarter",
+  //   ],
+  //   lookingFor: [
+  //     "Experience designing promotional materials and managing social media accounts (Instagram, Discord, etc.)",
+  //     "Good at professional writing",
+  //     "Playfully serious attitude (likes to have fun with their work, but takes their job seriously)",
+  //     "Past experience in marketing, communications, or design is a plus but definitely not required!",
+  //   ],
+  //   responsibilities: [
+  //     "Publicize DISC events on social media, university channels, and through other clubs",
+  //     "Design promotional materials and corporate support package",
+  //     "Manage DISC's Instagram, ListServ, and Wildcat Connection",
+  //     "Take photos at DISC events",
+  //     "Respond to member emails",
+  //     "Attend weekly exec meetings",
+  //   ],
+  //   whyApply: [
+  //     "You'll get to design cool promotional materials that will be seen by members across the Northwestern community and industry executives",
+  //     "You'll be the public face of the club and interact with students, faculty and administrators who are interested in DISC",
+  //   ],
+  // },
+  // {
+  //   id: "treasurer",
+  //   seats: 1,
+  //   title: "Treasurer",
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="24"
+  //       height="24"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="#14BD95"
+  //       strokeWidth="2"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <line x1="12" y1="1" x2="12" y2="23"></line>
+  //       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+  //     </svg>
+  //   ),
+  //   timeCommitment: [
+  //     "1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
+  //     "3-5 hours/week during weeks with event catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
+  //     "Note: There are roughly 2-3 events we cater per quarter",
+  //   ],
+  //   lookingFor: [
+  //     "Someone who is detail-oriented, organized, and good at keeping track of deadlines",
+  //     "Someone who takes initiative and accountability",
+  //   ],
+  //   responsibilities: [
+  //     "Take charge of all club finance matters, including managing the ledger, liaising with SOFO, and ensuring the club uses its funds responsibly",
+  //     "Work with the Co-Presidents to apply to grants",
+  //     "Attend weekly exec meetings",
+  //   ],
+  //   whyApply: [
+  //     "As the person in charge of our funds, you'll be a big part of many new events and initiatives!",
+  //     "Great experience if you're interested in corporate finance or accounting",
+  //     "You get to help us get free food",
+  //   ],
+  // },
 ];
 
 export const RolesTabs: React.FC = () => {
