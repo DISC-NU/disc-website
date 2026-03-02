@@ -28,8 +28,9 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "Fall Quarter: 10 hours/week (Weekly exec meeting, weekly workshop meeting, & weekly tech-lead syncs)",
-      "Winter & Spring Quarters: 3 hours/week (Weekly exec meeting, tech-lead syncs)",
+      "Fall Quarter: 4-5 hours/week (Weekly exec meeting, weekly workshop meeting, & weekly tech-lead syncs)",
+      "Winter & Spring Quarters: 2-3 hours/week (Weekly exec meeting, tech-lead syncs)",
+      "In general, workload varies week to week depending on events, preparing templates, recruiting season, etc..."
     ],
     lookingFor: [
       "Teaching, mentoring, and coaching experience",
@@ -96,7 +97,6 @@ const roles: Role[] = [
     responsibilities: [
       "Source & Finalize Clients (Fall) - Research local nonprofits, perform email outreach, pitch DISC's mission, confirm projects",
       "Support client and project communications (Winter/Spring) - Ensure smooth introduction, address issues, replace projects if needed",
-      "Winter & Spring: engage corporate sponsors",
       "Attend weekly exec meetings",
     ],
     whyApply: [
@@ -219,7 +219,7 @@ const roles: Role[] = [
     timeCommitment: [
       "1-2 hours/week during non-event weeks (Weekly exec meeting, brainstorming events, helping with catering order planning)",
       "3-5 hours/week during weeks with event catering (applying or grants, helping with catering order pickup, SOFO reimbursements and tax exemption form)",
-      "Note: There are roughly 2-3 events we cater per quarter",
+      "Note: There are roughly 3-4 events we cater per quarter",
     ],
     lookingFor: [
       "Someone who is detail-oriented, organized, and good at keeping track of deadlines",
