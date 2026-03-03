@@ -20,7 +20,7 @@ export const CallToAction: React.FC = () => {
                 </p>
                 <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdkIlr0JeYuL-4662qnGcY61fpAxjSIX7m5ZWUX-nhMJQeBgg/viewform?usp=preview"
+                    href="https://forms.gle/GLnAwNFQaQLiUQQ28"
                     className="w-full sm:w-auto"
                   >
                     <Button

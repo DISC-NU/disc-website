@@ -28,9 +28,9 @@ const roles: Role[] = [
       </svg>
     ),
     timeCommitment: [
-      "Fall Quarter: 10 hours/week (Weekly exec meeting, weekly workshop meeting, & weekly tech-lead syncs)",
-      "Winter & Spring Quarters: 3 hours/week (Weekly exec meeting, tech-lead syncs)",
-      "In general, workload varies week to week depending on events, preparing templates, recruiting season, etc..."
+      "Fall Quarter: 4-5 hours/week (Weekly exec meeting, weekly workshop meeting, & weekly tech-lead syncs)",
+      "Winter & Spring Quarters: 2-3 hours/week (Weekly exec meeting, tech-lead syncs)",
+      "In general, workload varies week to week depending on events, preparing templates, recruiting season, etc...",
     ],
     lookingFor: [
       "Teaching, mentoring, and coaching experience",
@@ -309,7 +309,7 @@ export const RolesTabs: React.FC = () => {
       >
         {roles.map(
           (role) =>
-            role.id === activeTab && <RoleDetails key={role.id} role={role} />
+            role.id === activeTab && <RoleDetails key={role.id} role={role} />,
         )}
       </motion.div>
     </div>

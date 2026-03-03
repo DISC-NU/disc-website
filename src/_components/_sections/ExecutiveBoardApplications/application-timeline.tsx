@@ -12,7 +12,7 @@ export const ApplicationTimeline: React.FC = () => {
         <TimelineStep
           number="1"
           title="Application Opens"
-          date="March 2nd - 16th"
+          date="March 2nd - 28th"
           description="The application window opens for all executive board positions."
           delay={0.1}
         />
@@ -20,20 +20,20 @@ export const ApplicationTimeline: React.FC = () => {
           number="2"
           title="Application Closes"
           date="March 28th"
-          description="All applications must be submitted by this date."
+          description="All applications must be submitted by this date (at 11:59PM)."
           delay={0.2}
         />
         <TimelineStep
           number="3"
           title="Interview Period"
-          date="March 17th - April 4th"
+          date="March 29th - April 12th"
           description="Selected candidates will be invited for interviews."
           delay={0.3}
         />
         <TimelineStep
           number="4"
           title="Offers Sent"
-          date="April 1st - 9th"
+          date="April 13th - 19th"
           description="Offers will be sent on a rolling basis. Applicants have 48 hours to accept."
           delay={0.4}
         />

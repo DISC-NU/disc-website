@@ -38,7 +38,7 @@ export const RoleExpectationsNotice: React.FC = () => {
           <p className="text-gray-700">
             To apply, fill out this{" "}
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdkIlr0JeYuL-4662qnGcY61fpAxjSIX7m5ZWUX-nhMJQeBgg/viewform?usp=preview"
+              href="https://forms.gle/GLnAwNFQaQLiUQQ28"
               className="font-bold underline"
             >
               application
