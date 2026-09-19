@@ -373,7 +373,7 @@ export const teamMembers = [
     name: "Kaytie Chung",
     grade: "Senior",
     background: "Computer Science",
-    image: "/kaytie.jpg",
+    image: "/kaytie.png",
     social: {
       linkedin: "",
       instagram: "https://www.instagram.com/kaytie.chung/",
