@@ -23,18 +23,24 @@ const SocialLinks = memo(
     <div className="flex gap-4 mt-4">
       <a
         href={social.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-gray-400 hover:text-gray-600 transition-colors"
       >
         <Linkedin size={20} />
       </a>
       <a
         href={social.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-gray-400 hover:text-gray-600 transition-colors"
       >
         <Instagram size={20} />
       </a>
       <a
         href={social.github}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-gray-400 hover:text-gray-600 transition-colors"
       >
         <Github size={20} />
@@ -90,12 +96,14 @@ const TeamMemberCard = memo(({ member }: TeamMemberCardProps) => {
 TeamMemberCard.displayName = "TeamMemberCard";
 
 const TopTeamGrid = memo(() => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
-    {teamMembers.slice(0, 5).map((member, index) => (
-      <div key={`top-${member.name}-${index}`} className="w-full">
-        <TeamMemberCard member={member} />
-      </div>
-    ))}
+  <div className="flex justify-center w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full mb-8">
+      {teamMembers.slice(0, 4).map((member, index) => (
+        <div key={`top-${member.name}-${index}`} className="w-full">
+          <TeamMemberCard member={member} />
+        </div>
+      ))}
+    </div>
   </div>
 ));
 
@@ -103,8 +111,8 @@ TopTeamGrid.displayName = "TopTeamGrid";
 
 const BottomTeamGrid = memo(() => (
   <div className="flex justify-center w-full">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full lg:w-3/4">
-      {teamMembers.slice(5).map((member, index) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+      {teamMembers.slice(4).map((member, index) => (
         <div key={`bottom-${member.name}-${index}`} className="w-full">
           <TeamMemberCard member={member} />
         </div>
