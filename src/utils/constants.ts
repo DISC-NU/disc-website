@@ -361,7 +361,7 @@ export const teamMembers = [
     name: "Paul Kim",
     grade: "Senior",
     background: "Computer Science",
-    image: "/paul.png",
+    image: "/paul.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/pauljsk/",
       instagram: "https://www.instagram.com/p_js.k/",
