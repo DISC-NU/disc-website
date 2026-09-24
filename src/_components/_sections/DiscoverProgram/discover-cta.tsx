@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ApplyButton from "./apply-button";
+// import ApplyButton from "./apply-button";
 
 export default function DiscoverCTA() {
   return (
@@ -42,14 +42,14 @@ export default function DiscoverCTA() {
       <div className="flex flex-col items-center justify-center px-4 text-center">
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#297777] to-[#40B4B4] mb-4">
-            Apply to the Discover Program
+            Applications are opening up later this year
           </h2>
-          <p className="text-gray-500 text-lg">
+          {/* <p className="text-gray-500 text-lg">
             And take the first step towards building impactful projects
-          </p>
+          </p> */}
         </div>
 
-        <ApplyButton />
+        {/* <ApplyButton /> */}
 
         <div className="mt-8 space-y-4">
           <p className="text-gray-500">
