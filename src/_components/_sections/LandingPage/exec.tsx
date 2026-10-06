@@ -1,16 +1,20 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+"use client";
+
+import { ChevronDown, Github, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
-import { teamMembers } from "@/utils/constants";
-import { memo, useMemo } from "react";
+import { pastExecMembers, teamMembers } from "@/utils/constants";
+import { memo, useMemo, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { HeaderWithHighlight } from "@/_components/ui/header-with-highlight";
 
 interface TeamMemberCardProps {
   member: {
     name: string;
     position: string;
-    background: string;
+    background?: string;
+    year?: string;
     image: string;
-    social: {
+    social?: {
       linkedin: string;
       instagram: string;
       github: string;
@@ -19,7 +23,11 @@ interface TeamMemberCardProps {
 }
 
 const SocialLinks = memo(
-  ({ social }: { social: TeamMemberCardProps["member"]["social"] }) => (
+  ({
+    social,
+  }: {
+    social: NonNullable<TeamMemberCardProps["member"]["social"]>;
+  }) => (
     <div className="flex gap-4 mt-4">
       <a
         href={social.linkedin}
@@ -86,8 +94,10 @@ const TeamMemberCard = memo(({ member }: TeamMemberCardProps) => {
             ></span>
           </span>
         </p>
-        <p className="text-gray-500 text-sm">{member.background}</p>
-        <SocialLinks social={member.social} />
+        <p className="text-gray-500 text-sm">
+          {member.year ?? member.background}
+        </p>
+        {member.social && <SocialLinks social={member.social} />}
       </div>
     </div>
   );
@@ -123,6 +133,62 @@ const BottomTeamGrid = memo(() => (
 
 BottomTeamGrid.displayName = "BottomTeamGrid";
 
+const PastExecSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="mt-12 border-t border-gray-200">
+      <button
+        type="button"
+        onClick={() => setIsOpen((open) => !open)}
+        aria-expanded={isOpen}
+        aria-controls="past-exec-panel"
+        className="group flex w-full items-center justify-between gap-4 border-b border-gray-200 px-2 py-5 text-left"
+      >
+        <span className="flex items-baseline gap-3">
+          <span className="text-xl font-bold text-gray-900">Past Exec</span>
+          <span className="text-sm text-gray-500">
+            {pastExecMembers.length} alumni
+          </span>
+        </span>
+        <ChevronDown
+          size={24}
+          className={`shrink-0 text-gray-400 transition-transform duration-300 group-hover:text-gray-900 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            id="past-exec-panel"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full pt-8">
+              {pastExecMembers.map((member, index) => (
+                <motion.div
+                  key={`past-${member.name}-${member.year}`}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 + index * 0.04 }}
+                  className="w-full"
+                >
+                  <TeamMemberCard member={member} />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 export default function MeetTheTeam() {
   return (
     <section className="py-12 flex justify-center px-4">
@@ -143,6 +209,8 @@ export default function MeetTheTeam() {
             <BottomTeamGrid />
           </div>
         </div>
+
+        <PastExecSection />
       </div>
     </section>
   );

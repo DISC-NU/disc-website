@@ -339,7 +339,7 @@ export const teamMembers = [
     background: "Computer Science, Viola",
     image: "/jazlyn.jpg",
     social: {
-      linkedin: "https://www.linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/jazlyn-ho/",
       instagram: "https://www.instagram.com/jazlynh.o/",
       github: "https://github.com/jazlynho2028",
     },
@@ -375,7 +375,7 @@ export const teamMembers = [
     background: "Computer Science",
     image: "/kaytie.png",
     social: {
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/kaytlyn-chung-4706162a8/",
       instagram: "https://www.instagram.com/kaytie.chung/",
       github: "",
     },
@@ -389,7 +389,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/diego-purr-agua/",
       instagram: "https://www.instagram.com/deeaygop/",
-      github: "",
+      github: "https://www.github.com/dpdoescode",
     },
   },
   {
@@ -401,7 +401,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/devon-lai/",
       instagram: "https://www.instagram.com/devon_lai_/",
-      github: "",
+      github: "https://github.com/devlai23",
     },
   },
   {
@@ -417,6 +417,108 @@ export const teamMembers = [
     },
   },
   
+];
+
+export const pastExecMembers = [
+  {
+    position: "Co-President",
+    name: "Joanna Soltys",
+    year: "2025–26",
+    image: "/joanna.JPEG",
+    social: {
+      linkedin: "https://www.linkedin.com/in/joanna-soltys/",
+      instagram: "https://www.instagram.com/jothesmolbean/",
+      github: "https://github.com/jmsoltys",
+    },
+  },
+  {
+    position: "Co-President",
+    name: "Aanand Patel",
+    year: "2025–26",
+    image: "/annand.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/aanand-patel1/",
+      instagram: "https://www.instagram.com/aanandpatel123/",
+      github: "https://github.com/aanandp123",
+    },
+  },
+  {
+    position: "VP Business Development",
+    name: "Yong-yu Huang",
+    year: "2025–26",
+    image: "/yong-yu.JPEG",
+    social: {
+      linkedin: "https://www.linkedin.com/in/yong-yuhuang/",
+      instagram: "https://www.instagram.com/yongs.h/",
+      github: "https://github.com/yongssh",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Vihaan Shah",
+    year: "2025–26",
+    image: "/vihaan.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/shah-vihaan/",
+      instagram: "https://www.instagram.com/vihaanshah26/",
+      github: "https://github.com/vihaanshah26",
+    },
+  },
+  {
+    position: "Co-President",
+    name: "Rachel Yao",
+    year: "2024–25",
+    image: "/rachel.JPG",
+    social: {
+      linkedin: "https://www.linkedin.com/in/rachellyao/",
+      instagram: "https://www.instagram.com/rachellyao/",
+      github: "https://github.com/rachelya0",
+    },
+  },
+  {
+    position: "Co-President",
+    name: "Blake Hu",
+    year: "2024–25",
+    image: "/blake.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/blakehy/",
+      instagram: "https://www.instagram.com/blonkagram/",
+      github: "https://github.com/blake-hu",
+    },
+  },
+  {
+    position: "VP Business Development",
+    name: "Jacky Zhang",
+    year: "2024–25",
+    image: "/jacky.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/jackyz21/",
+      instagram: "https://www.instagram.com/jackyzhang1219/",
+      github: "https://github.com/JackyZhang1219",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Amy Liao",
+    year: "2024–25",
+    image: "/amy.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/amyzliao/",
+      instagram: "https://www.instagram.com/ammmy_liao/",
+      github: "https://github.com/amyzliao",
+    },
+  },
+  {
+    position: "Technical Lead",
+    name: "Ethan Pineda",
+    year: "2024–25",
+    image: "/ethan2.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ethanpineda/",
+      instagram: "https://www.instagram.com/ethanpinedaa_____________/",
+      github: "https://github.com/ethanpaneraa",
+    },
+  },
 ];
 
 export const projects = [
