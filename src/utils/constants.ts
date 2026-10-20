@@ -84,7 +84,7 @@ export const clients: Client[] = [
       type: "image",
       src: "/kid-logo-header.png",
     },
-    website: "https://volunteer.projecthelping.org/agency/detail/?agency_id=155608",
+    website: "https://www.facebook.com/kidsindanger/",
   },
   {
     name: "Urban Tables",
@@ -658,6 +658,7 @@ export const projects = [
 export const pastProjects: PastProject[] = [
   {
     client: "Evanston Animal Shelter",
+    website: "https://evanstonanimalshelter.net/",
     description:
       "Evanston Animal Shelter runs a pet food pantry that provides free pet food to community members in need. DISCover Program alumni built a user-friendly platform where clients can request food and staff can manage inventory, while collecting valuable data such as distribution frequency, client demographics, and pounds of food given out.",
     media: {
@@ -667,7 +668,7 @@ export const pastProjects: PastProject[] = [
   },
   {
     client: "Kids in Danger",
-    website: "https://kidsindanger.org/",
+    website: "https://www.facebook.com/kidsindanger/",
     description:
       "Kids in Danger is a nonprofit committed to protecting children by advocating for product safety. DISCover Program alumni rebuilt and improved their Chrome extension into a fully functional tool that uses Consumer Product Safety Commission data to show up-to-date product safety information and recall history while shopping online.",
     media: {
