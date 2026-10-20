@@ -15,6 +15,19 @@ export interface Client {
   website: string;
 }
 
+// Videos can be a YouTube/Google Drive link or a file in /public (e.g. "/demo.mp4")
+export type ProjectMedia =
+  | { type: "video"; src: string }
+  | { type: "screenshots"; srcs: string[] }
+  | { type: "phone"; src: string };
+
+export interface PastProject {
+  client: string;
+  website?: string;
+  description: string;
+  media?: ProjectMedia;
+}
+
 export interface Role {
   id: string;
   seats: number;
