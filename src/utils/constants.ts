@@ -1,5 +1,5 @@
 import { Instagram, Linkedin, Mail, Github } from "lucide-react";
-import { Company, Client } from "@/types";
+import { Company, Client, PastProject } from "@/types";
 export const footerSections = [
   {
     title: "About",
@@ -62,14 +62,6 @@ export const socialMediaLinks = [
 ];
 
 export const clients: Client[] = [
-  {
-    name: "Books and Breakfast",
-    logo: {
-      type: "image",
-      src: "/books_and_breakfast_logo.png",
-    },
-    website: "https://www.booksbreakfast.org",
-  },
   {
     name: "Chicago Furniture Bank",
     logo: {
@@ -165,6 +157,46 @@ export const clients: Client[] = [
       src: "/recyclery.png",
     },
     website: "https://www.therecyclery.org/",
+  },
+  {
+    name: "Trash People",
+    logo: {
+      type: "image",
+      src: "/trashpeople.png",
+    },
+    website: "https://www.trashpeople.org",
+  },
+  {
+    name: "Reparations Stakeholders Authority of Evanston",
+    logo: {
+      type: "image",
+      src: "/rsae_logo.png",
+    },
+    website: "https://rsaevanston.org/",
+  },
+  {
+    name: "C&W Market Foundation",
+    logo: {
+      type: "image",
+      src: "/c&w.png",
+    },
+    website: "https://www.cwmarketfoundation.org/",
+  },
+  {
+    name: "Juleya Woodson",
+    logo: {
+      type: "image",
+      src: "/juleyawoodson.jpg",
+    },
+    website: "https://www.facebook.com/Ihopetheyunderstand/",
+  },
+  {
+    name: "YWCA",
+    logo: {
+      type: "image",
+      src: "/ywca.png",
+    },
+    website: "https://www.ywca.org",
   },
 ];
 
@@ -389,7 +421,7 @@ export const teamMembers = [
     social: {
       linkedin: "https://www.linkedin.com/in/diego-purr-agua/",
       instagram: "https://www.instagram.com/deeaygop/",
-      github: "https://www.github.com/dpdoescode",
+      github: "https://github.com/dpdoescode",
     },
   },
   {
@@ -618,5 +650,46 @@ export const projects = [
     link: "https://www.ywca.org",
     image_url:
       "../ywca.png",
+  },
+];
+
+// Shown in "Previous Client Projects" on the landing page, newest first.
+// A project without `media` shows text only.
+export const pastProjects: PastProject[] = [
+  {
+    client: "Evanston Animal Shelter",
+    description:
+      "Evanston Animal Shelter runs a pet food pantry that provides free pet food to community members in need. DISCover Program alumni built a user-friendly platform where clients can request food and staff can manage inventory, while collecting valuable data such as distribution frequency, client demographics, and pounds of food given out.",
+    media: {
+      type: "video",
+      src: "https://drive.google.com/file/d/1it_4_VFJN3mIAvlFYbn57Kpjk430Dufq/view?usp=sharing",
+    },
+  },
+  {
+    client: "Kids in Danger",
+    website: "https://kidsindanger.org/",
+    description:
+      "Kids in Danger is a nonprofit committed to protecting children by advocating for product safety. DISCover Program alumni rebuilt and improved their Chrome extension into a fully functional tool that uses Consumer Product Safety Commission data to show up-to-date product safety information and recall history while shopping online.",
+    media: {
+      type: "video",
+      src: "https://drive.google.com/file/d/15_OmttG--esryOfxZARS69HrFy8RWOeE/view?usp=sharing",
+    },
+  },
+  {
+    client: "Climate Action Evanston",
+    website: "https://www.climateactionevanston.org/",
+    description:
+      "Climate Action Evanston is a nonprofit that collaborates with the city, local businesses, environmental organizations, and residents to accelerate climate action in Evanston. DISCover Program alumni built a platform to log and highlight their impact across three areas: people, policy, and place.",
+    media: {
+      type: "screenshots",
+      srcs: ["/climate-action-landpage.png", "/climate-action-form.png"],
+    },
+  },
+  {
+    client: "Books & Breakfast",
+    website: "https://www.booksbreakfast.org",
+    description:
+      "A mobile application designed to streamline operations for a local before-school program that provides nutritious meals and academic support to elementary school students. Through close collaboration with program staff and volunteers, we created an intuitive interface that helps track attendance, manage meal planning, and coordinate volunteer schedules.",
+    media: { type: "phone", src: "/books_and_breakfast.png" },
   },
 ];
