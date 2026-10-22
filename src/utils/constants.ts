@@ -210,7 +210,7 @@ export const companies: Company[] = [
     website: "https://www.salesforce.com/",
   },
   {
-    name: "Group one Trading",
+    name: "Group One Trading",
     logo: {
       type: "image",
       src: "/group_one.jpeg",
@@ -266,7 +266,7 @@ export const companies: Company[] = [
     website: "https://www.splunk.com/",
   },
   {
-    name: "rubrik",
+    name: "Rubrik",
     logo: {
       type: "image",
       src: "/rubrik.png",
@@ -312,6 +312,22 @@ export const companies: Company[] = [
       src: "/ep3.png",
     },
     website: "https://www.epsilon3.io/",
+  },
+  {
+    name: "Databricks",
+    logo: {
+      type: "image",
+      src: "/databricks.png",
+    },
+    website: "https://www.databricks.com/",
+  },
+  {
+    name: "Relativity",
+    logo: {
+      type: "image",
+      src: "/relativity.svg",
+    },
+    website: "https://www.relativity.com/",
   },
 ];
 
