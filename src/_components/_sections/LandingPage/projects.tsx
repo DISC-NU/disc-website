@@ -116,7 +116,7 @@ export function ClientProjectsSection() {
                 idx % 2 === 1 ? "lg:order-2" : ""
               } ${project.media ? "" : "lg:col-span-2 max-w-3xl mx-auto"}`}
             >
-              <h3 className="text-2xl font-semibold text-black">
+              <h3 className="text-2xl font-bold text-gray-900">
                 {project.website ? (
                   <a
                     href={project.website}
